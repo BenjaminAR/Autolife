@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo_2020w.png" type="image/x-icon">
+    <meta name="description"
+        content="Garantizamos automóviles y realizamos programas a la medida. AutoLife - Premium. Características. Unidades. Para unidades hasta con 10 años de ...">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="author" content="https://github.com/BenjaminAR">
+    <meta name="developer" content="Benjamin Avila">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/global.css">
@@ -123,20 +125,41 @@
                 </div>
             </section>
 
-            <section class="contacto contenedor-fluid">
+            <section class="contenedor-fluid contacto">
+                <div class="contenedor">
+                    <div class="contacto__header">
+                        <h2>Contáctanos</h2>
+                        <br>
+                        <h3>Si desea hacer cualquier consulta rellene el siguiente
+                            formulario. Los campos marcados con * son obligatorios
+                        </h3>
+                    </div>
+                    <div class="formulario">
 
-                <div class="formulario">
-                    <h2 style="text-align: left;">Contáctanos</h2>
-                    <h3>Si desea hacer cualquier consulta rellene el siguiente
-                        formulario. Los campos marcados con * son obligatorios
-                    </h3>
-                    <form>
-
-                    </form>
+                        <form class="form">
+                            <input placeholder="Nombre" type="text" name="Nombre" id="">
+                            <input placeholder="Apellidos" type="text" name="Apellidos" id="">
+                            <input placeholder="mail@mail.com" type="email" name="Email" id="">
+                            <input placeholder="Número de telefono" type="tel" name="Telefono" id="">
+                            <input placeholder="Comentarios" type="textarea" name="" id="">
+                            <input type="checkbox" name="Privacidad" id="">
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
                 </div>
-                
-                <aside>
-
+                <aside class="sidebar">
+                    <a href="">
+                        <p>Descartes 60, nueva Anzures, CDMX</p>
+                    </a>
+                    <a href="">
+                        <p>800 780 <span>AUTO</span> </p>
+                    </a>
+                    <a href="">
+                        <p>info@autolife.mx</p>
+                    </a>
+                    <a href="">
+                        <p>www.autolife.mx</p>
+                    </a>
                 </aside>
             </section>
 
@@ -144,14 +167,9 @@
 
     </div>
 
-
-
-
-    </div>
-
-
-    <footer>
-
+    <footer class="footer">
+        <h2>Desarrollado en AMSA</h2>
+        <h3>Terminos y condiciones</h3>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
