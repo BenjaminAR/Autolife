@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+
+/* Header */
+
+.header{
+    padding: 2rem 0;
+    background-color: var(--backObscuro);
+}
+
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra nav a{
+    color: var(--blanco);
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.barra nav a:hover{
+    color: var(--primario);
+}
+
+.logo{
+    display: grid;
+    justify-items: center;
+}
+
+.logo__img{
+    height: 4rem;
+    width: 12.5rem;
+}
+
+
+.logo__text{
+    color: var(--blanco);
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+/* End header */
+
+.contenido-principal{
+    width: 800rem;
+}
+
+.productos h1, h2, h3, h4{
+    text-align: center;
+}
+.productos h4{
+    font-weight: normal;
+}
+
+.productos{
+    margin: 3rem 0;
+}
+
+.carousel-item img{
+    height: 50rem;
+}
+
+@media (min-width: 1600px) {
+    .carousel-item img{
+        height: 68rem;
+    }
+}
+
+.elementos__widget{
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.somos{
+    display: flex;
+    background-color: var(--backObscuro);
+    height: 40rem;
+    justify-items: center;
+    align-items: center;
+    color: var(--blanco);
+}
+
