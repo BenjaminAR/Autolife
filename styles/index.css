@@ -6,22 +6,34 @@ body{
 /* Header */
 
 .header{
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: var(--backObscuro);
 }
+/* 
 
+.contenedor--nav{
+    position: fixed;
+    background-color: var(--backObscuro);
+    height: 8rem;
+    padding-top: 1rem;
+    z-index: 100;
+    margin-bottom: 3rem;
+}
+ */
 
 .barra{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 3rem;
 }
 
 .barra nav a{
     color: var(--blanco);
     margin: 0 1rem;
     font-size: 1.5rem;
+    transition: color .5s ease; 
 }
 
 .barra nav a:hover{
@@ -51,6 +63,16 @@ body{
     width: 800rem;
 }
 
+
+.test{
+    display: flex;
+    gap: 3rem;
+}
+
+.test p{
+    text-align: justify;
+}
+
 .productos h1, h2, h3, h4{
     text-align: center;
 }
@@ -62,6 +84,13 @@ body{
     margin: 3rem 0;
 }
 
+
+.carousel{
+    margin-top: 5rem;
+}
+
+/* 
+
 .carousel-item img{
     height: 50rem;
 }
@@ -71,24 +100,35 @@ body{
         height: 68rem;
     }
 }
+ */
 
 .elementos__widget{
+    display: grid;    
     margin: 4rem 0;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.elementos__img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
 }
 
 .somos{
     display: flex;
-    background-color: var(--backObscuro);
-    height: 40rem;
+    background-color: var(--blanco);
+    max-height: 80rem;
     justify-items: center;
     align-items: center;
-    color: var(--blanco);
-    padding-bottom: 3rem;
-    margin-bottom: 5rem;
+    color: var(--negro);
+    padding: 10rem 0;
 }
+
 
 .contacto{
     display: grid;
@@ -132,12 +172,19 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 7rem;
     width: 100%;
     height: 20rem;
     color: var(--blanco);
     background-color: var(--backObscuro);
 }
+
+
+.map__frame{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 .footer h1,h2,h3,h4{
     margin: 0 4rem;
 }

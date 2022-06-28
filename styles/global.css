@@ -1,10 +1,11 @@
 :root {
     --fuenteHeading: 'PT sans', sans-serif;
     --funeteParrafo: 'Open Sans', sans-serif;
-    --primario: rgb(255, 115, 0);
+    --primario: #FF7300;
     --blanco: #fff;
     --negro: #000;
     --backObscuro: #2A2A2A;
+    --backClaro: #e0e0e0;
 
 
 }
@@ -42,9 +43,34 @@ body {
     /* Para centrar los elementos hijos */
 }
 
+.space-7{
+    height: 7rem;
+    background-color: transparent;
+}
+
+.space-2{
+    height: 2rem;
+    background-color: transparent;
+}
+
+
+.space-3{
+    height: 3rem;
+    background-color: transparent;
+}
+
+.bold{
+    font-weight: bold;
+}
+.font-center{
+    text-align: center;
+}
+
 .contenedor-fluid{
     width: 100%;
 }
+
+
 
 a {
     text-decoration: none;
