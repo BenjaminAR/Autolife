@@ -1,13 +1,11 @@
 :root {
     --fuenteHeading: 'PT sans', sans-serif;
     --funeteParrafo: 'Open Sans', sans-serif;
-    --primario: #FF7300;
+    --primario: #FE5000;
     --blanco: #fff;
     --negro: #000;
-    --backObscuro: #2A2A2A;
+    --backObscuro: #332F21;
     --backClaro: #e0e0e0;
-
-
 }
 
 html {

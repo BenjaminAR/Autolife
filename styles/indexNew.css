@@ -1,3 +1,9 @@
+.logoG{
+    display: grid;
+    justify-items: center;
+}
+
+
 .barra__redes {
     display: flex;
     flex-direction: row;
@@ -16,18 +22,16 @@
     padding-right: 5rem;
     
 }
-.backClaro {
-    background-color: var(--backClaro);
-}
+
 
 .banner__principal {
-    background-image: url(../img/bannerGrua.png);
-    background-size: contain;
+    background-image: url(../img/def/carretera.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 60rem;
+    height: 65rem;
+    color: var(--blanco);
 }
-
 
 .widget{
     display: flex;
@@ -75,4 +79,37 @@
 .widget__button:hover {
     background-color: var(--blanco);
     color: var(--primario);
+}
+
+.footer{
+    padding: 0 5rem;
+}
+
+.footer h4{
+    margin: 2rem 0;
+}
+
+
+.footer a{
+    color: var(--blanco);
+}
+
+.footer a:hover{
+    color: var(--primario)
+}
+
+.footer__about{
+    max-width: 35rem;
+}
+
+.footer__horario{
+    text-align: center;
+}
+
+.footer__dia{
+    color: var(--primario);
+}
+
+.cr{
+    align-items: center;
 }
