@@ -31,8 +31,19 @@
     background-position: center center;
     height: 65rem;
     color: var(--blanco);
+    
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.459);
+    height: 100%;
 }
 
+.baner__caractristicas{
+    display: grid;
+    gap: 2rem;
+    margin: 0 10rem;
+    padding: 2rem 0;
+}
 .widget{
     display: flex;
     flex-direction: column;
