@@ -214,12 +214,20 @@ body{
     color: var(--primario)
 }
 
+@media (max-width: 768px) {
+    .footer__about{
+        text-align: center;
+    }    
+}
+
+
 .footer__about {
     max-width: 35rem;
 }
 
 .footer__horario {
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .footer__dia {

@@ -16,20 +16,6 @@
     align-items: center;
 }
 
-
-.contacto{
-    display: flex;
-    background-color: rgba(124, 107, 107, 0.521);
-}
-
-
-.form input{
-    background-color: transparent;
-    border: 3px solid var(--primarioOpacity);
-    border-radius: 3px; 
-}
-
-
 textarea:focus,
 input:focus {
     outline: 2px solid rgb(253, 145, 99);
@@ -37,17 +23,6 @@ input:focus {
 
 .contacto__header h2, h3{
     text-align: left;
-}
-
-.form{
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: .9rem;
-}
-
-.form input{
-    padding: .5rem;
 }
 
 .sidebar{
@@ -68,6 +43,19 @@ input:focus {
     color:var(--primario);
 }
 
+@media (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+    }
+}
+
+.map{
+    padding: 0;
+    margin: 0;
+    width: auto;
+    border: none;
+}
+
 .footer{
     display: flex;
     justify-content: space-between;
@@ -75,14 +63,6 @@ input:focus {
     height: auto;
     color: var(--blanco);
     background-color: var(--backObscuro);
-}
-
-
-.map{
-    padding: 0;
-    margin: 0;
-    width: auto;
-    border: none;
 }
 
 .footer h1,h2,h3,h4{
