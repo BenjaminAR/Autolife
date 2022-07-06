@@ -9,7 +9,7 @@
 
 @media (max-width: 768px ) {
     .formulario__aside{
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
     }
 }
 
@@ -89,6 +89,12 @@
 
 .two{
     grid-column: 1 / 3;
+}
+
+@media (max-width: 768px) {
+    .ex{
+        grid-column: 1 / 3;
+    }
 }
 
 
