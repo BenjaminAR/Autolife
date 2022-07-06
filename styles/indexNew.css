@@ -38,16 +38,37 @@
     height: 100%;
 }
 
-.baner__caractristicas{
-    display: grid;
-    gap: 2rem;
-    margin: 0 10rem;
-    padding: 2rem 0;
+
+
+@media (min-width: 768px) {
+    .baner__caractristicas{
+        display: grid;
+        gap: 2rem;
+        margin: 0 10rem;
+        padding: 2rem 0;
+    }
 }
 .widget{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+@media (min-width: 768px) {
+    .elementos__widget{
+        display: grid;    
+        margin: 4rem 0;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+
+.elementos__img h4{
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
