@@ -1,7 +1,8 @@
 :root {
     --fuenteHeading: 'PT sans', sans-serif;
     --funeteParrafo: 'Open Sans', sans-serif;
-    --primario: #FE5000;
+    --primario: #f07325;
+    --primarioOpacity: #d36622;
     --blanco: #fff;
     --negro: #000;
     --backObscuro: #332F21;

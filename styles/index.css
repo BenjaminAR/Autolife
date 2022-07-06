@@ -1,90 +1,3 @@
-body{
-    background-color: rgb(238, 238, 238);
-}
-
-body h2{
-    font-weight: bold;
-}
-
-.header{
-    padding: 1rem 0;
-    background-color: var(--backObscuro);
-}
-
-
-.barra{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3rem;
-}
-
-.barra nav a{
-    color: var(--blanco);
-    margin: 0 1rem;
-    font-size: 1.5rem;
-    transition: color .5s ease;
-}
-
-.barra nav a:hover{
-    color: var(--primario);
-}
-
-.logo{
-    display: grid;
-    justify-items: center;
-}
-
-.logo__img{
-    height: 4rem;
-    width: 12.5rem;
-}
-
-
-
-.logo__text{
-    color: var(--blanco);
-    font-size: .9rem;
-    font-weight: normal;
-}
-
-
-
-.backClaro {
-    background-color: var(--backClaro);
-}
-
-@media (max-width: 892px) {
-    .barra{
-        flex-direction: column;
-
-    }
-    .navegacion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2rem;
-    }
-
-}
-
-/* End header */
-
-.contenido-principal{
-    width: 800rem;
-}
-
-
-.test{
-    display: flex;
-    gap: 3rem;
-}
-
-.test p{
-    text-align: justify;
-}
-
 .productos h1, h2, h3, h4{
     text-align: center;
 }
@@ -96,12 +9,6 @@ body h2{
     margin: 3rem 0;
 }
 
-
-.carousel{
-    margin-top: 5rem;
-}
-
-
 .elementos__img{
     display: flex;
     flex-direction: column;
@@ -109,33 +16,23 @@ body h2{
     align-items: center;
 }
 
-.somos{
-    display: flex;
-    background-color: var(--blanco);
-    max-height: 80rem;
-    justify-items: center;
-    align-items: center;
-    color: var(--negro);
-    padding: 10rem 0;
-}
-
 
 .contacto{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 8rem;
+    display: flex;
+    background-color: rgba(124, 107, 107, 0.521);
 }
+
 
 .form input{
     background-color: transparent;
-    border: none;
-    border-bottom: 2px solid var(--primario);
+    border: 3px solid var(--primarioOpacity);
+    border-radius: 3px; 
 }
 
 
 textarea:focus,
 input:focus {
-    outline: none;
+    outline: 2px solid rgb(253, 145, 99);
 }
 
 .contacto__header h2, h3{
