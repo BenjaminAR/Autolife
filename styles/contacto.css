@@ -1,23 +1,21 @@
-
-
 @media (min-width: 768px) {
-    .formulario{
+    .formulario {
         display: grid;
-        grid-template-columns: 1fr 2fr;    
+        grid-template-columns: 1fr 2fr;
     }
 }
 
-@media (max-width: 768px ) {
-    .formulario__aside{
+@media (max-width: 768px) {
+    .formulario__aside {
         margin-bottom: 4rem;
     }
 }
 
-.formulario__aside{
+.formulario__aside {
     display: flex;
     flex-direction: column;
-    background: rgb(255,172,120);
-    background: linear-gradient(90deg, rgba(255,172,120,1) 0%, rgba(254,138,66,1) 48%, rgba(254,100,5,1) 100%);
+    background: rgb(255, 172, 120);
+    background: linear-gradient(90deg, rgba(255, 172, 120, 1) 0%, rgba(254, 138, 66, 1) 48%, rgba(254, 100, 5, 1) 100%);
     height: 40rem;
     border-radius: 20px;
     padding: 1.3rem;
@@ -26,38 +24,43 @@
     align-items: center;
 }
 
-.i-plane{
+.i-plane {
     color: white;
     font-size: 7rem;
 }
 
-.i-aside{
+.i-aside {
     color: var(--blanco);
-    font-size: 3rem; 
+    font-size: 3rem;
 }
 
-.formulario__aside p{
+.formulario__aside p {
     color: rgb(22, 22, 22);
 }
 
-.formulario__datos{
-    padding: 0 2rem;
+@media (min-width: 758px) {
+
+    .formulario__datos {
+        padding: 0 2rem;
+    }
+
 }
 
-.form_{
+.form_ {
     background-color: transparent;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-.form_ input, textarea{
-    border: 1px solid var(--primario) ;
+.form_ input,
+textarea {
+    border: 1px solid var(--primario);
     padding: 5px;
     border-radius: 4px;
 }
 
-.form_ button{
+.form_ button {
     background-color: transparent;
     border-radius: 3px;
     border: 1px solid var(--primario);
@@ -68,45 +71,46 @@
     height: 3.4rem;
 }
 
-.form_ button:hover{
+.form_ button:hover {
     background-color: var(--primario);
     border: 1px solid transparent;
     color: var(--blanco);
 }
 
-.form_ a{
+.form_ a {
     color: rgba(0, 0, 0, 0.603);
 }
 
-.form_ a:hover{
+.form_ a:hover {
     color: var(--primario);
 }
 
-.one{
+.one {
     grid-column: 1 / 3;
     height: 28rem;
 }
 
-.two{
+.two {
     grid-column: 1 / 3;
 }
 
 @media (max-width: 768px) {
-    .ex{
+    .ex {
         grid-column: 1 / 3;
     }
 }
 
 
-textarea, input{
+textarea,
+input {
     resize: none;
     height: auto;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-.h-100{
+.h-100 {
     height: 100%;
 }
