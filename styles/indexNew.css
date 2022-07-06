@@ -1,4 +1,4 @@
-.logoG{
+.logoG {
     display: grid;
     justify-items: center;
 }
@@ -17,10 +17,10 @@
 }
 
 
-.barra__texto{
+.barra__texto {
     color: var(--primario);
     padding-right: 5rem;
-    
+
 }
 
 
@@ -31,9 +31,10 @@
     background-position: center center;
     height: 65rem;
     color: var(--blanco);
-    
+
 }
-.bg{
+
+.bg {
     background-color: rgba(0, 0, 0, 0.459);
     height: 100%;
 }
@@ -41,14 +42,15 @@
 
 
 @media (min-width: 768px) {
-    .baner__caractristicas{
+    .baner__caractristicas {
         display: grid;
         gap: 2rem;
         margin: 0 10rem;
         padding: 2rem 0;
     }
 }
-.widget{
+
+.widget {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,8 +58,8 @@
 
 
 @media (min-width: 768px) {
-    .elementos__widget{
-        display: grid;    
+    .elementos__widget {
+        display: grid;
         margin: 4rem 0;
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
@@ -66,7 +68,7 @@
 }
 
 
-.elementos__img h4{
+.elementos__img h4 {
     font-weight: bold;
 }
 
@@ -90,7 +92,7 @@
 }
 
 @media (min-width: 758px) {
-    .widget__item{
+    .widget__item {
         border-top: none;
     }
 }
@@ -112,35 +114,46 @@
     color: var(--primario);
 }
 
-.footer{
+.footer {
     padding: 0 5rem;
 }
 
-.footer h4{
+.footer h4 {
     margin: 2rem 0;
 }
 
 
-.footer a{
+.footer a {
     color: var(--blanco);
 }
 
-.footer a:hover{
+.footer a:hover {
     color: var(--primario)
 }
 
-.footer__about{
+.footer__about {
     max-width: 35rem;
 }
 
-.footer__horario{
+.footer__horario {
     text-align: center;
 }
 
-.footer__dia{
+.footer__dia {
     color: var(--primario);
 }
 
-.cr{
+.cr {
     margin: auto 0;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .cr {
+        display: none;
+    }
+
 }

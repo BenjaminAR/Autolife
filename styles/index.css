@@ -122,7 +122,20 @@ body h2{
 
 .contacto{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+}
+
+.form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--primario);
+}
+
+
+textarea:focus,
+input:focus {
+    outline: none;
 }
 
 .contacto__header h2, h3{
@@ -133,11 +146,11 @@ body h2{
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
+    gap: .9rem;
 }
-.form__center{
-    align-items: center;
+
+.form input{
+    padding: .5rem;
 }
 
 .sidebar{
@@ -161,7 +174,6 @@ body h2{
 .footer{
     display: flex;
     justify-content: space-between;
-    
     width: 100%;
     height: auto;
     color: var(--blanco);
