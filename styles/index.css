@@ -2,6 +2,10 @@ body{
     background-color: rgb(238, 238, 238);
 }
 
+body h2{
+    font-weight: bold;
+}
+
 .header{
     padding: 1rem 0;
     background-color: var(--backObscuro);
@@ -165,9 +169,10 @@ body{
 }
 
 
-.map__frame{
+.map{
     padding: 0;
     margin: 0;
+    width: auto;
     border: none;
 }
 
