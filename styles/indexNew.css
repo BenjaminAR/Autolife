@@ -45,14 +45,22 @@ body{
     width: 12.5rem;
 }
 
-
-
 .logo__text{
     color: var(--blanco);
     font-size: .9rem;
     font-weight: normal;
 }
 
+@media (max-width: 768px) {
+    .logo__img{
+        margin-top: 2rem;
+        height: 4.7rem;
+        width: 17rem;
+    }
+    .logo__text{
+        font-size: 1.1rem;
+    }
+}
 
 
 .backClaro {
@@ -73,6 +81,7 @@ body{
 
 }
 
+
 /* End header */
 
 .contenido-principal{
@@ -86,6 +95,14 @@ body{
     align-items: center;
     height: 3.5rem;
 }
+
+
+@media (max-width: 300px) {
+    .barra__redes{
+        display: none;
+    }
+}
+
 .barra__redes nav a {
     padding: 0 0.8rem;
 }
@@ -93,16 +110,28 @@ body{
 .barra__texto {
     color: var(--primario);
     padding-right: 5rem;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 2rem;
 }
 
+@media (max-width: 768px) {
+    .barra__texto{
+        padding-right: 1rem;
+    }
+}
 
 .iconos{
     color: var(--primario);
-    font-weight: bold;
-    font-size: 1.9rem;
-    margin: 5px 1rem;
     opacity: 1;
     transition: opacity .3s ease;
+}
+
+@media (min-width: 768px) {
+    .iconos{
+        font-weight: bold;
+        font-size: 1.9rem;
+        margin: 5px 1rem;
+    }
 }
 
 .iconos:hover{
