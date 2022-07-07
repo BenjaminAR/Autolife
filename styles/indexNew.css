@@ -15,6 +15,15 @@ body{
     padding: 0 3rem;
 }
 
+@media (max-width: 500px) {
+    .barra{
+        padding: 0;
+    }
+    .barra nav a{
+        margin: 0;
+    }
+}
+
 .barra nav a{
     color: var(--blanco);
     margin: 0 1rem;
@@ -77,6 +86,15 @@ body{
     align-items: center;
     height: 3.5rem;
 }
+.barra__redes nav a {
+    padding: 0 0.8rem;
+}
+
+.barra__texto {
+    color: var(--primario);
+    padding-right: 5rem;
+}
+
 
 .iconos{
     color: var(--primario);
@@ -98,14 +116,6 @@ body{
     margin: 5px 1rem;   
 }
 
-.barra__redes nav a {
-    padding: 0 0.8rem;
-}
-
-.barra__texto {
-    color: var(--primario);
-    padding-right: 5rem;
-}
 
 .banner__principal {
     background-image: url(../img/def/carretera.jpg);

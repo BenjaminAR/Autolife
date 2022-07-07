@@ -1,0 +1,74 @@
+.flex__row{
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+
+    .flex__row{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+
+.card__testimonial {
+    max-height: 66rem;
+    max-width: 50rem;
+    background-color: rgb(226, 226, 226);
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .card__testimonial{
+        margin: 2rem 0;
+        height: 60rem;
+    }
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    background: rgb(255, 172, 120);
+    background: linear-gradient(0deg, rgba(255, 172, 120, 1) 0%, rgba(254, 138, 66, 1) 48%, rgba(254, 100, 5, 1) 100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 11rem;
+    margin-bottom: 7rem;
+}
+
+@media (max-width: 768px) {
+    .card__header{
+        padding-top: 8rem;
+        height: 15rem;
+    }
+}
+
+.card__avatar {
+    height: 16rem;
+    width: 16rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/Avatar.PNG);
+    border: 3px solid var(--blanco);
+    border-radius: 50%;
+}
+
+.card__comment {
+    margin: 5rem 1rem;
+    text-align: center;
+}
+
+.card__comment h3 {
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+.card__comment i{
+    margin: 1rem 0;
+    color: var(--primario);
+    font-size: 2.5rem;
+}
