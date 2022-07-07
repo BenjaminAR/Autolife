@@ -49,10 +49,10 @@
 .card__avatar {
     height: 16rem;
     width: 16rem;
+    background-image: url(../img/Avatar.PNG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(../img/Avatar.PNG);
     border: 3px solid var(--blanco);
     border-radius: 50%;
 }

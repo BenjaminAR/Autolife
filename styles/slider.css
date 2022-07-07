@@ -1,0 +1,101 @@
+
+:root{
+    --primario: #f07325;
+}
+
+#testimonial_area {
+	padding: 13rem 0;
+    
+}
+
+
+.box-area {
+	padding: 29px;
+	position: relative;
+	display: block;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin: 40px 0;
+    width: 34rem;
+   
+}
+.box-area h5 {
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 45px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.box-area span {
+	color: #262626;
+	display: block;
+	font-size: 13px;
+	margin: 0 0 10px;
+	font-weight: 400;
+}
+
+.box-area i{
+    color: var(--primario);
+}
+
+.box-area .img-area {
+    background-image: url(../img/Avatar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -40px;
+	left: 0;
+	bottom: 0;
+	margin: 0 auto;
+	right: 0;
+	z-index: 1;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.socials {
+	margin-top: 30px;
+}
+
+#testimonial_area .owl-nav {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+#testimonial_area .owl-prev, #testimonial_area .owl-next {
+	width: 40px;
+	height: 40px;
+	line-height: 39px;
+	color: white;
+	border-radius: 50%;
+	text-align: center;
+	background: var(--primario);
+	position: absolute;
+}
+#testimonial_area .owl-prev {
+	left: -60px;
+	top: -30px;
+}
+#testimonial_area .owl-next {
+	right: -60px;
+	top: -30px;
+}
+@media only screen and (max-width: 991px) {
+	.owl-nav {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.box-area {
+		text-align: center;
+	}
+	.owl-nav {
+		display: none;
+	}
+}
