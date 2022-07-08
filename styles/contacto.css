@@ -11,6 +11,11 @@
     }
 }
 
+textarea:focus,
+input:focus {
+    outline: 2px solid rgb(253, 145, 99);
+}
+
 .formulario__aside {
     display: flex;
     flex-direction: column;
