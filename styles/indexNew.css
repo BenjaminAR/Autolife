@@ -41,14 +41,12 @@ body{
 }
 
 .logo__img{
-    height: 4rem;
-    width: 12.5rem;
+    height: 5rem;
+    width: 15rem;
 }
 
 .logo__text{
-    color: var(--blanco);
-    font-size: .9rem;
-    font-weight: normal;
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -155,19 +153,47 @@ body{
 }
 
 .bg {
-    background-color: rgba(0, 0, 0, 0.459);
+    background-color: rgba(0, 0, 0, 0.507);
     height: 100%;
 }
 
 
+.baner__caractristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+.banner__logo{
+    width: 70%;
+}
 
 @media (min-width: 768px) {
+
     .baner__caractristicas {
-        display: grid;
         gap: 2rem;
-        margin: 0 10rem;
-        padding: 2rem 0;
+        height: 80%;
     }
+    .banner__logo{
+        width: 40%;
+    }
+
+    .banner__text-frase{
+        font-size: 4rem;
+    }
+
+    .baner__caractristicas h2{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 7rem;
+        font-weight: bold;
+    }
+    .baner__caractristicas h3{
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+    }
+
 }
 
 .widget {
