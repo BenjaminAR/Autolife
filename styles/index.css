@@ -1,26 +1,5 @@
 
-.productos h1, h2, h3, h4{
-    text-align: center;
-}
-.productos h4{
-    font-weight: normal;
-}
 
-.productos{
-    margin: 3rem 0;
-}
-
-.elementos__img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-textarea:focus,
-input:focus {
-    outline: 2px solid rgb(253, 145, 99);
-}
 
 .contacto__header h2, h3{
     text-align: left;
