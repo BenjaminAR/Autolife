@@ -3,15 +3,6 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89JQMMKQJE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-89JQMMKQJE');
-    </script>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +25,15 @@
     <link rel="stylesheet" href="styles/slider.css">
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <title>Autolife</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89JQMMKQJE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-89JQMMKQJE');
+    </script>
+    
 </head>
 
 <body>
@@ -64,9 +64,9 @@
                 </a>
                 <nav class="navegacion">
                     <a href="index.html" class="navegacion__enlace">Inicio</a>
-                    <a href="contacto.html" class="navegacion__enlace">Elementos Garantizados</a>
+                    <a href="#_garantizado" class="navegacion__enlace">Elementos Garantizados</a>
                     <a href="somos.html" class="navegacion__enlace">¿Quienes somos?</a>
-                    <a href="contanto.html" class="navegacion__enlace">Contacto</a>
+                    <a href="#_contacto" class="navegacion__enlace">Contacto</a>
                     <a href="productos.html" class="navegacion__enlace">Productos</a>
                     <a href="https://autolife.789.com.mx/login" class="navegacion__enlace">Iniciar sesión</a>
                 </nav>
@@ -90,7 +90,7 @@
 
     <div class="space-7"></div>
 
-    <section class="contenedor">
+    <section class="contenedor" id="_garantizado">
         <h2 class="m-5">Elementos Garantizados</h2>
         <div class="elementos__widget">
             <div class="elementos__img">
@@ -138,7 +138,6 @@
 
     </section>
     <div class="space-7"></div>
-
 
     <section class="contenedor-fluid">
         <h3 class="font-center">Productos</h3>
@@ -207,7 +206,6 @@
         </div>
 
     </section>
-
 
     <section id="testimonial_area" class="section_padding">
         <h3 class="text-center">Historias de éxito de nuestros socios</h3>
@@ -313,7 +311,7 @@
 
     </section>
 
-    <section class="contenedor-fluid">
+    <section class="contenedor-fluid" id="_contacto">
         <h3 class="text-center">Contáctanos...</h3>
         <div class="space-3"></div>
         <div class="contenedor">
