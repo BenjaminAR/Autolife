@@ -1,13 +1,13 @@
-body{
+body {
     background-color: rgb(238, 238, 238);
 }
 
-.header{
+.header {
     padding: 1rem 0;
     background-color: var(--backObscuro);
 }
 
-.barra{
+.barra {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,46 +16,48 @@ body{
 }
 
 @media (max-width: 500px) {
-    .barra{
+    .barra {
         padding: 0;
     }
-    .barra nav a{
+
+    .barra nav a {
         margin: 0;
     }
 }
 
-.barra nav a{
+.barra nav a {
     color: var(--blanco);
     margin: 0 1rem;
     font-size: 1.5rem;
     transition: color .4s ease;
 }
 
-.barra nav a:hover{
+.barra nav a:hover {
     color: var(--primario);
 }
 
-.logo{
+.logo {
     display: grid;
     justify-items: center;
 }
 
-.logo__img{
+.logo__img {
     height: 5rem;
     width: 15rem;
 }
 
-.logo__text{
+.logo__text {
     display: none;
 }
 
 @media (max-width: 768px) {
-    .logo__img{
-        margin-top: 2rem;
-        height: 4.7rem;
+    .logo__img {
+        margin-top: .9rem;
+        height: 4.6rem;
         width: 17rem;
     }
-    .logo__text{
+
+    .logo__text {
         font-size: 1.1rem;
     }
 }
@@ -66,11 +68,12 @@ body{
 }
 
 @media (max-width: 892px) {
-    .barra{
+    .barra {
         flex-direction: column;
 
     }
-    .navegacion{
+
+    .navegacion {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -78,6 +81,7 @@ body{
     }
 
 }
+
 /* End header */
 
 
@@ -91,7 +95,7 @@ body{
 
 
 @media (max-width: 300px) {
-    .barra__redes{
+    .barra__redes {
         display: none;
     }
 }
@@ -108,34 +112,34 @@ body{
 }
 
 @media (max-width: 768px) {
-    .barra__texto{
+    .barra__texto {
         padding-right: 1rem;
     }
 }
 
-.iconos{
+.iconos {
     color: var(--primario);
     opacity: 1;
     transition: opacity .3s ease;
 }
 
 @media (min-width: 768px) {
-    .iconos{
+    .iconos {
         font-weight: bold;
         font-size: 1.9rem;
         margin: 5px 1rem;
     }
 }
 
-.iconos:hover{
+.iconos:hover {
     opacity: .7;
 }
 
-.iconos--sh{
+.iconos--sh {
     color: var(--primario);
     font-weight: bold;
     font-size: 1.8rem;
-    margin: 5px 1rem;   
+    margin: 5px 1rem;
 }
 
 
@@ -163,7 +167,7 @@ body{
     height: 40%;
 }
 
-.banner__logo{
+.banner__logo {
     width: 70%;
 }
 
@@ -173,27 +177,29 @@ body{
         gap: 2rem;
         height: 80%;
     }
-    .banner__logo{
+
+    .banner__logo {
         width: 40%;
     }
 
-    .banner__text-frase{
+    .banner__text-frase {
         font-size: 4rem;
     }
 
-    .baner__caractristicas h2{
+    .baner__caractristicas h2 {
         font-family: 'Work Sans', sans-serif;
         font-size: 7rem;
         font-weight: bold;
     }
-    .baner__caractristicas h3{
+
+    .baner__caractristicas h3 {
         font-family: 'Work Sans', sans-serif;
         text-align: center;
     }
 
 }
 
-.elementos__img{
+.elementos__img {
     margin: 1.5rem 0;
     display: flex;
     flex-direction: row;
@@ -201,19 +207,19 @@ body{
 }
 
 @media (max-width: 1040px) {
-    .elementos__img{
+    .elementos__img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 }
 
-.elementos__img h4{
+.elementos__img h4 {
     margin: auto 0;
     text-align: start;
 }
 
-.elementos__img img{
+.elementos__img img {
     margin-left: 0;
 }
 
@@ -235,14 +241,18 @@ body{
 }
 
 
-.productos h1, h2, h3, h4{
+.productos h1,
+h2,
+h3,
+h4 {
     text-align: center;
 }
-.productos h4{
+
+.productos h4 {
     font-weight: normal;
 }
 
-.productos{
+.productos {
     margin: 3rem 0;
 }
 
@@ -253,6 +263,12 @@ body{
     align-items: center;
 }
 
+
+@media (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+    }
+}
 
 @media (min-width: 768px) {
 
@@ -297,8 +313,22 @@ body{
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    color: var(--blanco);
+    background-color: var(--backObscuro);
     padding: 0 5rem;
 }
+
+.footer h1,
+h2,
+h3,
+h4 {
+    margin: 0 4rem;
+}
+
 
 .footer h4 {
     margin: 2rem 0;
@@ -313,15 +343,14 @@ body{
     color: var(--primario)
 }
 
-@media (max-width: 768px) {
-    .footer__about{
+
+
+@media (min-width: 768px) {
+
+    .footer__about {
         text-align: center;
-    }    
-}
-
-
-.footer__about {
-    max-width: 35rem;
+        max-width: 35rem;
+    }
 }
 
 .footer__horario {
@@ -329,16 +358,21 @@ body{
     padding-bottom: 2rem;
 }
 
-.footer__dia {
-    color: var(--primario);
-}
-
 .cr {
     margin: auto 0;
 }
 
-
-
+@media (max-width: 768px) {
+    .footer h4{
+        color: var(--primario);
+    }
+    .footer__about {
+        text-align: center;
+    }
+    .footer__contact{
+        text-align: center;
+    }
+}
 
 @media (max-width: 768px) {
 

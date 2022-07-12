@@ -23,11 +23,6 @@
     color:var(--primario);
 }
 
-@media (max-width: 768px) {
-    .footer{
-        flex-direction: column;
-    }
-}
 
 .map{
     padding: 0;
@@ -36,15 +31,3 @@
     border: none;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    color: var(--blanco);
-    background-color: var(--backObscuro);
-}
-
-.footer h1,h2,h3,h4{
-    margin: 0 4rem;
-}
