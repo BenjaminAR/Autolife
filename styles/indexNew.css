@@ -235,6 +235,21 @@ body {
     }
 }
 
+@media (max-width: 420px) {
+    .elementos__widget {
+        display: grid;
+        gap: .7rem ;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        font-size: .9rem;
+        font-weight: normal;
+    }
+    .elementos__img h4{
+        text-align: center;
+        font-size: 1.9rem;
+    }
+}
 
 .elementos__img h4 {
     font-weight: bold;
