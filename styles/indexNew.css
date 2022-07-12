@@ -223,7 +223,7 @@ body {
     margin-left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 740px) {
     .elementos__widget {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -235,7 +235,7 @@ body {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 730px) {
     .elementos__widget {
         display: grid;
         gap: .7rem ;
