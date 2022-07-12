@@ -96,11 +96,11 @@
 
 @media (max-width: 768px) {
     .contet-pa__text-rigth p{
-        margin: 2.8rem;
+        margin-left: 3rem;
         font-size: 1.5rem;
     }
     .contet-pa__text p{
-        margin: 3rem;
+        margin-right: 3rem;
         font-size: 1.5rem;
     }
 }
