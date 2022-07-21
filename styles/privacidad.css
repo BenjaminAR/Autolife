@@ -1,0 +1,16 @@
+.aviso-privacidad {
+    padding: 0rem 7rem;
+    margin-bottom: 10rem;
+    text-indent: 1rem;
+    text-align: justify;
+    color: rgb(43, 43, 43);
+    
+}
+
+.aviso-privacidad p{
+    line-height: 2.4rem;
+}
+
+h1{
+    color: var(--primario);
+}
