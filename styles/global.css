@@ -1,6 +1,6 @@
 :root {
     --fuenteHeading: 'PT sans', sans-serif;
-    --funeteParrafo: 'Open Sans', sans-serif;
+    --funeteParrafo: 'Lato', sans-serif;
     --primario: #f07325;
     --primarioOpacity: #d36622;
     --blanco: #fff;
@@ -14,7 +14,6 @@ html {
     /* Hacer que el paddig, border no afecte el acho de nuestros elementos */
     font-size: 62.5%;
     /* 1 rem = 10px */
-
 }
 
 *,

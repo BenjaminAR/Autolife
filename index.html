@@ -2,7 +2,6 @@
 <html lang="es-mx">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +10,16 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <meta name="author" content="https://github.com/BenjaminAR">
     <meta name="developer" content="Benjamin Avila">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!--
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
+    -->
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
     <link rel="stylesheet"
@@ -29,6 +34,7 @@
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <title>Autolife</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-89JQMMKQJE"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -41,20 +47,22 @@
 
 <body>
 
-    <div class="contenedor">
-        <div class="barra__redes">
-            <a href="/proceso.html"><span class="barra__texto bold">¿Proceso de avería?</span></a>
-            <nav class="navegación">
-                <a href="">
-                    <i class="fa-brands fa-facebook-f iconos"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-instagram iconos"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-twitter iconos"></i>
-                </a>
-            </nav>
+    <div class="contenedor-fluid bg-redes">
+        <div class="contenedor">
+            <div class="barra__redes">
+                <a href="/proceso.html" target="_blank"><span class="barra__texto bold">¿Proceso de avería?</span></a>
+                <nav class="navegación">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f iconos"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram iconos"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter iconos"></i>
+                    </a>
+                </nav>
+            </div>
         </div>
     </div>
 
@@ -70,8 +78,9 @@
                     <a href="#_garantizado" class="navegacion__enlace">Elementos Garantizados</a>
                     <a href="somos.html" class="navegacion__enlace">¿Quienes somos?</a>
                     <a href="#_contacto" class="navegacion__enlace">Contacto</a>
-                    <a href="productos.html" class="navegacion__enlace">Productos</a>
-                    <a href="https://autolife.789.com.mx/login" class="navegacion__enlace">Iniciar sesión</a>
+                    <a href="/productos.html" class="navegacion__enlace">Productos</a>
+                    <a href="https://autolife.789.com.mx/login" target="_blank" class="navegacion__enlace">Iniciar
+                        sesión</a>
                 </nav>
             </div>
         </div>
@@ -91,7 +100,7 @@
 
     </div>
 
-    <div class="space-7"></div>
+    <div class="space-3"></div>
 
     <section class="contenedor" id="_garantizado">
         <h2 class="m-5">Elementos Garantizados</h2>
@@ -143,7 +152,7 @@
     <div class="space-7"></div>
 
     <section class="contenedor-fluid">
-        <h3 class="font-center">Productos</h3>
+        <h3 class="font-center">Productos y servicios</h3>
         <div class="space-3"></div>
         <div class="widget">
 
@@ -156,7 +165,7 @@
                     <circle cx="17" cy="17" r="2" />
                     <path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
                 </svg>
-                <p class="bold">Sistema de enfriamiento</p>
+                <p class="bold">Servicio de gruas</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi provident dolor laboriosam
                     doloribus!</p>
                 <a class="widget__button bold" href="#">Ver más</a>
@@ -171,9 +180,9 @@
                     <circle cx="17" cy="17" r="2" />
                     <path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
                 </svg>
-                <p class="bold">Sistema de alimentación</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi provident dolor laboriosam
-                    doloribus!</p>
+                <p class="bold">Premium</p>
+                <p>Garantía enfocada para autos de alta gama, maneja tu auto con la confianza de una garantía al nivel
+                    de tu auto</p>
                 <a class="widget__button bold" href="#">Ver más</a>
             </div>
 
