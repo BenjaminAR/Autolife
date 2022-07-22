@@ -14,3 +14,12 @@
 h1{
     color: var(--primario);
 }
+
+@media (max-width: 768px) {
+    .aviso-privacidad{
+        padding: 0rem .2rem;
+        margin-bottom: 5rem;
+        text-indent: 0;
+    }
+   
+}
