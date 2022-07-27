@@ -279,21 +279,10 @@ body {
 }
 
 
-.productos h1,
-h2,
-h3,
-h4 {
-    text-align: center;
+.prod-img{
+    width: 84px;
+    height: 84px;
 }
-
-.productos h4 {
-    font-weight: normal;
-}
-
-.productos {
-    margin: 3rem 0;
-}
-
 
 .widget {
     display: flex;
