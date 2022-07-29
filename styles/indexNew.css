@@ -2,9 +2,20 @@ body {
     background-color: rgb(238, 238, 238);
 }
 
+
+.header-fixed{
+    z-index: 101;
+    width: 100%;
+    position: fixed;
+    
+}
+
 .header {
     padding: 1rem 0;
     background-color: var(--backObscuro);
+    -webkit-box-shadow: 0px 21px 23px -14px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 21px 23px -14px rgba(0,0,0,0.8);
+    box-shadow: 0px 21px 23px -14px rgba(0,0,0,0.8);
 }
 
 .barra {
@@ -13,6 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
+
 }
 
 @media (max-width: 500px) {
@@ -86,6 +98,7 @@ body {
 
 
 .barra__redes {
+
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -151,7 +164,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 85vh;
+    height: 100vh;
     color: var(--blanco);
 
 }
@@ -182,6 +195,7 @@ body {
 
 
 .baner__caractristicas {
+    padding-top: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,7 +219,7 @@ body {
     }
 
     .banner__text-frase {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .baner__caractristicas h2 {
@@ -279,7 +293,7 @@ body {
 }
 
 
-.prod-img{
+.prod-img {
     width: 84px;
     height: 84px;
 }
@@ -369,8 +383,22 @@ h4 {
 .footer a:hover {
     color: var(--primario)
 }
+.bg-footer{
+    text-align: right;
+    background-color: var(--backObscuro);
+    color: white;
+}
 
+.bg-footer a{
+    margin-right: 5rem;
+    color: var(--blanco);
+    font-size: 1.4rem;
+}
 
+.bg-footer a:hover{
+    color: var(--primario);
+    
+}
 
 @media (min-width: 768px) {
 
