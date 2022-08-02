@@ -57,6 +57,11 @@ body {
     background-color: transparent;
 }
 
+.space-1{
+    height: 2rem;
+    background-color: transparent;
+}
+
 .bold{
     font-weight: bold;
 }

@@ -1,5 +1,6 @@
 .contenedor-cards{
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(4,1fr);
     align-items: center;
     justify-content: center;
@@ -22,6 +23,7 @@
     height: 270px;
     position: relative;
     perspective: 1000px;
+    
 }
 
 
@@ -40,7 +42,11 @@
 }
 
 .cara.detras {
+    width: 100%;
+    height: 270px;
     transform: rotateY(180deg);
+    border: solid 2px var(--primario);
+    
 }
 
 .cara.detras h4{
@@ -86,5 +92,40 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
 
+.bg-elemento-cinco{
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/FondoEG/5.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-elemento-seis{
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/FondoEG/6.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-elemento-siete{
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/FondoEG/7.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-elemento-ocho{
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/FondoEG/8.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
