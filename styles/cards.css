@@ -54,7 +54,35 @@
 .bg-elemento-uno{
     width: 100%;
     height: 270px;
-    background-image: url(../img/test/sis-enfriamiento.jpg);
+    background-image: url(../img/FondoEG/1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+.bg-elemento-dos{
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/FondoEG/2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-elemento-tres{
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/FondoEG/3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.bg-elemento-cuatro{
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/FondoEG/4.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
