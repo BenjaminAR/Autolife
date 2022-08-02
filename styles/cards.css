@@ -1,0 +1,62 @@
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .contenedor-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .h4{
+        top: 2rem;
+    }
+}
+
+.carta-box {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    perspective: 1000px;
+}
+
+
+.carta-box:hover .carta {
+    transform: rotateY(180deg);
+}
+
+.carta {
+    transform-style: preserve-3d;
+    transition: all 0.3s linear;
+}
+
+.cara {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.cara.detras {
+    transform: rotateY(180deg);
+}
+
+.cara.detras h4{
+    margin-top: 3rem;
+}
+.carta-box p{
+    margin: 1.5rem;
+    text-align: justify;
+}
+
+.bg-elemento-uno{
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/test/sis-enfriamiento.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
