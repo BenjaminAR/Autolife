@@ -58,9 +58,17 @@ body {
     width: 15rem;
 }
 
+/* 
 .logo__text {
     display: none;
 }
+*/
+
+.logo__text{
+    color: var(--blanco);
+    font-size: 1rem;
+}
+
 
 @media (max-width: 768px) {
     .logo__img {
@@ -160,7 +168,7 @@ body {
 
 
 .banner__principal {
-    background-image: url(../img/def/mecanico.jpg);
+    background-image: url(../img/def/mecanico.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
