@@ -1,13 +1,6 @@
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
 
 nav {
-    background: #2fcdcd;
+    background: rgb(46, 45, 45);
     height: 80px;
     width: 100%;
 }
@@ -37,12 +30,10 @@ nav ul li a {
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
 }
 
-li a.active,
 li a:hover {
-    background: #000090;
+    color: var(--primario);
     transition: .5s;
 }
 
@@ -60,12 +51,7 @@ li a:hover {
     display: none;
 }
 
-section {
-    background: url(fondo.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
-}
+
 
 @media (max-width: 952px) {
     .enlace {
@@ -112,4 +98,28 @@ section {
     #check:checked~ul {
         left: 0;
     }
+}
+
+@media (min-width: 768px) {
+    .banner__principal {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+}
+
+
+.banner__img{
+    background-image: url(../img/def/mecanico.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40vh;
+    
+}
+
+.baner__caractristicas{
+    text-align: center;
+    background-color: rgba(242, 19, 19, 0.456);
+    height: 40vh;
 }
