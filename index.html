@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/indexNew.css">
+    <link rel="stylesheet" href="styles/headerNav.css">
     <link rel="stylesheet" href="styles/cards.css">
     <link rel="stylesheet" href="styles/productos.css">
     <link rel="stylesheet" href="styles/contacto.css">
@@ -47,7 +48,7 @@
 
 </head>
 
-<div class="header-fixed" style="padding-bottom: 20px;">
+<div class="header-fixed">
     <div class="contenedor-fluid bg-redes">
         <div class="contenedor">
             <div class="barra__redes">
@@ -69,35 +70,33 @@
     </div>
 
     <header class="header">
-        <div class="contenedor-fluid">
-            <div class="barra">
-                <a href="index.html" class="logo">
-                    <img class="logo__img" src="img/logo_2020w.png" alt="Logo Autolife">
-                    <span class="logo__text">Garantiza la tranquilidad en tu camino</span>
-                </a>
-                <nav class="navegacion">
-                    <a href="index.html" class="navegacion__enlace">Inicio</a>
-                    <a href="#_garantizado" class="navegacion__enlace">Elementos Garantizados</a>
-                    <a href="somos.html" class="navegacion__enlace">¿Quienes somos?</a>
-                    <a href="#_contacto" class="navegacion__enlace">Contacto</a>
-                    <a href="#_productos" class="navegacion__enlace">Productos</a>
-                    <a href="https://autolife.789.com.mx/login" target="_blank" class="navegacion__enlace">Iniciar
-                        sesión</a>
-                </nav>
-            </div>
-        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="img/logo_2020w.png" alt="" class="logo">
+            </a>
+            <ul>
+                <!--
+                <li><a class="active" href="#">Inicio</a></li>
+                -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Elementos garantizados</a></li>
+                <li><a href="#">¿Quienes Somos?</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
+
 </div>
-
-
 
 <div class="contenedor-fluid">
     <div class="banner__principal">
         <div class="bg">
             <div class="baner__caractristicas">
-
-                <img class="banner__logo" src="img/logo_2020w.png" alt="Autolife logo">
-                <span class="banner__text-frase">Garantiza la tranquilidad en tu camino</span>
 
             </div>
         </div>
