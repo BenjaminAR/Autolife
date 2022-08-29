@@ -10,6 +10,7 @@
     --backClaro: #e0e0e0;
 }
 
+
 html {
     box-sizing: border-box;
     /* Hacer que el paddig, border no afecte el acho de nuestros elementos */
@@ -123,8 +124,13 @@ img{
     padding: 0;
 }
 
-.centrar-texto{
+.text-center{
     text-align: center;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.445);
+    height: 100%;
 }
 
 .p-3{
