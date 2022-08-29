@@ -10,30 +10,25 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <meta name="author" content="https://github.com/BenjaminAR">
     <meta name="developer" content="Benjamin Avila">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <!--
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    -->
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/indexNew.css">
     <link rel="stylesheet" href="styles/headerNav.css">
-    <link rel="stylesheet" href="styles/cards.css">
-    <link rel="stylesheet" href="styles/productos.css">
     <link rel="stylesheet" href="styles/contacto.css">
     <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="SSS/sss.css">
+    <link rel="stylesheet" href="styles/slider-min.css">
+
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <title>Autolife</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-89JQMMKQJE"></script>
@@ -48,125 +43,152 @@
 
 </head>
 
-<div class="header-fixed">
-    <div class="contenedor-fluid bg-redes">
-        <div class="contenedor">
-            <div class="barra__redes">
-                <a href="proceso.html" target="_blank"><span class="barra__texto bold">¿Proceso de
-                        avería?</span></a>
-                <nav class="navegación">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f iconos"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram iconos"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter iconos"></i>
-                    </a>
-                </nav>
-            </div>
-        </div>
-    </div>
+<header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="index.html" class="enlace">
+            <img src="img/logo_2020w.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Elementos garantizados</a></li>
+            <li><a href="#">¿Quienes somos?</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Iniciar sesion</a></li>
 
-    <header class="header">
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="#" class="enlace">
-                <img src="img/logo_2020w.png" alt="" class="logo">
-            </a>
-            <ul>
-                <!--
-                <li><a class="active" href="#">Inicio</a></li>
-                -->
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Elementos garantizados</a></li>
-                <li><a href="#">¿Quienes Somos?</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        </ul>
+    </nav>
+</header>
 
-</div>
-
-<div class="contenedor-fluid">
+<section>
     <div class="banner__principal">
-        <div class="bg">
-            <div class="baner__caractristicas">
 
+        <div class="baner__caractristicas">
+            <br>
+            <div class="bc__texto">
+                <p class="bold animate__animated animate__bounceInLeft" style="font-size: 2rem;">Garantiza la
+                    tranquilidad de tu camino.</p>
+                <p class="bold" style="font-size: 2rem;">Tú opinion nos importa</p>
+                <p>La satisfaccion de nuestros clientes es un pilar de la empresa.</p>
             </div>
         </div>
-    </div>
 
-</div>
+        <div class="banner__testimonios">
+
+            <div class="banner__img">
+                <img src="img/def/OpinionTra.png" alt="Avatar">
+            </div>
+
+            <div class="wrapper">
+                <div class="slider slider-dos">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/avatar1.png" alt="cliente1">
+                        </div>
+
+                        <div class="testimonial-text">
+                            <P>Juan Carlos Jaime</P>
+                            <p>
+                                La experiencia y servicio recibido en cuanto a la garantía fue excelente, muy amable,
+                                toda la información clara, siempre atenta y siempre ayudándome con el tramita.
+                                Ampliamente recomendable la atención de Irma Mancera.
+                            </p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/avatar1.png" alt="cliente1">
+                        </div>
+
+                        <div class="testimonial-text">
+                            <P>Salomon</P>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam velit itaque
+                                consequatur
+                                rerum, adipisci dolor commodi hic veritatis culpa recusandae accusantium temporibus!
+                            </p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/avatar1.png" alt="cliente1">
+                        </div>
+
+                        <div class="testimonial-text">
+                            <P>Gabriel</P>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam velit itaque
+                                consequatur
+                                rerum, adipisci dolor commodi hic veritatis culpa recusandae accusantium temporibus!
+                            </p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--
+                    <div class="banner__img">
+
+            <div style="max-width: 50rem; float: right;" class="text-center tes-clientes">
+                <div class="img-avt-cliente">
+                    
+                </div>
+                <p class="bold lh">Juan Carlos Jaime</p>
+                <span class="font-min lh">Cliente</span>
+                <p class="content-cliente lh">
+                    La experiencia y servicio recibido en cuanto a la garantía fue excelente, muy amable, toda la
+                    información clara, siempre atenta y siempre ayudándome con el tramite.
+                    Ampliamente recomendable la atención de Irma Mancera.
+                </p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+        </div>
+        -->
+
+    </div>
+</section>
+
 
 <!--
-
-<section class="contenedor" id="_garantizado">
-    <div class="space-7"></div>
-    <h2 class="m-5 font-center">Elementos Garantizados</h2>
-    <div style="display: none !important;" class="elementos__widget">
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot1.png" alt="Sistema de enfriamiento">
-            <h4>Sistema de enfriamiento</h4>
-        </div>
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot2.png" alt="Sistema de Alimentación">
-            <h4>Sistema de Alimentación</h4>
-        </div>
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot3.png" alt="Suspención">
-            <h4>Suspención</h4>
-        </div>
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot4.png" alt="Caja de cambio">
-            <h4>Caja de cambio</h4>
-        </div>
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot5.png" alt="Sistema de dirección">
-            <h4>Sistema de dirección</h4>
-        </div>
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot6.png" alt="Frenos">
-            <h4>Frenos</h4>
-        </div>
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot7.png" alt="Aire acondicionado">
-            <h4>Aire acondicionado</h4>
-        </div>
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot8.png" alt="Sistema eléctrico">
-            <h4>Sistema eléctrico</h4>
-        </div>
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot9.png" alt="Diferencial">
-            <h4>Diferencial</h4>
-        </div>
-        <div class="elementos__img">
-            <img src="img/Garantizados/mot10.png" alt="Motor">
-            <h4>Motor</h4>
-        </div>
-
-    </div>
-    
-</section>
--->
-
-<div class="space-1"></div>
-
 <section class="contenedor-fluid" id="_garantizado">
-    <!--<h3 class="font-center" id="_garantizado">Elementos garantizdos</h3>-->
+
     <div class="contenedor-cards">
         <div class="carta-box">
             <div class="carta">
                 <div class="cara bg-elemento-uno">
-                    <!--
-                        <h3 style="text-align: center; margin: 0; color: var(--blanco);">Sistema de enfriamiento</h3>
-                        -->
+
                 </div>
                 <div class="cara detras">
                     <h4 class="font-center">Motor</h4>
@@ -184,8 +206,7 @@
         <div class="carta-box">
             <div class="carta">
                 <div class="cara bg-elemento-dos">
-                   <!-- <h3 style="text-align: center; margin: 0; color: var(--blanco);">Sistema de enfriamiento</h3>-->
-                </div>
+                   </div>
                 <div class="cara detras">
                     <h4 class="font-center titulo-card">Sistema de A/C</h4>
                     <p>
@@ -202,112 +223,111 @@
         <div class="carta-box">
             <div class="carta">
                 <div class="cara bg-elemento-tres">
-                   <!-- <h3 style="text-align: center; margin: 0; color: var(--blanco);">Sistema de enfriamiento</h3>-->
-                </div>
-                <div class="cara detras">
-                    <h4 class="font-center titulo-card">Sistema de suspención</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                        ducimus
-                        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                        in, nulla
-                        molestiae veniam? Architecto fuga tempore sint!
-                    </p>
-                </div>
-            </div>
-        </div>
+                   
+</div>
+<div class="cara detras">
+    <h4 class="font-center titulo-card">Sistema de suspención</h4>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
+        ducimus
+        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
+        in, nulla
+        molestiae veniam? Architecto fuga tempore sint!
+    </p>
+</div>
+</div>
+</div>
 
-        <div class="carta-box">
-            <div class="carta">
-                <div class="cara bg-elemento-cuatro">
-                   <!-- <h3 style="text-align: center; margin: 0; color: var(--blanco);">Sistema de enfriamiento</h3>-->
-                </div>
-                <div class="cara detras">
-                    <h4 class="font-center titulo-card">Diferencial</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                        ducimus
-                        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                        in, nulla
-                        molestiae veniam? Architecto fuga tempore sint!
-                    </p>
-                </div>
-            </div>
+<div class="carta-box">
+    <div class="carta">
+        <div class="cara bg-elemento-cuatro">
+            
         </div>
-
-        <div class="carta-box">
-            <div class="carta">
-                <div class="cara bg-elemento-cinco">
-                   <!-- <h3 style="text-align: center; margin: 0; color: var(--blanco);">Sistema de enfriamiento</h3>-->
-                </div>
-                <div class="cara detras">
-                    <h4 class="font-center titulo-card">Frenos</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                        ducimus
-                        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                        in, nulla
-                        molestiae veniam? Architecto fuga tempore sint!
-                    </p>
-                </div>
-            </div>
+        <div class="cara detras">
+            <h4 class="font-center titulo-card">Diferencial</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
+                ducimus
+                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
+                in, nulla
+                molestiae veniam? Architecto fuga tempore sint!
+            </p>
         </div>
-
-        <div class="carta-box">
-            <div class="carta">
-                <div class="cara bg-elemento-seis">
-                   <!-- <h3 style="text-align: center; margin: 0; color: var(--blanco);">Sistema de enfriamiento</h3>-->
-                </div>
-                <div class="cara detras">
-                    <h4 class="font-center titulo-card">Caja de direcciones</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                        ducimus
-                        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                        in, nulla
-                        molestiae veniam? Architecto fuga tempore sint!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="carta-box">
-            <div class="carta">
-                <div class="cara bg-elemento-siete">
-                   <!-- <h3 style="text-align: center; margin: 0; color: var(--blanco);">Sistema de enfriamiento</h3>-->
-                </div>
-                <div class="cara detras">
-                    <h4 class="font-center titulo-card">Sistema de alimentación</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                        ducimus
-                        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                        in, nulla
-                        molestiae veniam? Architecto fuga tempore sint!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="carta-box">
-            <div class="carta">
-                <div class="cara bg-elemento-ocho">
-                   <!-- <h3 style="text-align: center; margin: 0; color: var(--blanco);">Sistema de enfriamiento</h3>-->
-                </div>
-                <div class="cara detras">
-                    <h4 class="font-center titulo-card">Sistema de dirección</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                        ducimus
-                        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                        in, nulla
-                        molestiae veniam? Architecto fuga tempore sint!
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </div>
+</div>
+
+<div class="carta-box">
+    <div class="carta">
+        <div class="cara bg-elemento-cinco">
+            
+        </div>
+        <div class="cara detras">
+            <h4 class="font-center titulo-card">Frenos</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
+                ducimus
+                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
+                in, nulla
+                molestiae veniam? Architecto fuga tempore sint!
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="carta-box">
+    <div class="carta">
+        <div class="cara bg-elemento-seis">
+            
+        </div>
+        <div class="cara detras">
+            <h4 class="font-center titulo-card">Caja de direcciones</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
+                ducimus
+                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
+                in, nulla
+                molestiae veniam? Architecto fuga tempore sint!
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="carta-box">
+    <div class="carta">
+        <div class="cara bg-elemento-siete">
+           
+        </div>
+        <div class="cara detras">
+            <h4 class="font-center titulo-card">Sistema de alimentación</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
+                ducimus
+                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
+                in, nulla
+                molestiae veniam? Architecto fuga tempore sint!
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="carta-box">
+    <div class="carta">
+        <div class="cara bg-elemento-ocho">
+        </div>
+        <div class="cara detras">
+            <h4 class="font-center titulo-card">Sistema de dirección</h4>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
+                ducimus
+                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
+                in, nulla
+                molestiae veniam? Architecto fuga tempore sint!
+            </p>
+        </div>
+    </div>
+</div>
+
+</div>
 
 </section>
 
@@ -363,6 +383,8 @@
     </div>
 
 </section>
+-->
+
 
 <section id="testimonial_area" style="padding-bottom: 0px;">
     <h3 class="text-center">Historias de éxito de nuestros socios</h3>
@@ -370,7 +392,7 @@
     <div class="contenedor">
         <div class="row">
             <div class="col-md-12">
-                <div class="testmonial_slider_area text-center owl-carousel">
+                <div class="testmonial_slider_area text-center owl-carousel lh">
 
                     <div class="box-area">
                         <div class="img-area">
@@ -527,23 +549,23 @@
     <div class="footer">
         <div class="footer__about">
             <h4>¿Quienes somos?</h4>
-            <p>
+            <p class="lh">
                 Somos una empresa de gestión de garantías extendida y coberturas mecánicas a nivel nacional que
                 brindamos un servicio de excelencia.
             </p>
         </div>
 
         <div class="footer__contact">
-            <h4>Contacto</h4>
-            <p>
+            <h4 class="text-center">Contacto</h4>
+            <p class="text-center">
                 <i class="fa-solid fa-location-dot iconos--sh"></i>
                 <span><a href="https://n9.cl/autolife">Descartes 60, Nueva Anzures, CDMX</a></span>
             </p>
-            <p>
+            <p class="text-center">
                 <i class="fa-regular fa-envelope iconos--sh"></i>
                 <span> <a href="mailto:contacto@autolife.mx">contacto@autolife.mx</a></span>
             </p>
-            <p>
+            <p class="text-center">
                 <i class="fa-solid fa-phone iconos--sh"></i>
                 <span> <a href="tel:5526742356">800 780 AUTO</a> </span>
             </p>
@@ -570,9 +592,15 @@
     </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 <script src="scripts/slider.js"></script>
+<script src="SSS/sss.js"></script>
+<script>
+    jQuery(function ($) {
+        $('.slider').sss();
+    });
+</script>
 </body>
 
 </html>
