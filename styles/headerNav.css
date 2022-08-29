@@ -1,9 +1,6 @@
 nav {
-    /* background: var(--backObscuro); */
-    position: fixed;
-    z-index: 101;
-    background-color: transparent;
-    height: 80px;
+    background-color: var(--backObscuro);
+    height: 8rem;
     width: 100%;
     text-decoration: none;
     list-style: none;
@@ -11,19 +8,22 @@ nav {
 
 .enlace {
     position: absolute;
-    padding: 20px 50px;
+    padding: 1.5rem 3rem;
 }
 
 .logo {
-    height: 45px;
+    height: 4.5rem;
+    
 }
 
 nav ul {
+    margin: 0 0;
     float: right;
     margin-right: 2.3rem;
 }
 
 nav ul li {
+    
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
@@ -31,7 +31,7 @@ nav ul li {
 
 nav ul li a {
     color: var(--blanco);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 7px 13px;
     border-radius: 3px;
     
@@ -39,18 +39,19 @@ nav ul li a {
 
 li a.active,
 li a:hover {
-    color: var(--primario)!important;
+    color: var(--primario);
     transition: .5s;
 }
 
 .checkbtn {
+    display: none;
     font-size: 30px;
     color: var(--primario);
     float: right;
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
-    display: none;
+    
 }
 
 #check {
@@ -90,7 +91,7 @@ li a:hover {
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     li a:hover,
