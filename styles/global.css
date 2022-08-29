@@ -2,6 +2,7 @@
     --fuenteHeading: 'PT sans', sans-serif;
     --funeteParrafo: 'Lato', sans-serif;
     --primario: #f07325;
+    --primarioT: rgba(247, 125, 49, 0.548);
     --primarioOpacity: #d36622;
     --blanco: #fff;
     --negro: #000;
@@ -26,7 +27,6 @@ html {
 body {
     font-family: var(--funeteParrafo);
     font-size: 1.6rem;
-    
     margin: 0;
     padding: 0;
     /* Interliniado entre fonts */
@@ -72,8 +72,6 @@ body {
 .contenedor-fluid{
     width: 100%;
 }
-
-
 
 a {
     text-decoration: none;
