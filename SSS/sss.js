@@ -9,7 +9,7 @@ $.fn.sss = function(options) {
 	var settings = $.extend({
 	slideShow : true,
 	startOn : 0,
-	speed : 3500,
+	speed : 5500,
 	transition : 400,
 	arrows : true
 	}, options);
