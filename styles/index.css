@@ -80,11 +80,6 @@ body {
 }
 
 
-
-.banner__img i{
-    color: var(--primario);
-}
-
 .baner__caractristicas{
     height: 40vh;
 }
@@ -185,12 +180,6 @@ body {
     align-items: center;
 }
 
-
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-    }
-}
 
 @media (min-width: 768px) {
 
