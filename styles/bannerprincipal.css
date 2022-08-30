@@ -1,0 +1,83 @@
+#banner__principal{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner__principal-frase{
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+}
+
+.banner__principal-frase p{
+    margin-top: 8rem;
+    font-size: 3.5rem;
+    color: #56585A;
+}
+
+.banner__principal-frase p span{
+    color: var(--primario);
+}
+
+@media (max-width: 1024px) {
+    .parrafo-principal-web{
+        display: none;
+    }
+    .banner__principal-frase p{
+        margin-top: 2rem;
+    }
+}
+
+.banner__principal-testimonios{
+    
+    display: grid;
+    grid-template-columns: 25% 75%;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+
+.banner__principal-img-testimonios{
+    height: 100%;
+    background-image: url(../img/def/OpinionTra.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* 
+.banner__principal-testimonios img{
+    height: 35vh;
+}
+*/
+
+.testimonial-text p{
+    margin: 8px;
+}
+
+@media (max-width: 768px) {
+    #banner__principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner__principal-frase{
+        height: 25vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .banner__principal-testimonios{
+        display: block;
+        width: 100%;
+    }
+    .banner__principal-img-testimonios{
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .parrafo-principal-app{
+        display: none;
+    }
+}
