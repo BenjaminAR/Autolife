@@ -25,9 +25,3 @@
 .testimonial-text i{
     color: var(--primario);
 }
-
-@media (max-width: 768px) {
-    .testimonial-text i{
-        color: var(--blanco);
-    }
-}
