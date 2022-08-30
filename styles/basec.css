@@ -79,6 +79,11 @@ li a:hover {
         transition: all .5s;
     }
 
+    nav ul{
+        margin: 0 0 0 0 !important;
+        padding-inline-start: 0px !important;
+    }
+
     nav ul li {
         display: block;
         margin: 50px 0;

@@ -40,6 +40,8 @@ input:focus {
 }
 
 .formulario__aside p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: rgb(22, 22, 22);
 }
 
