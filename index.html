@@ -44,37 +44,40 @@
 
 </head>
 
-<header>
-    <nav>
+<header id="header-nav">
+    <nav class="sombra">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
         <a href="index.html" class="enlace">
-            <img src="img/logo_2020w.png" alt="" class="logo">
+            <img src="img/LogoSmall.png" alt="" class="logo">
         </a>
         <ul>
-            <li><a class="entrada-app" href="#">Inicio</a></li>
+            <li style="margin-left: 0;"><a class="entrada-app" href="#">Inicio</a></li>
             <li><a class="entrada-app" href="#">Productos</a></li>
             <li><a class="entrada-app" href="#">Elementos garantizados</a></li>
             <li><a class="entrada-app" href="#">¿Quienes somos?</a></li>
-            <li><a class="entrada-app" href="#">Contacto</a></li>
+            <li><a class="entrada-app" href="#_contacto">Contacto</a></li>
             <li><a class="entrada-app" href="#">Iniciar sesion</a></li>
 
         </ul>
     </nav>
 </header>
 
-<section>
+<section id="banner-principal" style="margin-top: 1rem;">
     <div class="banner__principal">
-
         <div class="baner__caractristicas">
-            <br>
-            <div class="bc__texto">
-                <p class="bold animate__animated animate__bounceInLeft" style="font-size: 2rem;">Garantiza la
-                    tranquilidad de tu camino.</p>
-                <p class="bold" style="font-size: 2rem;">Tú opinion nos importa</p>
-                <p>La satisfaccion de nuestros clientes es un pilar de la empresa.</p>
+            <div class="bc__texto" style="display: flex; align-items: center; justify-content: center2; height: 100%;">
+                <p class="bold animate__animated animate__bounceInLeft text-center"
+                    style="font-size: 5rem; color: var(--primario);">Garantiza</p>
+                <br>
+                <span class="bold animate__animated animate__bounceInLeft text-center" style="font-size: 3rem;">
+                    <p style="color: #56585A;">&nbsp;</p>la tranquilidad de tu camino.
+                </span>
+            </div>
+            <div style="background-color: var(--primario); height: 14rem;">
+                <h4 class="text-center">Hola mundo</h4>
             </div>
         </div>
 
@@ -115,8 +118,6 @@
                         <div class="testimonial-text">
                             <P>Francisco Mejia</P>
                             <p>
-                                Siempre en comunicación sobre el status del reporte y el seguimiento de la misma manera
-                                puntual y conciso.
                                 La póliza agrega mucho valor y es extremadamente útil, es un excelente valor agregado en
                                 casos como el mío donde la agencia ofrece el servicio y creo que más de una persona
                                 estaríamos interesados en pagarla al vencimiento.
@@ -154,240 +155,36 @@
                 </div>
             </div>
 
-        </div>
-
-        <!--
-                    <div class="banner__img">
-
-            <div style="max-width: 50rem; float: right;" class="text-center tes-clientes">
-                <div class="img-avt-cliente">
-                    
-                </div>
-                <p class="bold lh">Juan Carlos Jaime</p>
-                <span class="font-min lh">Cliente</span>
-                <p class="content-cliente lh">
-                    La experiencia y servicio recibido en cuanto a la garantía fue excelente, muy amable, toda la
-                    información clara, siempre atenta y siempre ayudándome con el tramite.
-                    Ampliamente recomendable la atención de Irma Mancera.
-                </p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+            <div class="banner__testimonio-footer">
+                <h4>Hola mundo</h4>
             </div>
 
         </div>
-        -->
 
     </div>
 </section>
 
+<div class="space-7"></div>
+<div class="space-7"></div>
+<div class="space-7"></div>
 
-<!--
-<section class="contenedor-fluid" id="_garantizado">
 
-    <div class="contenedor-cards">
-        <div class="carta-box">
-            <div class="carta">
-                <div class="cara bg-elemento-uno">
-
-                </div>
-                <div class="cara detras">
-                    <h4 class="font-center">Motor</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                        ducimus
-                        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                        in, nulla
-                        molestiae veniam? Architecto fuga tempore sint!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="carta-box">
-            <div class="carta">
-                <div class="cara bg-elemento-dos">
-                   </div>
-                <div class="cara detras">
-                    <h4 class="font-center titulo-card">Sistema de A/C</h4>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                        ducimus
-                        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                        in, nulla
-                        molestiae veniam? Architecto fuga tempore sint!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="carta-box">
-            <div class="carta">
-                <div class="cara bg-elemento-tres">
-                   
-</div>
-<div class="cara detras">
-    <h4 class="font-center titulo-card">Sistema de suspención</h4>
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-        ducimus
-        quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-        in, nulla
-        molestiae veniam? Architecto fuga tempore sint!
-    </p>
-</div>
-</div>
-</div>
-
-<div class="carta-box">
-    <div class="carta">
-        <div class="cara bg-elemento-cuatro">
-            
-        </div>
-        <div class="cara detras">
-            <h4 class="font-center titulo-card">Diferencial</h4>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                ducimus
-                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                in, nulla
-                molestiae veniam? Architecto fuga tempore sint!
-            </p>
-        </div>
+<section id="banner__cobertura" class="contenedor">
+    <div class="img-cobertura">
+        <img src="img/def/AutoParado2.jpg" alt="WomanCar">
     </div>
-</div>
+    <div class="banner__cobertura-img-text">
+        <P class="text-center bold">¿Tu auto se paró?</P>
+        <p style="padding: 0 2rem;">No preocupes, contamos servicio de grua con cobertura nacional las 24 horas 365 dias
+            del año</p>
+        <a class="btn" href="/proceso.html">Proceso de avería</a>
+        
+        <a class="btn" href="#_contacto">Contactanos</a>
 
-<div class="carta-box">
-    <div class="carta">
-        <div class="cara bg-elemento-cinco">
-            
-        </div>
-        <div class="cara detras">
-            <h4 class="font-center titulo-card">Frenos</h4>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                ducimus
-                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                in, nulla
-                molestiae veniam? Architecto fuga tempore sint!
-            </p>
-        </div>
+
+
     </div>
-</div>
-
-<div class="carta-box">
-    <div class="carta">
-        <div class="cara bg-elemento-seis">
-            
-        </div>
-        <div class="cara detras">
-            <h4 class="font-center titulo-card">Caja de direcciones</h4>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                ducimus
-                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                in, nulla
-                molestiae veniam? Architecto fuga tempore sint!
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="carta-box">
-    <div class="carta">
-        <div class="cara bg-elemento-siete">
-           
-        </div>
-        <div class="cara detras">
-            <h4 class="font-center titulo-card">Sistema de alimentación</h4>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                ducimus
-                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                in, nulla
-                molestiae veniam? Architecto fuga tempore sint!
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="carta-box">
-    <div class="carta">
-        <div class="cara bg-elemento-ocho">
-        </div>
-        <div class="cara detras">
-            <h4 class="font-center titulo-card">Sistema de dirección</h4>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ad enim saepe sed eum
-                ducimus
-                quasi hic, quibusdam reiciendis tempora aliquid quaerat eius vel esse incidunt temporibus,
-                in, nulla
-                molestiae veniam? Architecto fuga tempore sint!
-            </p>
-        </div>
-    </div>
-</div>
-
-</div>
-
 </section>
-
-<section class="contenedor-fluid" id="_productos">
-    <div class="space-7"></div>
-    <div class="space-7"></div>
-    <h2 class="font-center">Productos</h2>
-    <div class="space-3"></div>
-    <div class="space-3"></div>
-    <div class="widget" style="display: none;">
-
-        <div class="widget__item">
-            <img src="img/def/Grua.png" alt="Grua" class="prod-img">
-            <p class="bold">Servicio de gruas</p>
-            <p>Contamos con servicio de gruas con cobertura a nivel nacional.</p>
-            <a class="widget__button bold" href="#">Ver más</a>
-        </div>
-
-        <div class="widget__item">
-            <img src="img/def/premium.png" alt="Premium-img" class="prod-img">
-            <p class="bold">Premium</p>
-            <p>Garantía enfocada para autos de alta gama, maneja tu auto con la confianza de una garantía al nivel
-                de tu auto</p>
-            <a class="widget__button bold" href="#">Ver más</a>
-        </div>
-
-        <div class="widget__item">
-            <img src="img/def/altaGama.png" alt="Auto de alta gama" class="prod-img">
-            <p class="bold">Alta gama</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi provident dolor laboriosam
-                doloribus!</p>
-            <a class="widget__button bold" href="#">Ver más</a>
-        </div>
-
-        <div class="widget__item">
-            <img src="img/def/cajaCambios.png" alt="Caja de cambios" class="prod-img">
-            <p class="bold">Caja de cambios</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi provident dolor laboriosam
-                doloribus!</p>
-            <a class="widget__button bold" href="#">Ver más</a>
-        </div>
-    </div>
-    <div class="productos">
-        <div class="producto-item1">
-            <h3 class="font-center">Premium</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur error reprehenderit architecto!
-            </p>
-        </div>
-        <div class="producto-item2">
-            <h4 class="font-center">Alta gama</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci eum pariatur!</p>
-        </div>
-    </div>
-
-</section>
--->
-
 
 <section id="testimonial_area" style="padding-bottom: 0px;">
     <h3 class="text-center">Historias de éxito de nuestros socios</h3>
@@ -494,7 +291,6 @@
 </section>
 
 <section class="contenedor-fluid" id="_contacto">
-    <div class="space-7"></div>
     <div class="space-3"></div>
     <div class="space-3"></div>
     <h3 class="text-center">Contáctanos...</h3>
@@ -535,7 +331,7 @@
     </div>
 </section>
 
-<div class="space-7"></div>
+<div class="space-3"></div>
 
 <section class="contenedor-fluid">
     <div class="map">
