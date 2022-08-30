@@ -60,3 +60,8 @@
     width: 60%;
     text-align: center;
 }
+
+.btn:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+}

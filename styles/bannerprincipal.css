@@ -81,3 +81,54 @@
         display: none;
     }
 }
+
+.banner__principal-colora{
+    background-color: #f07325d7;
+    height: 29vh;
+}
+
+@media (max-width: 1020px) {
+    .banner__principal-colora{
+        display: none;
+    }
+}
+
+.banner__principal-colorb{
+    height: 29vh;
+    background-color: #6f7172dd;
+    padding: 0 5rem;
+}
+
+.banner__principal-colorb-texto-principal{
+    margin: 1rem 0 ;
+    color: var(--blanco);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner__principal-colorb-texto{
+    color: var(--blanco);
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    padding: 1rem;
+    border: solid 1px var(--primario);
+    background-color: var(--blanco);
+    color: var(--primario);
+    font-weight: bold;
+    
+    text-align: center;
+}
+
+.btn:hover{
+    color: var(--blanco);
+    background-color: var(--primario);
+}
+
+@media (max-width: 768px ) {
+    .btn{
+        padding: 1.5rem 4rem;
+    }
+}

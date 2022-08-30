@@ -25,3 +25,7 @@
 .testimonial-text i{
     color: var(--primario);
 }
+
+.wrapper p{
+    color: #56585A;
+}
