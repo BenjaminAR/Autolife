@@ -68,10 +68,6 @@ li a:hover {
     .enlace {
         padding-left: 20px;
     }
-
-    nav ul li a {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 974px) {
@@ -83,7 +79,7 @@ li a:hover {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c281c;
+        background: var(--backClaro);
         z-index: 120;
         top: 80px;
         left: -100%;
@@ -93,17 +89,17 @@ li a:hover {
 
     nav ul li {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 30px 0;
+        line-height: 5rem;
+        font-weight: bold;
+        margin-left: -5rem;
     }
 
-    nav ul li a {
-        font-size: 16px;
+    nav ul li a{
+        font-size: 2.5rem;
     }
 
-    li a:hover,
-    li a.active {
-        background: none;
+    li a:hover{
         color: var(--primario);
     }
 
