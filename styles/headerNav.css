@@ -106,4 +106,8 @@ li a:hover {
     #check:checked~ul {
         left: 0;
     }
+
+    .entrada-app:checked~ul{
+        right: 0;
+    }
 }
