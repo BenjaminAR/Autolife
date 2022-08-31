@@ -83,8 +83,9 @@
 }
 
 .banner__principal-colora{
-    background-color: #f07325d7;
     height: 29vh;
+    background-color: #f07325d7;
+    padding: 0 5rem;
 }
 
 @media (max-width: 1020px) {
@@ -118,7 +119,6 @@
     background-color: var(--blanco);
     color: var(--primario);
     font-weight: bold;
-    
     text-align: center;
 }
 

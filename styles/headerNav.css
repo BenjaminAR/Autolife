@@ -7,9 +7,9 @@ nav {
 }
 
 .sombra {
-    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(163,163,163,0.8);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(163,163,163,0.8);
+    box-shadow: 0px 7px 5px 0px rgba(163,163,163,0.8);
 }
 
 .enlace {

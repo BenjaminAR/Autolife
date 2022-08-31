@@ -1,0 +1,40 @@
+.banner__principal--ac{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+    .banner__principal--ac{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.banner__principal-img{
+    height: 35vh;
+    background-image: url(../img/def/atencioncliente.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.banner__principal-txt{
+    background-color: #f07325d7;
+    height: 35vh;
+    padding: 1rem 4rem;
+}
+
+.banner__principal-txt p{
+    color: #332F21;
+    font-size: 2.5rem;
+}
+
+.serviciocliente{
+    margin: 7rem ;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.serviciocliente p{
+    font-size: 1.8rem;
+}
