@@ -1,33 +1,39 @@
-#banner__principal{
+#banner__principal {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.banner__principal-frase{
+.banner__principal-frase {
     display: flex;
     justify-content: center;
     height: 45vh;
 }
 
-.banner__principal-frase p{
+.banner__principal-frase p {
     margin-top: 8rem;
     font-size: 3.5rem;
     color: #56585A;
 }
 
-.banner__principal-frase p span{
+@media (max-width: 500px) {
+    .banner__principal-frase p {
+        margin-top: 2rem;
+    }
+}
+
+
+.banner__principal-frase p span {
     color: var(--primario);
 }
 
 @media (max-width: 1026px) {
-    .parrafo-principal-web{
+    .parrafo-principal-web {
         display: none;
     }
 }
 
-.banner__principal-testimonios{
-    
+.banner__principal-testimonios {
     display: grid;
     grid-template-columns: 25% 75%;
     justify-content: center;
@@ -35,16 +41,24 @@
     height: 45vh;
 }
 
-@media (min-width: 1080px) {
-    .banner__principal-testimonios{
-        height: 40vh;
-    }
-    .banner__principal-frase{
+@media (min-width: 768px) {
+    .banner__principal-testimonios {
         height: 40vh;
     }
 }
 
-.banner__principal-img-testimonios{
+
+@media (min-width: 1080px) {
+    .banner__principal-testimonios {
+        height: 40vh;
+    }
+
+    .banner__principal-frase {
+        height: 40vh;
+    }
+}
+
+.banner__principal-img-testimonios {
     height: 100%;
     background-image: url(../img/def/OpinionTra.png);
     background-size: contain;
@@ -58,37 +72,39 @@
 }
 */
 
-.testimonial-text p{
+.testimonial-text p {
     margin: 8px;
 }
 
 @media (max-width: 768px) {
-    #banner__principal{
+    #banner__principal {
         display: flex;
         flex-direction: column;
     }
-    .banner__principal-frase{
+
+    .banner__principal-frase {
         height: 25vh;
     }
 }
 
 @media (max-width: 536px) {
-    .banner__principal-testimonios{
+    .banner__principal-testimonios {
         display: block;
         width: 100%;
     }
-    .banner__principal-img-testimonios{
+
+    .banner__principal-img-testimonios {
         display: none;
     }
 }
 
 @media (min-width: 1027px) {
-    .parrafo-principal-app{
+    .parrafo-principal-app {
         display: none;
     }
 }
 
-.banner__principal-colora{
+.banner__principal-colora {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,12 +115,12 @@
 }
 
 @media (max-width: 1020px) {
-    .banner__principal-colora{
+    .banner__principal-colora {
         display: none;
     }
 }
 
-.banner__principal-colorb{
+.banner__principal-colorb {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,20 +130,20 @@
     padding: 0 5rem;
 }
 
-.banner__principal-colorb-texto-principal{
-    margin: 1rem 0 ;
+.banner__principal-colorb-texto-principal {
+    margin: 1rem 0;
     color: var(--blanco);
     font-size: 3rem;
     font-weight: bold;
 }
 
-.banner__principal-colorb-texto{
+.banner__principal-colorb-texto {
     color: var(--blanco);
     font-size: 1.8rem;
     margin-bottom: 3rem;
 }
 
-.btn{
+.btn {
     padding: 1rem;
     border: solid 1px var(--primario);
     background-color: var(--blanco);
@@ -136,13 +152,13 @@
     text-align: center;
 }
 
-.btn:hover{
+.btn:hover {
     color: var(--blanco);
     background-color: var(--primario);
 }
 
-@media (max-width: 768px ) {
-    .btn{
+@media (max-width: 768px) {
+    .btn {
         padding: 1.5rem 4rem;
     }
 }
