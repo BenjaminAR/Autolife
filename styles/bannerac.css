@@ -26,7 +26,7 @@
 
 @media (max-width: 768px) {
     .banner__principal-txt{
-        height: 25vh;
+        height: 18vh;
     }
 }
 .banner__principal-txt p{
@@ -38,6 +38,12 @@
     margin: 7rem ;
     padding-bottom: 4rem;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .serviciocliente{
+        margin: 3rem;
+    }
 }
 
 .serviciocliente p{
