@@ -7,7 +7,7 @@
 .banner__principal-frase{
     display: flex;
     justify-content: center;
-    height: 35vh;
+    height: 45vh;
 }
 
 .banner__principal-frase p{
@@ -35,7 +35,7 @@
     grid-template-columns: 25% 75%;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    height: 45vh;
 }
 
 .banner__principal-img-testimonios{
