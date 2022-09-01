@@ -20,12 +20,9 @@
     color: var(--primario);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1026px) {
     .parrafo-principal-web{
         display: none;
-    }
-    .banner__principal-frase p{
-        margin-top: 2rem;
     }
 }
 
@@ -36,6 +33,15 @@
     justify-content: center;
     align-items: center;
     height: 45vh;
+}
+
+@media (min-width: 1080px) {
+    .banner__principal-testimonios{
+        height: 40vh;
+    }
+    .banner__principal-frase{
+        height: 40vh;
+    }
 }
 
 .banner__principal-img-testimonios{
@@ -66,7 +72,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 536px) {
     .banner__principal-testimonios{
         display: block;
         width: 100%;
@@ -76,13 +82,17 @@
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1027px) {
     .parrafo-principal-app{
         display: none;
     }
 }
 
 .banner__principal-colora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 29vh;
     background-color: #f07325d7;
     padding: 0 5rem;
@@ -95,6 +105,10 @@
 }
 
 .banner__principal-colorb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     height: 29vh;
     background-color: #6f7172dd;
     padding: 0 5rem;
