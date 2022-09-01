@@ -94,7 +94,7 @@
     justify-content: center;
     align-items: center;
     height: 33vh;
-    background-color: #EF8644;
+    background-color: var(--primario);
     padding: 0 5rem;
 }
 
@@ -110,7 +110,7 @@
     justify-content: center;
     align-items: flex-end;
     height: 33vh;
-    background-color: #808283;
+    background-color: var(--secundario);
     padding: 0 5rem;
 }
 

@@ -2,12 +2,14 @@
     --fuenteHeading: 'PT sans', sans-serif;
     --funeteParrafo: 'Lato', sans-serif;
     --primario: #f07325;
+    --secundario: #58595b;
     --primarioT: rgba(247, 125, 49, 0.548);
     --primarioOpacity: #d36622;
     --blanco: #fff;
     --negro: #000;
     --backObscuro: #332F21;
     --backClaro: #e0e0e0;
+
 }
 
 body {
