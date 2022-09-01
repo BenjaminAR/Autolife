@@ -93,8 +93,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 29vh;
-    background-color: #f07325d7;
+    height: 33vh;
+    background-color: #EF8644;
     padding: 0 5rem;
 }
 
@@ -109,8 +109,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    height: 29vh;
-    background-color: #6f7172dd;
+    height: 33vh;
+    background-color: #808283;
     padding: 0 5rem;
 }
 
