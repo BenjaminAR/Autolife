@@ -1,4 +1,4 @@
-.header-pa{
+.header-pa {
     display: static;
     margin: 0;
     background-image: url(../img/def/proceso.jpg);
@@ -10,7 +10,7 @@
     background-position: center center;
 }
 
-.bg-pa{
+.bg-pa {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,16 +19,16 @@
     background-color: rgba(0, 0, 0, 0.384);
 }
 
- /* Contenedor grid*/
+/* Contenedor grid*/
 
-.content-pa{
+.content-pa {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
 }
 
 
-.contet-pa__text{
+.contet-pa__text {
     grid-column: 1 / 3;
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@
     font-size: 1.8rem;
 }
 
-.contet-pa__text-rigth{
+.contet-pa__text-rigth {
     grid-column: 3 / 5;
     display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@
     font-size: 1.8rem;
 }
 
-.contet-pa__num{
+.contet-pa__num {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,19 +67,25 @@
     margin: -3rem;
 }
 
-.padre{
+.padre {
     display: flex;
     justify-content: flex-end;
     margin-right: -3rem;
     z-index: 2
 }
 
-.padre-img{
+.padre-img {
     display: flex;
     justify-content: flex-end;
 }
 
-.contet-pa__num-rigth{
+
+.img-ea {
+    width: 13rem;
+    height: 13rem;
+}
+
+.contet-pa__num-rigth {
     float: left;
     margin-right: 0;
     grid-column: 2 / 3;
@@ -94,40 +100,43 @@
     width: 11rem;
 }
 
-.bg-primario{
+.bg-primario {
     background-color: var(--primario);
     color: var(--blanco);
     text-align: center;
     margin-bottom: 0;
 }
-.bg-primario p{
+
+.bg-primario p {
     margin-bottom: 0;
     font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {
-    .bg-primario p{
+    .bg-primario p {
         font-size: .9rem;
     }
 }
 
 @media (max-width: 768px) {
-    .contet-pa__text-rigth p{
+    .contet-pa__text-rigth p {
         margin-left: 3rem;
         font-size: 1.5rem;
     }
-    .contet-pa__text p{
+
+    .contet-pa__text p {
         margin-right: 3rem;
         font-size: 1.5rem;
     }
 }
 
 @media (max-width: 400px) {
-    .contet-pa__text-rigth{
+    .contet-pa__text-rigth {
         height: 10rem;
         margin: 0;
     }
-    .contet-pa__text{   
+
+    .contet-pa__text {
         height: 10rem;
     }
 }
