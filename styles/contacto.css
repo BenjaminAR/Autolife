@@ -21,11 +21,8 @@ input:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*background: linear-gradient(0deg, rgba(255, 172, 120, 1) 0%, rgba(254, 138, 66, 1) 48%, rgba(254, 100, 5, 1) 100%);  */
     background-color: #332F21;
-    /* #332F21   #232323*/
-    
-    height: 40rem;
+    height: 41rem;
     border-radius: 2px;
     padding: 1.3rem;
     text-align: center;
@@ -57,7 +54,7 @@ input:focus {
 }
 
 .form_ {
-    background-color: transparent;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -66,12 +63,11 @@ input:focus {
 .form_ input,
 textarea {
     border: 1px solid var(--primario);
-    padding: 5px;
+    padding: 10px;
     border-radius: 2px;
 }
 
 .form_ button {
-    background-color: transparent;
     border-radius: 3px;
     border: 1px solid var(--primario);
     color: var(--primario);
@@ -79,7 +75,6 @@ textarea {
     transition: color .5s ease;
     font-weight: bold;
     height: 5rem;
-
 }
 
 .form_ button:hover {
