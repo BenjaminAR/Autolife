@@ -1,13 +1,13 @@
 .header-pa {
     display: static;
     margin: 0;
-    background-image: url(../img/def/proceso.jpg);
+    background-image: url(../img/def/proceso.webp);
     color: white;
     height: 30rem;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top;
 }
 
 .bg-pa {
