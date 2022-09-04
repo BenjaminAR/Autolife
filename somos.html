@@ -7,163 +7,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/indexNew.css">
+    <link rel="stylesheet" href="styles/headerNav.css">
     <link rel="stylesheet" href="styles/somos.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
-    <title>Autolife | Proceso de averia</title>
+    <title>Autolife | ¿Quienes somos?</title>
 </head>
 
 <body>
+    <header id="header-nav">
+        <nav class="sombra">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html" class="enlace">
+                <img src="img/LogoSmall.webp" alt="logo" class="logo">
+            </a>
+            <ul>
+                <li><a class="entrada-app" href="#">Productos</a></li>
+                <li><a class="entrada-app" href="garantizados.html">Elementos garantizados</a></li>
+                <li><a class="entrada-app a-active" href="#">Acerca de nosotros</a></li>
+                <li><a class="entrada-app" href="serviciocliente.html">Servicio al cliente</a></li>
+                <li><a class="entrada-app" href="https://autolife.789.com.mx/login">Iniciar sesion</a></li>
 
-    <div class="contenedor-fluid bg-redes">
-        <div class="contenedor">
-            <div class="barra__redes">
-                <a href="proceso.html" target="_blank"><span class="barra__texto bold">¿Proceso de avería?</span></a>
-                <nav class="navegación">
-                    <a href="">
-                        <i class="fa-brands fa-facebook-f iconos"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-instagram iconos"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-twitter iconos"></i>
-                    </a>
-                </nav>
-            </div>
-        </div>
-    </div>
-
-    <header class="header">
-        <div class="contenedor-fluid">
-            <div class="barra">
-                <a href="index.html" class="logo">
-                    <img class="logo__img" src="img/logo_2020w.png" alt="Logo Autolife">
-                    <span class="logo__text">Garantiza la tranquilidad en tu camino</span>
-                </a>
-                <nav class="navegacion">
-                    <a href="index.html" class="navegacion__enlace">Inicio</a>
-                    <a href="#_garantizado" class="navegacion__enlace">Elementos Garantizados</a>
-                    <a href="somos.html" class="navegacion__enlace">¿Quienes somos?</a>
-                    <a href="#_contacto" class="navegacion__enlace">Contacto</a>
-                    <a href="#_productos" class="navegacion__enlace">Productos</a>
-                    <a href="https://autolife.789.com.mx/login" target="_blank" class="navegacion__enlace">Iniciar
-                        sesión</a>
-                </nav>
-            </div>
-        </div>
+            </ul>
+        </nav>
     </header>
 
+    <div class="space-3"></div>
 
-    <div class="contenedor-fluid">
+    <div class="contenedor col-2">
+        <div class="cont__somos">
+            <h1 class="cont__somos-h1">Acerca de nosotros</h1>
+            <p>
+                Una empresa formada por un <span>experto</span> y <span>calificado</span> equipo de profesionales con
+                más de 50 años de experiencia en el ámbito automotriz y específicamente en el sector de seguros 20 años,
+                así mismo gestionando <span>garantías extendidas</span> automotrices y con <span>amplios
+                    conocimientos</span>
+                en el área técnica.
+            </p>
 
-        <h1 class="font-center animate__animated animate__bounce">Autolife</h1>
+            <article id="contenido__socios">
+                <p style="font-weight: bold;">Socios</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus quod facere laudantium,
+                    voluptatem vitae saepe sapiente dolores! Et alias obcaecati velit itaque rerum laborum veritatis
+                    eniet tempora aspernatur sint, inventore, sunt eaque cum minima reiciendis deserunt
+                    veniam deleniti cumque perspiciatis suscipit minima consectetur nulla calak.
+                </p>
+            </article>
+            <br>
+            <br>
+            <br>
+            <button id="botonUno" onclick="verMas()">Socios</button>
+            <br>
+            <article id="contenido__benef">
+                <p style="font-weight: bold;">Beneficiarios</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat, eaque explicabo consequuntur
+                    quod architecto cum expedita accusamus rerum. Quas unde explicabo distinctio tenetur. Nisi natus
+                    neque quaerat animi ut!
+                </p>
+            </article>
+            <br>
+            <button id="botonDos" onclick="verMasDos()">Beneficiarios</button>
+            <!--
+            <h2 class="cont__somos-h1">¿Por que Autolife?</h2>
+            <p>
+                Buscamos principalmente la innovación en el mercado, brindando una atención personalizada. A nuestros
+                socios les ofrecemos una Herramienta para para el cierre de venta al contar con una garantía extendida
+                de la más alta calidad.
+            </p>
+            -->
+        </div>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur provident quidem error consequuntur quis
-            sit nemo facilis id fuga vel illo magnam dolor sequi quas nulla, culpa consequatur incidunt est modi
-            architecto reiciendis cum adipisci et! Reprehenderit alias expedita amet eveniet veritatis neque, magnam,
-            cum fuga perferendis nisi quis pariatur harum aliquid odit quibusdam ea iure cupiditate odio provident quas!
-            Minus consequatur neque blanditiis aliquam repudiandae iste doloremque porro dolorum at quod aperiam quam
-            officia sint dicta aspernatur reprehenderit quae natus illum, quasi iure. Maxime rem deleniti repellendus
-            necessitatibus laudantium totam dolores nulla quibusdam voluptatum accusantium autem, quod eaque sed itaque
-            odit et officiis perspiciatis quasi saepe nihil asperiores repudiandae veritatis aut iusto? Tempora aperiam
-            sapiente omnis voluptatibus! Earum, incidunt eum error voluptas quisquam tenetur praesentium? Minima maiores
-            perspiciatis harum incidunt voluptatem ullam, aliquam saepe, quam obcaecati et ex rem architecto officia,
-            autem itaque laborum magnam error! Aut assumenda optio repudiandae. Nam soluta reiciendis maiores illum
-            facilis nemo minima ab, praesentium animi unde aliquam accusamus voluptatem assumenda voluptatum et a
-            officia quo commodi vel deleniti voluptate hic recusandae. Iure blanditiis accusantium consectetur ut
-            deleniti totam illo non doloremque perspiciatis quod nostrum sit libero laborum, iste quas consequatur
-            quisquam, voluptatibus sapiente earum eos? Eveniet sequi amet, incidunt perspiciatis iste at. Dicta ducimus
-            architecto recusandae eius dignissimos cum temporibus eum exercitationem velit delectus, voluptatum quam
-            neque qui? Ad, aliquid! Earum labore nisi iste ea, odit mollitia est laborum corrupti impedit dolor
-            doloremque, omnis magni excepturi libero unde vero id dignissimos deserunt eos illum quo! In facilis
-            possimus provident? Mollitia dolorum illum ab suscipit. Magnam nam quo laudantium similique et dolore hic
-            totam aspernatur aut iusto facere sint asperiores necessitatibus, animi ut error nemo, ipsam eveniet quidem
-            nulla odit accusantium! Quisquam perferendis iste eaque sunt nam molestiae repudiandae voluptas, hic natus
-            veniam quaerat iure. Obcaecati odio laboriosam odit enim eos consectetur vero quo, nemo dolores quidem nulla
-            eum perferendis laborum quisquam repellendus necessitatibus exercitationem, expedita nobis repudiandae
-            perspiciatis quos! Possimus magni totam iste eos neque labore nihil quia minus maiores aspernatur. Nesciunt,
-            nostrum debitis ad sit iste quis?
+        <div class="img__somos">
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illo dignissimos delectus corrupti
-            consequuntur necessitatibus voluptatum asperiores similique nihil sint sequi id labore exercitationem,
-            adipisci deserunt suscipit voluptas aspernatur qui eos, minima aliquid eveniet! Quam, quo fugiat rerum neque
-            animi illo provident ratione eligendi, similique incidunt numquam a unde temporibus harum optio omnis beatae
-            explicabo blanditiis! Saepe animi similique accusamus commodi laborum inventore iure possimus natus
-            temporibus, voluptatibus vitae odit consequuntur harum delectus? Dolores dolor soluta aperiam inventore
-            magnam saepe delectus, culpa rerum eligendi quasi illum, quas nihil, sunt porro dignissimos nesciunt! Eaque
-            incidunt eum possimus reiciendis dolor et odio at fugit ducimus facere enim odit assumenda iure temporibus
-            sint, culpa voluptatem magnam doloribus quam! Nesciunt itaque, earum numquam nihil sed iusto. Odit similique
-            facilis, placeat omnis, fugit consequatur quam at vel porro, nulla eaque explicabo soluta dolorem adipisci
-            id quia neque temporibus itaque. Quia doloribus dignissimos aliquam consequuntur ipsa delectus unde, enim in
-            autem repellat ducimus molestias. Officia neque in nisi eaque debitis necessitatibus nostrum deserunt harum
-            obcaecati molestias. Commodi consequuntur laborum quasi fugit amet corrupti officia maxime necessitatibus
-            excepturi nulla architecto mollitia, impedit molestiae, voluptatem delectus, nemo totam recusandae dolores
-            perspiciatis? Maxime alias porro ipsa neque possimus! Porro harum, perferendis accusamus perspiciatis
-            impedit eum maiores sit exercitationem, nostrum, itaque ea? Dolore laudantium inventore recusandae voluptas,
-            explicabo rerum illum obcaecati iste! Magnam, pariatur. Accusantium eius expedita similique corporis in quos
-            distinctio nemo sint, recusandae suscipit ut debitis magni voluptates explicabo iusto perferendis ullam,
-            sapiente ipsum, voluptate dolor veniam odit dolore dolores. Obcaecati recusandae labore ullam illum animi,
-            aut laudantium dicta explicabo accusantium quod ea magnam et expedita consectetur nostrum dolorem reiciendis
-            odio debitis nulla? Odit delectus fugiat autem libero, in dolore error magnam velit distinctio ipsa
-            necessitatibus? Eligendi quaerat sed labore illo. Distinctio quibusdam dolorem, omnis beatae ullam,
-            asperiores suscipit, magni iusto id iure corporis unde atque voluptatibus inventore corrupti odio vero
-            aliquid delectus exercitationem. Esse omnis eveniet, consequuntur earum tempora necessitatibus quasi
-            incidunt, neque voluptatem, repudiandae ullam! Voluptatibus nihil eveniet est sint repudiandae id, quasi
-            unde placeat laboriosam, deserunt ex libero aliquid nostrum mollitia doloremque dolore sapiente quis
-            obcaecati incidunt! Laborum unde maiores mollitia, dolor hic esse omnis quibusdam beatae necessitatibus
-            consequatur alias expedita, veniam culpa sequi facere iste praesentium dolore suscipit ad laudantium ullam
-            voluptatum deserunt ipsum quod. Tenetur quibusdam deleniti explicabo at recusandae eaque, enim
-            exercitationem. Labore quis delectus nihil nostrum, eius iure dignissimos commodi minus voluptatum aperiam
-            harum corporis deserunt eos itaque. Voluptate totam dolor maxime alias, minus autem inventore ipsa doloribus
-            tenetur, asperiores ullam architecto repellendus, impedit animi fuga veniam hic eligendi atque tempore.
-            Cupiditate, perferendis totam doloribus tenetur illo debitis placeat corporis consectetur corrupti vero!
-            Blanditiis necessitatibus maxime quis, alias quam ad soluta mollitia corrupti sit quas harum quaerat
-            recusandae accusamus voluptate reiciendis voluptatum itaque non sint minus tempora. Esse porro, temporibus
-            deleniti eos libero excepturi repudiandae! Suscipit est ipsa at quasi corrupti facere? Eius nostrum
-            quibusdam neque placeat et culpa ipsum repudiandae animi temporibus, nulla in autem nesciunt commodi ab
-            labore? Quia et deserunt tempora, quos harum tenetur delectus itaque illum animi sit consequatur corporis
-            incidunt unde adipisci temporibus numquam? Molestias cupiditate earum nisi laudantium. Magnam nobis itaque
-            velit obcaecati dolorem magni consectetur earum, mollitia expedita molestias nostrum est, deserunt
-            repellendus cum ipsa tempore corrupti ad numquam odio fugiat illum ea, quae tenetur. Quam iure quae optio
-            excepturi labore, ullam deserunt porro explicabo fugiat obcaecati minus eum rerum eos.
-        </p>
-        
+        </div>
+
 
     </div>
+
+    <div class="space-7"></div>
 
     <footer class="contenedor-fluid">
 
         <div class="footer">
             <div class="footer__about">
                 <h4>¿Quienes somos?</h4>
-                <p>
+                <p class="lh">
                     Somos una empresa de gestión de garantías extendida y coberturas mecánicas a nivel nacional que
                     brindamos un servicio de excelencia.
                 </p>
             </div>
-            <div class="footer__contact">
 
-                <h4>Contacto</h4>
-                <p>
+            <div class="footer__contact">
+                <h4 class="text-center">Contacto</h4>
+                <p class="text-center">
                     <i class="fa-solid fa-location-dot iconos--sh"></i>
                     <span><a href="https://n9.cl/autolife">Descartes 60, Nueva Anzures, CDMX</a></span>
                 </p>
-                <p>
+                <p class="text-center">
                     <i class="fa-regular fa-envelope iconos--sh"></i>
                     <span> <a href="mailto:contacto@autolife.mx">contacto@autolife.mx</a></span>
                 </p>
-                <p>
+                <p class="text-center">
                     <i class="fa-solid fa-phone iconos--sh"></i>
                     <span> <a href="tel:5526742356">800 780 AUTO</a> </span>
                 </p>
             </div>
+
             <div class="footer__horario">
                 <h4>Horario</h4>
                 <p><span class="footer__dia">Lunes</span> <span>9:00 - 18:00</span></p>
@@ -180,8 +138,12 @@
                 <p>© 2022 Autolife. Todos los derechos reservados.</p>
             </span>
         </div>
+        <div class="bg-footer">
+            <a href="privacidad.html">Aviso de privacidad</a>
+        </div>
     </footer>
 
+    <script src="scripts/somos.js"></script>
 </body>
 
 </html>
