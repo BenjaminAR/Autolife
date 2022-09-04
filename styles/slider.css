@@ -1,9 +1,6 @@
-
 #testimonial_area {
 	padding: 1rem 4rem;
-	
 }
-
 
 .box-area {
 	padding: 29px;
@@ -111,17 +108,32 @@
 
 @media (max-width: 768px) {
 	.box-area{
-		margin-left: 3rem;
-		padding-left: 20px;
-		padding-right: 20px;
-		width: 31rem;
+		width: 28rem;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.box-area{
+		margin: 4rem;
 	}
 }
 
 @media only screen and (max-width: 767px) {
 	.box-area {
 		text-align: center;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 0px;
+		margin: 4rem 0;
 	}
 
 }
 
+@media (max-width: 476px) {
+	#testimonial_area .owl-next, #testimonial_area .owl-prev{
+	
+		margin: 0rem 1rem;
+		background-color: var(--blanco);
+		border-radius: 50%;
+	}
+	
+}
