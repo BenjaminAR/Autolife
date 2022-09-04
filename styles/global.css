@@ -42,29 +42,36 @@ body {
 /* Globales */
 
 .contenedor {
+    width: 90%;
+    margin: 0 auto;
+    /* Para centrar los elementos hijos */
+}
+
+.contenedor-testimonios {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
     /* Para centrar los elementos hijos */
 }
 
-.space-7{
+
+.space-7 {
     height: 7rem;
     background-color: transparent;
 }
 
-.space-2{
+.space-2 {
     height: 2rem;
     background-color: transparent;
 }
 
 
-.space-3{
+.space-3 {
     height: 3rem;
     background-color: transparent;
 }
 
-.space-1{
+.space-1 {
     height: 2rem;
     background-color: transparent;
 }
@@ -74,14 +81,15 @@ body {
     background-color: var(--backClaro);
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
-.font-center{
+
+.font-center {
     text-align: center;
 }
 
-.contenedor-fluid{
+.contenedor-fluid {
     width: 100%;
 }
 
@@ -92,45 +100,45 @@ a {
 h1,
 h2,
 h3,
-h4{
+h4 {
     font-family: var(--funeteParrafo);
     line-height: 1.2;
 }
 
-h1{
+h1 {
     font-size: 4.8rem;
 }
 
 
-h2{
+h2 {
     font-size: 4rem;
 }
 
 
-h3{
+h3 {
     font-size: 3.2rem;
 }
 
 
-h4{
+h4 {
     font-size: 2.6rem;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
 /* Utilidades */
 
-.no-margin{
+.no-margin {
     margin: 0;
 }
 
-.no-paddig{
+.no-paddig {
     padding: 0;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -139,14 +147,14 @@ img{
     height: 100%;
 }
 
-.p-3{
+.p-3 {
     padding-top: 3rem;
 }
 
-.m-3{
+.m-3 {
     margin: 3rem 0;
 }
 
-.m-5{
+.m-5 {
     margin: 5rem 0;
 }
