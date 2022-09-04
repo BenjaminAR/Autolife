@@ -7,7 +7,15 @@
 .banner__principal-frase {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 45vh;
+    
+}
+
+@media (min-width: 920px) {
+    .banner__principal-frase{
+        margin-top: -5rem;
+    }
 }
 
 .banner__principal-frase h1 {
@@ -65,7 +73,7 @@
 
 .banner__principal-img-testimonios {
     height: 100%;
-    background-image: url(../img/def/OpinionTra.png);
+    background-image: url(../img/def/OpinionTra.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -96,7 +104,11 @@
     .banner__principal-testimonios {
         display: block;
         width: 100%;
-        height: 40vh;
+        height: 35vh;
+    }
+
+    .banner__principal-frase{
+        height: 12rem;
     }
 
     .banner__principal-img-testimonios {
@@ -149,8 +161,13 @@
 
 .banner__principal-colorb-texto {
     color: var(--blanco);
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 3rem;
+    text-align: justify;
+}
+
+.banner__principal-colorb-texto p{
+    line-height: 2rem;
 }
 
 .btn {
