@@ -1,3 +1,126 @@
-.grua{
-    width: 100px;
+.col-2 {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont__somos{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .col-2{
+        display: grid;
+        grid-template-columns: 60% 40%;  
+        min-height: 78vh;
+    }
+
+}
+
+.img__somos {
+    width: 70%;
+    height: 55rem;
+    background-image: url(../img/def/Mecanico.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 800px) {
+    .img__somos {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/def/Mecanico.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.cont__somos p {
+    font-weight: 300;
+    font-size: 2rem;    
+    margin: 0;
+    line-height: 3.4rem;
+    text-align: center;
+    padding: 0 7rem;
+    border-bottom: solid 1px var(--secundario);
+}
+
+@media (min-width: 800px) {
+    .cont__somos p {
+        padding: 0 2rem;
+    }
+}
+
+.cont__somos p span {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: var(--primario);
+}
+
+.cont__somos-h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    font-size: 2.7rem;
+    color: var(--secundario);
+    text-align: center;
+
+}
+
+@media (max-width: 433px) {
+    .cont__somos {
+        margin-top: 2rem;
+    }
+
+    .cont__somos p{
+        font-size: 1.8rem;
+        line-height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .img__somos{
+        width: 100%;
+        height: 30rem;
+    }
+}
+
+#contenido__socios{
+    max-height: .1rem;
+    overflow: hidden;
+    transition: max-height 1s;
+    text-align: justify;
+}
+#contenido__benef{
+    max-height: .1rem;
+    overflow: hidden;
+    transition: max-height 1s;
+    text-align: justify;
+}
+
+#contenido__socios.abierto{
+    max-height: 110rem;
+}
+
+#contenido__benef.abierto{
+    max-height: 110rem;
+}
+
+button{
+    cursor: pointer;
+    font-weight: 400;
+    width: 95%;
+    padding: 1.2rem 5rem;
+    border: solid var(--primario) 1px;
+}
+
+button:hover{
+    background-color: var(--primario);
+    color: var(--blanco);
+    border: solid transparent 1px;
 }
