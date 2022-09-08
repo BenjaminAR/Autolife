@@ -48,7 +48,6 @@
     line-height: 3.4rem;
     text-align: center;
     padding: 0 7rem;
-    border-bottom: solid 1px var(--secundario);
 }
 
 @media (min-width: 800px) {
@@ -96,6 +95,20 @@
     transition: max-height 1s;
     text-align: justify;
 }
+
+#contenido__socios p, #contenido__benef p{
+    line-height: 2.6rem;
+    text-align: start;
+    padding: 1rem 5rem;
+}
+
+#contenido__socios h2, #contenido__benef h2{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primario);
+    margin-bottom: 1rem;
+}
+
 #contenido__benef{
     max-height: .1rem;
     overflow: hidden;
