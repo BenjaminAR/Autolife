@@ -30,7 +30,7 @@
     }
 }
 .banner__principal-txt p{
-    color: #332F21;
+    color: var(--backObscuro);
     font-size: 2.5rem;
 }
 

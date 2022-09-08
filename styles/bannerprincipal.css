@@ -131,7 +131,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 33vh;
+    height: 34vh;
     background-color: var(--primario);
     padding: 0 5rem;
 }
@@ -147,7 +147,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    height: 33vh;
+    height: 34vh;
     background-color:#232323;
     padding: 0 5rem;
 }

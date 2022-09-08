@@ -101,11 +101,25 @@
     bottom: 0;
     right: 0;
     background-color: var(--primario);
-    margin: 2rem;
-    height: 7rem;
-    width: 7rem;
+    margin: .5rem;
+    height: 6.5rem;
+    width: 6.5rem;
     border-radius: 50%;
 }
+
+@media (min-width: 1000px) {
+    .whatsapp{
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .whatsapp{
+        height: 6rem;
+        width: 6rem;
+    }
+}
+
 
 .whatsapp a {
     display: flex;
