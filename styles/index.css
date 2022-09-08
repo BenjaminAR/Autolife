@@ -94,3 +94,29 @@
         width: 90%;
     }
 }
+
+.whatsapp{
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primario);
+    margin: 2rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.whatsapp a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.whatsapp a i{
+    font-size: 4.5rem;
+    text-align: center;
+    color: var(--blanco);
+}
