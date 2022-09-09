@@ -130,5 +130,18 @@ h1 {
 }
 
 .contenido-eg {
-  min-height: 80rem;
+  margin: 2rem 0;
+  display: flex;
+  padding: 0 3rem;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contenido-eg{
+      flex-direction: column;
+      padding: 0;
+    }
 }
