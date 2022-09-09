@@ -144,4 +144,8 @@ h1 {
       flex-direction: column;
       padding: 0;
     }
+    .contenido-eg p{
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
 }
