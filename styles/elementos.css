@@ -147,13 +147,57 @@ h1 {
   margin: 0;
 }
 
+
+@media (max-width: 1280px) {
+  .contenido-eg{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .banner__principal-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  
+}
+
 @media (max-width: 768px) {
     .contenido-eg{
-      flex-direction: column;
+      grid-template-columns: repeat(3, 1fr);
       padding: 0;
     }
     .contenido-eg p{
       font-weight: bold;
       font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 786px) {
+    .banner__principal-txt{
+      height: 45vh;
+    }
+    .banner__principal-txt p:last-child{
+      margin-top: 0;
+    }
+    .bannner__principal-eg{
+      height: 45vh;
+    }
+    .background-animation{
+      height: 45vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .contenido-eg{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .banner__principal-txt{
+      height: auto;
+    }
+    .bannner__principal-eg{
+      height: 25vh;
+    }
+    .background-animation{
+      height: 25vh;
     }
 }
