@@ -2,23 +2,24 @@
 const articulo = document.querySelector("#contenido__socios")
 const articuloDos = document.querySelector("#contenido__benef")
 const boton = document.querySelector("#botonUno")
+const botonDos = document.querySelector("#botonDos")
 
 function verMas() {
     if(articulo.className == "abierto"){
         articulo.className = "";
-        document.querySelector("#botonUno").textContent = "Socios";
+        boton.textContent = "Socios";
     } else{
         articulo.className = "abierto";
-        document.querySelector("#botonUno").textContent = "Cerrar";
+        boton.textContent = "Cerrar";
     }
 }
 
 function verMasDos() {
     if(articuloDos.className == "abierto"){
         articuloDos.className = "";
-        document.querySelector("#botonDos").textContent = "Beneficiarios";
+        botonDos.textContent = "Beneficiarios";
     } else{
         articuloDos.className = "abierto";
-        document.querySelector("#botonDos").textContent = "Cerrar";
+        botonDos.textContent = "Cerrar";
     }
 }
