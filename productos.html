@@ -54,19 +54,49 @@
         </ul>
     </nav>
 </header>
-    <div class="contenedor-fluid">
-        <div class="productos">
-            <div class="nombre__producto">
-                <a class="active" href="#">Autolife Premium Gama media</a>
-                <a href="#">Autolife premium Gama alta</a>
-            </div>
+<div class="contenedor-fluid">
+    <div class="productos">
+        <div class="nombre__producto">
+            <button id="btnProductoUno" class="active" onclick="verProductoUno()">Autolife Premium Gama media</button>
+            <button id="btnProductoDos" class="" onclick="verProductoDos()">Autolife premium Gama alta</button>
+        </div>
 
-            <div class="descripcion__producto">
-                Garantía para autos
+        <div id="desProductoUno" class="on">
+            <div class="margin_productoUno">
+            <h4 style="text-align: center;">Características</h4>
+                <ul class="listado_producto">
+                    <li><span>Para unidades con hasta 10 años de antiguedad.</span></li>
+               
+                    <li><span>Unidades de hasta 150,000 kms.</span></li>
+                    
+                    <li><span>Capacidad de arrastre 3 1/2 toneladas.</span></li>
+                 
+                    <li><span>Sin limite de averías.</span></li>
+                
+                    <li><span>Sin deducibles.</span></li>
+                
+                    <li><span>Sin limite de Kms a recorrer.</span></li>
+                    
+                    <li><span>Facturación individual o por bloque.</span></li>
+             
+                    <li><span>Atencion personalizada y atención de averías en menos de 24hrs.</span></li>
+
+                    <li><span>Duracion 14 meses.</span></li>
+                </ul>
             </div>
+                <img src="img/def/senal_mujer.png" alt="Img de mujer" class="img_mujer">
+        </div>
+
+        <div id="desProductoDos" class="off">
+            <h3>Para autos de mas HP</h3>
+            <p>Proximamente</p>
         </div>
 
     </div>
+
+</div>
+
+<script src="scripts/productos.js"></script>
 
 </body>
 

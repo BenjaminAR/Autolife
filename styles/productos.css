@@ -1,9 +1,13 @@
+.active {
+    color: var(--primario) !important;
+}
+
 .productos {
     display: grid;
     grid-template-columns: 30% 70%;
 }
 
-.nombre__producto{
+.nombre__producto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,20 +17,76 @@
     height: 100vh;
 }
 
-.nombre__producto a:first-child{
-    margin-top: 7rem;
+.nombre__producto button:first-child {
+    margin-top: 5rem;
 }
 
-.nombre__producto a{
+.nombre__producto button {
     color: var(--secundario);
     font-size: 2.8rem;
     font-weight: bold;
+    background-color: transparent;
+    border: None;
+    cursor: pointer;
 }
 
-.nombre__producto a:hover{
+.nombre__producto button:hover {
     color: var(--primario);
 }
 
-.active{
-    color:var(--primario)!important;
+/* Manejo dinámico */
+
+
+#desProductoUno.off {
+    display: None;
+}
+
+#desProductoUno.on {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#desProductoDos.off {
+    display: None;
+}
+
+#desProductoDos.on {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Termino de danejo dinámico */
+
+.margin_productoUno {
+    top: -2rem;
+}
+
+.img_mujer{
+    bottom: 0;
+    height: 70%;
+}
+
+#desProductoDos {
+    background: black;
+    color: var(--blanco);
+}
+
+
+.listado_producto {
+    font-size: 1.8rem;
+}
+
+.listado_producto li {
+    margin: 1.3rem 0;
+    color: var(--primario);
+    font-size: 1.9rem;
+}
+
+.listado_producto li span {
+    color: black;
 }
