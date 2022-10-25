@@ -1,26 +1,32 @@
 .productos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 30% 70%;
 }
 
-.producto-item2 p{
-    text-align: center;
-}
-.producto-item1 p{
-    text-align: center;
-}
-
-
-.producto-item2{
-    margin: 0;
-    background-image: url(../img/def/FondoAG.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: var(--blanco);
-    padding: 1rem;
-    height: 45rem;
+.nombre__producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-color: var(--backOscuro);
+    height: 100vh;
 }
 
+.nombre__producto a:first-child{
+    margin-top: 7rem;
+}
 
+.nombre__producto a{
+    color: var(--secundario);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.nombre__producto a:hover{
+    color: var(--primario);
+}
+
+.active{
+    color:var(--primario)!important;
+}
