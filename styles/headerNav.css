@@ -51,7 +51,7 @@ nav ul li a {
 li a.active,
 li a:hover {
     color: var(--primario);
-    transition: .5s;
+    transition: .6s;
 }
 
 .checkbtn {

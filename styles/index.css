@@ -1,3 +1,40 @@
+.accesos_directos{
+    background-color: var(--backClaro);
+    height: 2.5rem;
+}
+
+.accesos_directos ul{
+    margin: 0;
+    float: right;
+    margin-right: 5rem;
+
+}
+
+.accesos_directos ul li{
+    padding: 0 1rem;
+    font-weight: bold;
+    list-style-type: none;
+    display: inline-flex;
+    margin-top: 3px;
+}
+
+.accesos_directos ul li a{
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(86 88 90);
+}
+
+.accesos_directos ul li a:hover{
+    color: var(--primario);
+    transition: .7s;
+}
+
+@media (max-width: 964px) {
+    .accesos_directos{
+        display: none;
+    }
+}
+
 .banner__c {
     z-index: -2;
     background-image: url(../img/def/coche-a.webp);

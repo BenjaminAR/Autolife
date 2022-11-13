@@ -2,8 +2,7 @@
     display: static;
     margin: 0;
     background-image: url(../img/def/proceso.webp);
-    color: white;
-    height: 30rem;
+    height: 18rem;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +15,12 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: rgba(0, 0, 0, 0.583);
+}
+
+.bg-pa h2 {
+    font-size: 3.5rem;
+    color: var(--blanco);
 }
 
 /* Contenedor grid*/
@@ -139,4 +143,82 @@
     .contet-pa__text {
         height: 10rem;
     }
+}
+
+
+.poligono {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    height: 18rem;
+    background-color: var(--primario);
+}
+
+.poligono-dos {
+    clip-path: polygon(0% 0%, 85% 0%, 10% 100%, 0% 100%);
+    background-color: rgba(17, 17, 17, 0.797);
+    height: 18rem;
+    margin-top: -18rem;
+    display: flex;
+    align-items: center;
+}
+
+.poligono-dos p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: -11rem;
+    margin-left: 1rem;
+    color: var(--primario);
+
+}
+
+.img-averiauno {
+    background-image: url(../img/procesoaverias/averias-coche.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@media (min-width: 1600px) {
+    .poligono-dos {
+        clip-path: polygon(0% 0%, 60% 0%, 15% 100%, 0% 100%);
+    }
+
+    .poligono-dos p {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+}
+
+.poligono-reves {
+    height: 18rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.poligono-dos-reves {
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 85% 100%);
+    background-color: rgba(17, 17, 17, 0.797);
+    height: 18rem;
+    margin-top: -18rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.img-averiados {
+    background-image: url(../img/procesoaverias/Llamada.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poligono-dos-reves p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: -11rem;
+    margin-right: 1rem;
+    color: var(--primario);
 }
