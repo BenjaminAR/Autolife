@@ -107,7 +107,7 @@
 
 .titulo__slider{
     background-color: var(--backOscuro);
-    padding: 3.1rem;
+    padding: 3rem 0;
     color: var(--primario);
     margin: 0;
 }
@@ -154,3 +154,18 @@
 }
 
 /* Fin de estilos WhatsApp */
+
+/* Agregar efecto de scroll */
+
+.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Fin del efecto scroll */

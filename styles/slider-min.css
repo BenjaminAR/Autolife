@@ -24,6 +24,7 @@
 }
 .testimonial-text i{
     color: var(--primario);
+    font-size: 1.8rem;
 }
 
 .wrapper p{

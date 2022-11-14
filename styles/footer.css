@@ -27,15 +27,14 @@
     color: var(--primario)
 }
 .bg-footer{
-    text-align: right;
+    text-align: center;
     background-color: var(--backObscuro);
-    color: white;
+    
 }
 
-.bg-footer a{
-    margin-right: 5rem;
+.bg-footer p{
+    font-size: 2rem;
     color: var(--blanco);
-    font-size: 1.4rem;
 }
 
 .bg-footer a:hover{

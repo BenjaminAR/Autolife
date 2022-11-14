@@ -148,23 +148,24 @@
     justify-content: center;
     align-items: flex-end;
     height: 34vh;
-    background-color:#232323;
+    background-color: var(--backOscuro);
     padding: 0 5rem;
 }
 
 .banner__principal-colorb-texto-principal {
     margin: 1rem 0;
-    color: var(--blanco);
+    color: var(--backOscuro);
     font-size: 3rem;
     font-weight: bold;
 }
 
 .banner__principal-colorb-texto {
-    color: var(--blanco);
+    color: var(--backOscuro);
     font-size: 1.7rem;
     margin-bottom: 3rem;
     text-align: justify;
 }
+
 
 .banner__principal-colorb-texto p{
     line-height: 2rem;
