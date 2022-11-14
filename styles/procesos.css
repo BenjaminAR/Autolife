@@ -232,6 +232,13 @@
     background-size: cover;
 }
 
+.img-averiavideo{
+    position: absolute;
+    right: 0;
+    height: 18rem;
+    z-index: -1;
+}
+
 .poligono-dos-reves p{
     font-size: 1.5rem;
     font-weight: bold;
@@ -258,6 +265,9 @@
     }
     .poligono-dos-reves p{
         font-size: 2.7rem;
+    }
+    .img-averiavideo{
+        height: 56rem;
     }
 }
 
