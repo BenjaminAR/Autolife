@@ -269,6 +269,10 @@
         margin-top: -56rem;
     }
 
+    .poligono-dos p{
+        font-size: 2.7rem;
+    }
+
     .poligono-reves {
         height: 56rem;
     }
@@ -285,6 +289,10 @@
     .img-averiavideo {
         height: 56rem;
     }
+}
+
+@media (max-width: 480px) {
+    
 }
 
 .reveal {

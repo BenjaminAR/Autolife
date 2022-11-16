@@ -10,7 +10,7 @@
     width: 100%;
     height: auto;
     color: var(--blanco);
-    background-color: var(--backObscuro);
+    background-color: #232323;
     padding: 0 5rem;
 }
 
@@ -28,7 +28,7 @@
 }
 .bg-footer{
     text-align: center;
-    background-color: var(--backObscuro);
+    background-color: #232323;
     
 }
 
@@ -84,3 +84,28 @@
     }
 
 }
+
+
+.footer__contact i{
+    color: var(--primario);
+    padding-right: .8rem;
+}
+
+.footer__nav ul {
+    padding: 0;
+    
+}
+
+
+
+.footer__nav ul li{
+    list-style: none;
+    padding: .8rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.footer__nav ul li:first-child{
+    padding: 0;
+}
+

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/headerNav.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/productos.css">
+    <link rel="stylesheet" href="styles/contacto.css">
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <title>Autolife: Empresa de gestión de garantias para autos</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-89JQMMKQJE"></script>
@@ -57,13 +58,14 @@
 <div class="contenedor-fluid">
     <div class="productos">
         <div class="nombre__producto">
-            <button id="btnProductoUno" class="active" onclick="verProductoUno()">Autolife Premium Gama media</button>
-            <button id="btnProductoDos" class="" onclick="verProductoDos()">Autolife premium Gama alta</button>
+            <button id="btnProductoUno" class="active" onclick="verProductoUno()">Premium Gama media </button>
+            <button id="btnProductoDos" class="" onclick="verProductoDos()">Premium Gama alta <i
+                    class="fa-sharp fa-solid fa-greater-than"></i> </button>
         </div>
 
         <div id="desProductoUno" class="on">
             <div class="margin_productoUno">
-            <h4 style="text-align: center;">Características</h4>
+                <h4 style="text-align: center;">Características</h4>
                 <ul class="listado_producto">
                     <li><span>Para unidades con hasta 10 años de antiguedad.</span></li>
                     <li><span>Unidades de hasta 150,000 kms.</span></li>
@@ -76,7 +78,7 @@
                     <li><span>Duracion 14 meses.</span></li>
                 </ul>
             </div>
-                <img src="img/def/senal_mujer.png" alt="Img de mujer" class="img_mujer">
+            <img src="img/def/senal_mujer.png" alt="Img de mujer" class="img_mujer">
         </div>
 
         <div id="desProductoDos" class="off">
@@ -85,6 +87,77 @@
         </div>
 
     </div>
+
+    <div class="space-3"></div>
+
+    <div class="formulario__datos">
+
+        <h4>¿Quieres más informes? <br>   Contactanos...</h3>
+        <form class="form_" action="enviar.php" method="post">
+            <input class="w-100" type="text" name="name" id="name" placeholder="Nombre" required>
+            <input class="w-100" type="text" name="lastname" id="lastname" placeholder="Apellidos">
+            <input class="w-100 ex" type="email" name="mail" id="mail" placeholder="ejemplo@tucorreo.com" required>
+            <input class="w-100 ex" type="tel" name="phone" id="phone" placeholder="Número de teléfono" required>
+            <textarea class="one w-100" name="message" id="message" cols="auto" rows="auto"
+                placeholder="Comentarios o información"></textarea>
+            <label class="checkbox-form">
+                <input class="two" type="checkbox" value="1" name="privacidad" required> &nbsp; Acepto la <a
+                    href="privacidad.html">politica de privacidad</a>
+            </label>
+            <button class="h-100">Enviar</button>
+        </form>
+    </div>
+
+    <div class="space-3"></div>
+
+    <footer class="contenedor-fluid">
+
+        <div class="footer">
+            <div class="footer__about">
+                <h4>¿Quienes somos?</h4>
+                <p class="lh">
+                    Somos una empresa de gestión de garantías extendida y coberturas mecánicas a nivel nacional que
+                    brindamos un servicio de excelencia.
+                </p>
+            </div>
+    
+            <div class="footer__contact">
+                <h4 class="text-center">Contacto</h4>
+                <p class="text-center">
+                    <i class="fa-solid fa-location-dot iconos--sh"></i>
+                    <span><a href="https://n9.cl/autolife">Descartes 60, Nueva Anzures, CDMX</a></span>
+                </p>
+                <p class="text-center">
+                    <i class="fa-regular fa-envelope iconos--sh"></i>
+                    <span> <a href="mailto:contacto@autolife.mx">contacto@autolife.mx</a></span>
+                </p>
+                <p class="text-center">
+                    <i class="fa-solid fa-phone iconos--sh"></i>
+                    <span> <a href="tel:5526742356">800 780 AUTO</a> </span>
+                </p>
+            </div>
+    
+            <div class="footer__horario">
+                <h4>Horario</h4>
+                <p><span class="footer__dia">Lunes</span> <span>9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Martes</span> <span>9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Miercoles</span> <span>9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Jueves</span> <span>9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Viernes</span> <span>9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Sabado</span> <span>9:00 - 14:00</span></p>
+                <p><span class="footer__dia">Domingo</span> <span> &nbsp; Cerrado </span></p>
+                </p>
+            </div>
+    
+            <span class="cr">
+                <p>© 2022 Autolife. Todos los derechos reservados.</p>
+            </span>
+        </div>
+        <div class="bg-footer">
+            <p style="margin: 0; padding-bottom: 5px;"> <span><i style="color: var(--primario);" class="fa-sharp fa-solid fa-copyright"></i></span> &nbsp; 2021 Copyright Autolife 2022. Todos los derechos reservados.</p>
+    
+        </div>
+    </footer>
 
 </div>
 
