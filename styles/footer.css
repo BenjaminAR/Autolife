@@ -51,13 +51,17 @@
 }
 
 .footer__horario {
-    text-align: center;
+    text-align: left;
     padding-bottom: 2rem;
 }
+
+
+
 
 .footer__horario p{
     margin: .9rem 0;
 }
+
 
 .cr {
     margin: auto 0;
@@ -100,7 +104,7 @@
 
 .footer__nav ul li{
     list-style: none;
-    padding: .8rem 0;
+    padding: .5rem 0;
     font-size: 1.8rem;
     text-align: center;
 }
