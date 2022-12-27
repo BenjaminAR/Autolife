@@ -4,7 +4,7 @@ $(".testmonial_slider_area").owlCarousel({
     items: 2,
     loop: true,
     nav: true,
-    navText: ['<i class="fa fa-arrow-left-long"></i>', '<i class="fa fa-arrow-right-long"></i>'],
+    navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
     margin: 20,
     dots: true,
     responsive: {
