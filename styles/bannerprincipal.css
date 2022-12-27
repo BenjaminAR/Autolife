@@ -73,7 +73,8 @@
 
 .banner__principal-img-testimonios {
     height: 100%;
-    background-image: url(../img/def/OpinionTra.webp);
+    /* background-image: url(../img/def/OpinionTra.webp); */
+    background-image: url(../img/def/MujervCliente.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -126,15 +127,28 @@
     margin-top: 2rem !important; 
 }
 
+
+
 .banner__principal-colora {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 34vh;
     background-color: var(--primario);
     padding: 0 5rem;
 }
+
+.banner__principal-colora-img{
+    background-image: url(../img/def/icoGarantia.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 20%;
+    height: 100%;
+    margin-left: 2rem;
+}
+
 
 @media (max-width: 1020px) {
     .banner__principal-colora {
