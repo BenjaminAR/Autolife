@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Garantizamos automóviles y realizamos programas a la medida. AutoLife - Premium. Características. Unidades. Para unidades hasta con 10 años de ...">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <meta name="author" content="https://github.com/BenjaminAR">
+    <meta name="developer" content="Benjamin Avila">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/carrusellElementosGarantizados.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/navegacionSub.css">
+    
+    
+    <title>Autolife | Gama alta</title>
+</head>
+
+<body>
+
+    <header id="nav">
+        <div class="menu_bar">
+            <a href="../index.html" class="bt-menu"><i class="fas fa-bars"></i></a>
+            <div id="logoResponsive"><a href="../index.html"><img src="../img/LogoAutolife.png" class="logo-header"></a></div>
+        </div>
+
+        <nav id="menu">
+            <div id="logo"><img src="../img/LogoAutolife.png" class="logo-header"></div>
+            <ul>
+                <li><a href="../garantizados.html">Elementos garantizados</a></li>
+                <li class="submenu">
+                    <a href="#">Productos &nbsp; <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="children">
+                        <li><a href="gamaMedia.html">Gama media</a></li>
+                        <li><a href="#">Gama alta</a></li>
+                        <br>
+                    </ul>
+                </li>
+
+                <li><a href="#">Acerca de nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="height: 10rem; background-color: transparent;"></div>
+
+
+    <section class="awSlider">
+        <div class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target=".carousel" data-slide-to="0" class="active"></li>
+                <li data-target=".carousel" data-slide-to="1"></li>
+                <li data-target=".carousel" data-slide-to="2"></li>
+                <li data-target=".carousel" data-slide-to="3"></li>
+                <li data-target=".carousel" data-slide-to="4"></li>
+                <li data-target=".carousel" data-slide-to="5"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../img/Garantizados/1.svg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="../img/Garantizados/2.svg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="../img/Garantizados/3.svg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="../img/Garantizados/4.svg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="../img/Garantizados/5.svg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="../img/Garantizados/6.svg">
+                    <div class="carousel-caption"></div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+
+        $(document).ready(main);
+
+        var contador = 1;
+
+        function main() {
+            $('.menu_bar').click(function () {
+                if (contador == 1) {
+                    $('nav').animate({
+                        left: '0'
+                    });
+                    contador = 0;
+                } else {
+                    contador = 1;
+                    $('nav').animate({
+                        left: '-100%'
+                    });
+                }
+            });
+            // Mostramos y ocultamos submenus
+            $('.submenu').click(function () {
+                $(this).children('.children').slideToggle();
+            });
+        }
+
+        //Script para carruselElemetosGarantizados
+        
+        $('section.awSlider .carousel').carousel({
+            pause: "hover",
+            interval: 2500
+        });
+
+        $('section.awSlider .carousel').on('slid.bs.carousel', function () {
+            var bscn = $(this).find('.item.active > img').attr('src');
+            $('section.awSlider > img').attr('src', bscn);
+        });
+
+
+    </script>
+
+</body>
+
+</html>
