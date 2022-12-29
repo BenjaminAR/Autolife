@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="En Autolife Garantizamos automóviles y realizamos programas a la medida. AutoLife - Premium. Características. Unidades. Para unidades hasta con 10 años de ...">
+    <meta name="description" content="En Autolife Garantizamos automóviles y realizamos programas a la medida. AutoLife - Premium. Características. Unidades. Para unidades hasta con 10 años de ...">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <meta name="author" content="https://github.com/BenjaminAR">
     <meta name="developer" content="Benjamin Avila">
@@ -14,8 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/global.css">
@@ -45,24 +43,23 @@
     <header id="nav">
         <div class="menu_bar">
             <a href="#" class="bt-menu"><i class="fas fa-bars"></i></a>
-            <div id="logoResponsive"><a href="#"><img src="img/LogoAutolife.png" class="logo-header"></a></div>
+            <div id="logoResponsive"><a href="index.html"><img src="img/LogoAutolife.png" class="logo-header"></a></div>
         </div>
 
         <nav id="menu">
-            <div id="logo"><img src="img/LogoAutolife.png" class="logo-header"></div>
+            <div id="logo"><a href="index.html"><img src="img/LogoAutolife.png" class="logo-header"></a></div>
             <ul>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Elementos garantizados</a></li>
+                <li><a href="garantizados.html">Elementos garantizados</a></li>
                 <li class="submenu">
                     <a href="#">Productos &nbsp; <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="children">
-                        <li><a href="#">Gama media</a></li>
+                        <li><a href="products/gamaMedia.html">Gama media</a></li>
                         <li><a href="#">Gama alta</a></li>
                         <br>
                     </ul>
                 </li>
 
-                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="somos.html">Acerca de nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -200,9 +197,10 @@
                     mecánicos, eléctricos y electrónicos de los vehículos.
                 </p>
                 <br>
-                <span style="text-align: right;"> Que se encuentran en el contrato explícitamente detallado.</span>
+                <span style="text-align: right; color: var(--backOscuro);"> Que se encuentran en el contrato explícitamente detallado.</span>
 
             </main>
+            <div class="banner__principal-colora-img"></div>
         </div>
         <div class="banner__principal-colorb" style="text-align: right;">
             <p class="banner__principal-colorb-texto-principal" style="text-align: right; color: var(--blanco);">
@@ -435,27 +433,23 @@
             </div>
 
             <div class="footer__horario">
-                <h4>Horario</h4>
-                <p><span class="footer__dia">Lunes</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Martes</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Miercoles</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Jueves</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Viernes</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Sabado</span> <span>9:00 - 14:00</span></p>
-                <p><span class="footer__dia">Domingo</span> <span> &nbsp; Cerrado </span></p>
+                <h4 style="text-align: center;">Horario</h4>
+                <p><span class="footer__dia">Lunes a viernes de 9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Sábado de 9:00 - 14:00</span></p>
                 </p>
             </div>
 
             <span class="cr">
                 <a href="index.html"><img src="img/LogoSmallClaro.png" alt="" height="90rem"></a>
                 <p style="text-align: center;">Garantizamos la tranquilidad de tu camino.</p>
+                <br>
+                <a href="privacidad.html"><p style="text-align: center; font-size: 1.2rem;">Aviso de privacidad.</p></a>
             </span>
         </div>
         <div class="bg-footer">
             <p style="margin: 0; padding-bottom: 5px; font-size: 1.5rem;"> <span><i style="color: var(--primario);" class="fa-sharp fa-solid fa-copyright"></i></span> &nbsp;Copyright Autolife 2022.</p>
         </div>
     </footer>
-
 
     <div class="whatsapp"><a href="https://wa.me/+5215610012964" target="_blank"><i
                 class="fa-brands fa-whatsapp"></i></a>
@@ -471,6 +465,45 @@
         jQuery(function ($) {
             $('.slider').sss();
         });
+
+        
+        $(document).ready(main);
+
+        var contador = 1;
+
+        function main() {
+            $('.menu_bar').click(function () {
+                if (contador == 1) {
+                    $('nav').animate({
+                        left: '0'
+                    });
+                    contador = 0;
+                } else {
+                    contador = 1;
+                    $('nav').animate({
+                        left: '-100%'
+                    });
+                }
+            });
+            // Mostramos y ocultamos submenus
+            $('.submenu').click(function () {
+                $(this).children('.children').slideToggle();
+            });
+        }
+
+        //Script para carruselElemetosGarantizados
+        
+        $('section.awSlider .carousel').carousel({
+            pause: "hover",
+            interval: 2500
+        });
+
+        $('section.awSlider .carousel').on('slid.bs.carousel', function () {
+            var bscn = $(this).find('.item.active > img').attr('src');
+            $('section.awSlider > img').attr('src', bscn);
+        });
+
+
     </script>
 </body>
 
