@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <meta name="description"
-        content="Autolife es una empresa fromada por un experto y calificado equipo de profesionales con más de 50 años de experiencia en el ámbito...">
+    <meta name="description" content="Autolife es una empresa fromada por un experto y calificado equipo de profesionales con más de 50 años de experiencia en el ámbito...">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/headerNav.css">
+    <link rel="stylesheet" href="styles/navegacionSub.css">
     <link rel="stylesheet" href="styles/somos.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
@@ -23,25 +22,30 @@
 </head>
 
 <body>
-    <header id="header-nav">
-        <nav class="sombra">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="index.html" class="enlace">
-                <img src="img/LogoSmall.webp" alt="logo" class="logo">
-            </a>
-            <ul>
-                <li><a class="entrada-app" href="productos.html">Productos</a></li>
-                <li><a class="entrada-app" href="garantizados.html">Elementos garantizados</a></li>
-                <li><a class="entrada-app a-active" href="#">Acerca de nosotros</a></li>
-                <li><a class="entrada-app" href="serviciocliente.html">Servicio al cliente</a></li>
-                <li><a class="entrada-app" href="https://autolife.789.com.mx/login">Iniciar sesion</a></li>
+    <header id="nav">
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><i class="fas fa-bars"></i></a>
+            <div id="logoResponsive"><a href="index.html"><img src="img/LogoAutolife.png" class="logo-header"></a></div>
+        </div>
 
+        <nav id="menu">
+            <div id="logo"><a href="index.html"><img src="img/LogoAutolife.png" class="logo-header"></a></div>
+            <ul>
+                <li><a href="garantizados.html">Elementos garantizados</a></li>
+                <li class="submenu">
+                    <a href="#">Productos &nbsp; <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="children">
+                        <li><a href="products/gamaMedia.html">Gama media</a></li>
+                        <li><a href="#">Gama alta</a></li>
+                        <br>
+                    </ul>
+                </li>
+
+                <li><a href="somos.html">Acerca de nosotros</a></li>
             </ul>
         </nav>
     </header>
+    <div style="height: 10rem; background-color: transparent;"></div>
 
 
     <div class="contenedor-fluid">

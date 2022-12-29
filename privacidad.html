@@ -14,35 +14,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/headerNav.css">
-    <link rel="stylesheet" href="styles/privacidad.css">
+    <link rel="stylesheet" href="styles/navegacionSub.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/privacidad.css">
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <title>Autolife | Aviso de privacidad</title>
 </head>
 
 <body>
-    <header id="header-nav">
-        <nav class="sombra">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="index.html" class="enlace">
-                <img src="img/LogoAutolife.png" alt="logo" class="logo">
-            </a>
+
+    <header id="nav">
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><i class="fas fa-bars"></i></a>
+            <div id="logoResponsive">
+                <a href="index.html"><img src="img/LogoAutolife.png" class="logo-header"></a>
+            </div>
+        </div>
+
+        <nav id="menu">
+            <div id="logo"><a href="index.html"><img src="img/LogoAutolife.png" class="logo-header"></a></div>
             <ul>
-                <li><a class="entrada-app" href="productos.html">Productos</a></li>
-                <li><a class="entrada-app" href="garantizados.html">Elementos garantizados</a></li>
-                <li><a class="entrada-app" href="somos.html">Acerca de nosotros</a></li>
-                <li><a class="entrada-app" href="serviciocliente.html">Servicio al cliente</a></li>
-                <li><a class="entrada-app" href="https://autolife.789.com.mx/login">Iniciar sesion</a></li>
-    
+                <li><a href="garantizados.html">Elementos garantizados</a></li>
+                <li class="submenu">
+                    <a href="#">Productos &nbsp; <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="children">
+                        <li><a href="products/gamaMedia.html">Gama media</a></li>
+                        <li><a href="products/gamaAlta.html">Gama alta</a></li>
+                        <br>
+                    </ul>
+                </li>
+
+                <li><a href="somos.html">Acerca de nosotros</a></li>
             </ul>
         </nav>
     </header>
+    <div style="height: 10rem; background-color: transparent;"></div>
 
-    <div class="space-7"></div>
+    <div class="space-3"></div>
 
     <main class="contenedor" id="_privacidad">
         <h1 class="font-center">Aviso de privacidad</h1>
@@ -156,26 +164,65 @@
             </div>
 
             <div class="footer__horario">
-                <h4>Horario</h4>
-                <p><span class="footer__dia">Lunes</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Martes</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Miercoles</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Jueves</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Viernes</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Sabado</span> <span>9:00 - 14:00</span></p>
-                <p><span class="footer__dia">Domingo</span> <span> &nbsp; Cerrado </span></p>
+                <h4 style="text-align: center;">Horario</h4>
+                <p><span class="footer__dia">Lunes a viernes de 9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Sábado de 9:00 - 14:00</span></p>
                 </p>
             </div>
 
             <span class="cr">
                 <a href="index.html"><img src="img/LogoSmallClaro.png" alt="" height="90rem"></a>
                 <p style="text-align: center;">Garantizamos la tranquilidad de tu camino.</p>
+                <br>
+                <a href="privacidad.html"><p style="text-align: center; font-size: 1.2rem;">Aviso de privacidad.</p></a>
             </span>
         </div>
         <div class="bg-footer">
             <p style="margin: 0; padding-bottom: 5px; font-size: 1.5rem;"> <span><i style="color: var(--primario);" class="fa-sharp fa-solid fa-copyright"></i></span> &nbsp;Copyright Autolife 2022.</p>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(main);
+
+        var contador = 1;
+
+        function main() {
+            $('.menu_bar').click(function () {
+                if (contador == 1) {
+                    $('nav').animate({
+                        left: '0'
+                    });
+                    contador = 0;
+                } else {
+                    contador = 1;
+                    $('nav').animate({
+                        left: '-100%'
+                    });
+                }
+            });
+            // Mostramos y ocultamos submenus
+            $('.submenu').click(function () {
+                $(this).children('.children').slideToggle();
+            });
+        }
+
+        //Script para carruselElemetosGarantizados
+
+        $('section.awSlider .carousel').carousel({
+            pause: "hover",
+            interval: 2500
+        });
+
+        $('section.awSlider .carousel').on('slid.bs.carousel', function () {
+            var bscn = $(this).find('.item.active > img').attr('src');
+            $('section.awSlider > img').attr('src', bscn);
+        });
+
+
+    </script>
 
 </body>
 
