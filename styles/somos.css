@@ -1,9 +1,8 @@
 
 .img__somos_dos {
-    margin-top: 1.7rem;
-    height: 50vh;
+    height: 52vh;
     background: linear-gradient(to bottom, transparent, var(--backObscuro)),
-        url("../img/def/platica2.webp") top no-repeat;
+        url("../img/def/equipo.jpg") top no-repeat;
     display: flex;
     justify-content: center;
     align-items: flex-end;
