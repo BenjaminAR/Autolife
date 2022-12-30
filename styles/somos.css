@@ -1,4 +1,3 @@
-
 .img__somos_dos {
     height: 52vh;
     background: linear-gradient(to bottom, transparent, var(--backObscuro)),
@@ -6,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    
+
 }
 
 /* 
@@ -14,7 +13,7 @@
         url("../img/def/platica2.webp") top no-repeat;
 */
 
-.somos_h1{
+.somos_h1 {
     text-transform: uppercase;
     font-size: 2.9rem;
     color: var(--backObscuro);
@@ -23,7 +22,7 @@
     margin-bottom: -3.5rem;
 }
 
-.cont__somos{
+.cont__somos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,10 +33,14 @@
 
 
 @media (min-width: 860px) {
-    .cont__somos{
+    .cont__somos {
         padding: 0 2rem;
     }
+
 }
+
+
+
 .cont__somos p {
     font-weight: 300;
     font-size: 2rem;
@@ -47,45 +50,51 @@
     margin-top: 1rem;
 }
 
+@media (min-width: 450px) {
+    .cont__somos p {
+        margin-top: 12rem;
+    }
+}
+
 .cont__somos p span {
     font-size: 2.1rem;
     font-weight: bold;
     color: var(--primario);
 }
 
-.somos_clientes{
+.somos_clientes {
     margin: 0 5rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
 }
 
 @media (max-width: 780px) {
-    .somos_clientes{
+    .somos_clientes {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         padding: 2rem;
-    }   
+    }
 }
 
-.somos_clientes-socios h4{
+.somos_clientes-socios h4 {
     text-align: center;
     color: var(--backObscuro);
 }
 
-.somos_clientes-benef h4{
+.somos_clientes-benef h4 {
     text-align: center;
     color: var(--backObscuro);
 }
 
 
-.somos_clientes-socios p{
+.somos_clientes-socios p {
     text-align: justify;
     color: var(--backObscuro);
 }
 
-.somos_clientes-benef p{
+.somos_clientes-benef p {
     text-align: justify;
     color: var(--backObscuro);
 }
