@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <meta name="description" content="Autolife es una empresa fromada por un experto y calificado equipo de profesionales con más de 50 años de experiencia en el ámbito...">
+    <meta name="description"
+        content="Autolife es una empresa fromada por un experto y calificado equipo de profesionales con más de 50 años de experiencia en el ámbito...">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -42,10 +43,11 @@
                 </li>
 
                 <li><a href="somos.html">Acerca de nosotros</a></li>
+
             </ul>
         </nav>
     </header>
-    <div style="height: 10rem; background-color: transparent;"></div>
+    <div style="height: 15vh; background-color: transparent;"></div>
 
 
     <div class="contenedor-fluid">
@@ -136,32 +138,55 @@
             </div>
 
             <div class="footer__horario">
-                <h4>Horario</h4>
-                <p><span class="footer__dia">Lunes</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Martes</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Miercoles</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Jueves</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Viernes</span> <span>9:00 - 18:00</span></p>
-                <p><span class="footer__dia">Sabado</span> <span>9:00 - 14:00</span></p>
-                <p><span class="footer__dia">Domingo</span> <span> &nbsp; Cerrado </span></p>
+                <h4 style="text-align: center;">Horario</h4>
+                <p><span class="footer__dia">Lunes a viernes de 9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Sábado de 9:00 - 14:00</span></p>
                 </p>
             </div>
 
             <span class="cr">
-                <a href="index.html"><img src="img/LogoSmall.png" alt="" height="90rem"></a>
+                <a href="index.html"><img src="img/LogoSmallClaro.png" alt="" height="90rem"></a>
                 <p style="text-align: center;">Garantizamos la tranquilidad de tu camino.</p>
+                <br>
+                <a href="privacidad.html">
+                    <p style="text-align: center; font-size: 1.2rem;">Aviso de privacidad.</p>
+                </a>
             </span>
         </div>
         <div class="bg-footer">
-            <p style="margin: 0; padding-bottom: 5px;"> <span><i style="color: var(--primario);"
-                        class="fa-sharp fa-solid fa-copyright"></i></span> &nbsp; 2021 Copyright Autolife 2022. Todos
-                los
-                derechos reservados.</p>
-
+            <p style="margin: 0; padding-bottom: 5px; font-size: 1.5rem;"> <span><i style="color: var(--primario);"
+                        class="fa-sharp fa-solid fa-copyright"></i></span> &nbsp;Copyright Autolife 2022.</p>
         </div>
     </footer>
 
+
     <script src="scripts/scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(main);
+
+        var contador = 1;
+
+        function main() {
+            $('.menu_bar').click(function () {
+                if (contador == 1) {
+                    $('nav').animate({
+                        left: '0'
+                    });
+                    contador = 0;
+                } else {
+                    contador = 1;
+                    $('nav').animate({
+                        left: '-100%'
+                    });
+                }
+            });
+            // Mostramos y ocultamos submenus
+            $('.submenu').click(function () {
+                $(this).children('.children').slideToggle();
+            });
+        }
+    </script>
 </body>
 
 </html>

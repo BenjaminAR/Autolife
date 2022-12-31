@@ -55,7 +55,11 @@
     padding-bottom: 2rem;
 }
 
-
+@media (max-width: 650px) {
+    .footer__horario{
+        text-align: center;
+    }
+}
 
 
 .footer__horario p{
@@ -84,7 +88,7 @@
 @media (max-width: 768px) {
 
     .cr {
-        display: none;
+       margin-top: 1rem;
     }
 
 }

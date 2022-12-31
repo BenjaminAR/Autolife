@@ -5,13 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
+    margin-bottom: 4rem;
 }
-
-/* 
-    background: linear-gradient(to bottom, transparent, #EF8644),
-        url("../img/def/platica2.webp") top no-repeat;
-*/
 
 .somos_h1 {
     text-transform: uppercase;
@@ -27,7 +22,6 @@
     justify-content: center;
     align-items: center;
     height: 25vh;
-    margin-top: 3rem;
     max-width: 120rem;
 }
 
@@ -37,29 +31,50 @@
         padding: 0 2rem;
     }
 
+
 }
-
-
 
 .cont__somos p {
     font-weight: 300;
     font-size: 2rem;
     line-height: 3.4rem;
     text-align: center;
-    margin: 0;
-    margin-top: 1rem;
 }
 
-@media (min-width: 450px) {
-    .cont__somos p {
-        margin-top: 12rem;
-    }
-}
+
 
 .cont__somos p span {
     font-size: 2.1rem;
     font-weight: bold;
     color: var(--primario);
+}
+
+@media (max-width: 960px) {
+    .img__somos_dos{
+        height: 35vh;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .cont__somos p{
+        margin-top: 14rem;
+    }
+    .cont__somos p span{
+        font-size: 1.9rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .somos_h1{
+        font-size: 2.3rem;
+    }
+    .cont__somos p{
+        margin-top: 18rem;
+    }
 }
 
 .somos_clientes {
@@ -71,10 +86,9 @@
 
 @media (max-width: 780px) {
     .somos_clientes {
+        margin: 14rem 2rem;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        padding: 2rem;
     }
 }
 
