@@ -1,3 +1,16 @@
+.bannerGamaMedia{
+
+    width: 100%;
+    height: auto;
+}
+/*     background-image: url(../../img/Products/Banner/GamaMedia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+ */
+
+
+
 .gamaMediabk-img {
     width: 100%;
     height: 35vh;
@@ -17,3 +30,4 @@
         align-items: flex-start;
     }
 }
+
