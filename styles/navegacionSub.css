@@ -214,3 +214,13 @@ li:hover .children {
 		margin-right: 20px;
 	}
 }
+
+a:focus, a:hover {
+    color: var(--primario);
+    text-decoration: none!important;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
