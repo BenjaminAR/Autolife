@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Garantizamos automóviles y realizamos programas a la medida. AutoLife - Premium. Características. Unidades. Para unidades hasta con 10 años de ...">
+    <meta name="description"
+        content="Garantizamos automóviles y realizamos programas a la medida. AutoLife - Premium. Características. Unidades. Para unidades hasta con 10 años de ...">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <meta name="author" content="https://github.com/BenjaminAR">
     <meta name="developer" content="Benjamin Avila">
@@ -18,28 +19,44 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/navegacionSub.css">
-    
-    
-    <title>Autolife | Gama alta</title>
+    <link rel="stylesheet" href="../styles/Products/gamaMedia.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
+    <style>
+        .listado_producto li {
+            margin: .2rem 0;
+            color: var(--primario);
+            font-size: 1.8;
+            list-style-type: disc bold;
+        }
+
+        .listado_producto li span {
+            color: black;
+        }
+    </style>
+
+    <title>Autolife | Gama media</title>
 </head>
 
 <body>
 
     <header id="nav">
         <div class="menu_bar">
-            <a href="../index.html" class="bt-menu"><i class="fas fa-bars"></i></a>
-            <div id="logoResponsive"><a href="../index.html"><img src="../img/LogoAutolife.png" class="logo-header"></a></div>
+            <a href="#" class="bt-menu"><i class="fas fa-bars"></i></a>
+            <div id="logoResponsive"><a href="../index.html"><img src="../img/LogoAutolife.png" class="logo-header"></a>
+            </div>
         </div>
 
         <nav id="menu">
-            <div id="logo"><img src="../img/LogoAutolife.png" class="logo-header"></div>
+            <div id="logo"><a href="../index.html"><img src="../img/LogoAutolife.png" class="logo-header"></a></div>
             <ul>
                 <li><a href="../garantizados.html">Elementos garantizados</a></li>
                 <li class="submenu">
                     <a href="#">Productos &nbsp; <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="children">
-                        <li><a href="gamaMedia.html">Gama media</a></li>
-                        <li><a href="#">Gama alta</a></li>
+                        <li><a href="#">Gama media</a></li>
+                        <li><a href="gamaAlta.html">Gama alta</a></li>
                         <br>
                     </ul>
                 </li>
@@ -48,94 +65,181 @@
             </ul>
         </nav>
     </header>
-    <div style="height: 10rem; background-color: transparent;"></div>
+    <div style="height: 6.9rem; background-color: transparent;"></div>
 
+    <div class="bannerGamaMedia">
+        <img style="width: 100%;" src="../img/Products/Banner/GamaAlta.svg" alt="Banner de Gama media">
+    </div>
 
-    <section class="awSlider">
-        <div class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target=".carousel" data-slide-to="0" class="active"></li>
-                <li data-target=".carousel" data-slide-to="1"></li>
-                <li data-target=".carousel" data-slide-to="2"></li>
-                <li data-target=".carousel" data-slide-to="3"></li>
-                <li data-target=".carousel" data-slide-to="4"></li>
-                <li data-target=".carousel" data-slide-to="5"></li>
-            </ol>
+    <div class="contenedor-fluid gamaMedia">
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="../img/Garantizados/1.svg">
-                    <div class="carousel-caption"></div>
+        <div id="desProductoUno" class="on">
+            <div class="contenedor">
+                <h4>Características</h4>
+                <ul class="listado_producto">
+                    <li><span>Para unidades con hasta 10 años de antigüedad.</span></li>
+                    <li><span>Unidades de hasta 150,000 kms.</span></li>
+                    <li><span>Sin limite de averías.</span></li>
+                    <li><span>Sin deducibles.</span></li>
+                    <li><span>Sin limite de Kms a recorrer.</span></li>
+                    <li><span>Facturación individual o por bloque.</span></li>
+                    <li><span>Atencion personalizada y atención de averías en menos de 24hrs.</span></li>
+                    <li><span>Duracion 14 meses.</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="awSlider">
+            <div class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target=".carousel" data-slide-to="0" class="active"></li>
+                    <li data-target=".carousel" data-slide-to="1"></li>
+                    <li data-target=".carousel" data-slide-to="2"></li>
+                    <li data-target=".carousel" data-slide-to="3"></li>
+                    <li data-target=".carousel" data-slide-to="4"></li>
+                    <li data-target=".carousel" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="item-img" src="../img/Garantizados/1.svg">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/Garantizados/2.svg">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/Garantizados/3.svg">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/Garantizados/4.svg">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/Garantizados/5.svg">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/Garantizados/6.svg">
+                        <div class="carousel-caption"></div>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="../img/Garantizados/2.svg">
-                    <div class="carousel-caption"></div>
-                </div>
-                <div class="item">
-                    <img src="../img/Garantizados/3.svg">
-                    <div class="carousel-caption"></div>
-                </div>
-                <div class="item">
-                    <img src="../img/Garantizados/4.svg">
-                    <div class="carousel-caption"></div>
-                </div>
-                <div class="item">
-                    <img src="../img/Garantizados/5.svg">
-                    <div class="carousel-caption"></div>
-                </div>
-                <div class="item">
-                    <img src="../img/Garantizados/6.svg">
-                    <div class="carousel-caption"></div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </a>
+                <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <br>
+
+    <section class="contenedor-fluid" id="_contacto">
+        <div class="space-3"></div>
+        <div class="contenedor">
+            <div class="formulario">
+                <aside class="formulario__aside">
+                    <i class="fa-regular fa-paper-plane i-plane"></i>
+                    <p class="bold">
+                        No dejes pasar un dia mas sin el servicio de una garantia extendida,
+                        contactanos.
+                    </p>
+                    <i class="fa-regular fa-envelope iconos--sh i-aside"></i>
+                    <p>contacto@autolife.com.mx</p>
+                    <i class="fa-solid fa-phone iconos--sh i-aside"></i>
+                    <p>800 780 AUTO</p>
+                    <i class="fa-solid fa-location-dot i-aside"></i>
+                    <p>Descartes 60, Nueva Anzures, CDMX</p>
+
+                </aside>
+                <div class="formulario__datos">
+                    <form class="form_" action="enviar.php" method="post">
+                        <input class="w-100" type="text" name="name" id="name" placeholder="Nombre" required>
+                        <input class="w-100" type="text" name="lastname" id="lastname" placeholder="Apellidos">
+                        <input class="w-100 ex" type="email" name="mail" id="mail" placeholder="ejemplo@tucorreo.com"
+                            required>
+                        <input class="w-100 ex" type="tel" name="phone" id="phone" placeholder="Número de teléfono"
+                            required>
+                        <textarea class="one w-100" name="message" id="message" cols="auto" rows="auto"
+                            placeholder="Comentarios o información"></textarea>
+                        <label class="checkbox-form">
+                            <input class="two" type="checkbox" value="1" name="privacidad" required> &nbsp; Acepto la <a
+                                href="privacidad.html">politica de privacidad</a>
+                        </label>
+                        <button class="h-100">Enviar</button>
+                    </form>
                 </div>
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            </a>
-            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            </a>
         </div>
     </section>
+    <br>
+    <br>
+    <footer class="contenedor-fluid">
+
+        <div class="footer">
+            <div class="footer__nav">
+                <h4 style="text-align: center;">Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="somos.html">¿Quienes somos?</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="https://autolife.789.com.mx/login">Empleados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h4 class="text-center">Contacto</h4>
+                <p class="text-center">
+                    <i class="fa-solid fa-location-dot iconos--sh"></i>
+                    <span><a href="https://n9.cl/autolife">Descartes 60, Nueva Anzures, CDMX</a></span>
+                </p>
+                <p class="text-center">
+                    <i class="fa-regular fa-envelope iconos--sh"></i>
+                    <span> <a href="mailto:contacto@autolife.mx">contacto@autolife.mx</a></span>
+                </p>
+                <p class="text-center">
+                    <i class="fa-solid fa-phone iconos--sh"></i>
+                    <span> <a href="tel:5526742356">800 780 AUTO</a> </span>
+                </p>
+            </div>
+
+            <div class="footer__horario">
+                <h4 style="text-align: center;">Horario</h4>
+                <p><span class="footer__dia">Lunes a viernes de 9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Sábado de 9:00 - 14:00</span></p>
+                </p>
+            </div>
+
+            <span class="cr">
+                <a href="index.html"><img src="../img/LogoSmallClaro.png" alt="" height="90rem"></a>
+                <p style="text-align: center;">Garantizamos la tranquilidad de tu camino.</p>
+                <br>
+                <a href="privacidad.html">
+                    <p style="text-align: center; font-size: 1.2rem;">Aviso de privacidad.</p>
+                </a>
+            </span>
+        </div>
+        <div class="bg-footer">
+            <p style="margin: 0; padding-bottom: 5px; font-size: 1.5rem;"> <span><i style="color: var(--primario);"
+                        class="fa-sharp fa-solid fa-copyright"></i></span> &nbsp;Copyright Autolife 2022.</p>
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="../scripts/header.js"></script>
     <script>
-
-        $(document).ready(main);
-
-        var contador = 1;
-
-        function main() {
-            $('.menu_bar').click(function () {
-                if (contador == 1) {
-                    $('nav').animate({
-                        left: '0'
-                    });
-                    contador = 0;
-                } else {
-                    contador = 1;
-                    $('nav').animate({
-                        left: '-100%'
-                    });
-                }
-            });
-            // Mostramos y ocultamos submenus
-            $('.submenu').click(function () {
-                $(this).children('.children').slideToggle();
-            });
-        }
-
         //Script para carruselElemetosGarantizados
-        
-        $('section.awSlider .carousel').carousel({
-            pause: "hover",
-            interval: 2500
-        });
 
         $('section.awSlider .carousel').on('slid.bs.carousel', function () {
             var bscn = $(this).find('.item.active > img').attr('src');

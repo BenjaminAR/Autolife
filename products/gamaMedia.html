@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/navegacionSub.css">
     <link rel="stylesheet" href="../styles/Products/gamaMedia.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
     <style>
         .listado_producto li {
             margin: .2rem 0;
@@ -31,7 +34,6 @@
         .listado_producto li span {
             color: black;
         }
-
     </style>
 
     <title>Autolife | Gama media</title>
@@ -63,17 +65,17 @@
             </ul>
         </nav>
     </header>
-    <div style="height: 7.5rem; background-color: transparent;"></div>
+    <div style="height: 6.9rem; background-color: transparent;"></div>
 
-
-
-    <br>
+    <div class="bannerGamaMedia">
+        <img style="width: 100%;" src="../img/Products/Banner/GamaMedia.svg" alt="Banner de Gama media">
+    </div>
 
     <div class="contenedor-fluid gamaMedia">
 
         <div id="desProductoUno" class="on">
             <div class="contenedor">
-                <h4>Características <span style="color: var(--primario);">gama media</span></h4>
+                <h4>Características</h4>
                 <ul class="listado_producto">
                     <li><span>Para unidades con hasta 10 años de antigüedad.</span></li>
                     <li><span>Unidades de hasta 150,000 kms.</span></li>
@@ -141,6 +143,96 @@
 
     <br>
 
+    <section class="contenedor-fluid" id="_contacto">
+        <div class="space-3"></div>
+        <div class="contenedor">
+            <div class="formulario">
+                <aside class="formulario__aside">
+                    <i class="fa-regular fa-paper-plane i-plane"></i>
+                    <p class="bold">
+                        No dejes pasar un dia mas sin el servicio de una garantia extendida,
+                        contactanos.
+                    </p>
+                    <i class="fa-regular fa-envelope iconos--sh i-aside"></i>
+                    <p>contacto@autolife.com.mx</p>
+                    <i class="fa-solid fa-phone iconos--sh i-aside"></i>
+                    <p>800 780 AUTO</p>
+                    <i class="fa-solid fa-location-dot i-aside"></i>
+                    <p>Descartes 60, Nueva Anzures, CDMX</p>
+
+                </aside>
+                <div class="formulario__datos">
+                    <form class="form_" action="enviar.php" method="post">
+                        <input class="w-100" type="text" name="name" id="name" placeholder="Nombre" required>
+                        <input class="w-100" type="text" name="lastname" id="lastname" placeholder="Apellidos">
+                        <input class="w-100 ex" type="email" name="mail" id="mail" placeholder="ejemplo@tucorreo.com"
+                            required>
+                        <input class="w-100 ex" type="tel" name="phone" id="phone" placeholder="Número de teléfono"
+                            required>
+                        <textarea class="one w-100" name="message" id="message" cols="auto" rows="auto"
+                            placeholder="Comentarios o información"></textarea>
+                        <label class="checkbox-form">
+                            <input class="two" type="checkbox" value="1" name="privacidad" required> &nbsp; Acepto la <a
+                                href="privacidad.html">politica de privacidad</a>
+                        </label>
+                        <button class="h-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <footer class="contenedor-fluid">
+
+        <div class="footer">
+            <div class="footer__nav">
+                <h4 style="text-align: center;">Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="somos.html">¿Quienes somos?</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="https://autolife.789.com.mx/login">Empleados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h4 class="text-center">Contacto</h4>
+                <p class="text-center">
+                    <i class="fa-solid fa-location-dot iconos--sh"></i>
+                    <span><a href="https://n9.cl/autolife">Descartes 60, Nueva Anzures, CDMX</a></span>
+                </p>
+                <p class="text-center">
+                    <i class="fa-regular fa-envelope iconos--sh"></i>
+                    <span> <a href="mailto:contacto@autolife.mx">contacto@autolife.mx</a></span>
+                </p>
+                <p class="text-center">
+                    <i class="fa-solid fa-phone iconos--sh"></i>
+                    <span> <a href="tel:5526742356">800 780 AUTO</a> </span>
+                </p>
+            </div>
+
+            <div class="footer__horario">
+                <h4 style="text-align: center;">Horario</h4>
+                <p><span class="footer__dia">Lunes a viernes de 9:00 - 18:00</span></p>
+                <p><span class="footer__dia">Sábado de 9:00 - 14:00</span></p>
+                </p>
+            </div>
+
+            <span class="cr">
+                <a href="index.html"><img src="../img/LogoSmallClaro.png" alt="" height="90rem"></a>
+                <p style="text-align: center;">Garantizamos la tranquilidad de tu camino.</p>
+                <br>
+                <a href="privacidad.html">
+                    <p style="text-align: center; font-size: 1.2rem;">Aviso de privacidad.</p>
+                </a>
+            </span>
+        </div>
+        <div class="bg-footer">
+            <p style="margin: 0; padding-bottom: 5px; font-size: 1.5rem;"> <span><i style="color: var(--primario);"
+                        class="fa-sharp fa-solid fa-copyright"></i></span> &nbsp;Copyright Autolife 2022.</p>
+        </div>
+    </footer>
 
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
