@@ -1,4 +1,6 @@
-
+.carousel-inner{
+    height: 100%;
+}
 
 section.awSlider .carousel {
     display: table;
@@ -6,8 +8,8 @@ section.awSlider .carousel {
 }
 
 section.awSlider {
-    margin: 1rem auto;
-    padding: 1rem;
+    margin: 0;
+    padding: 0;
     position: relative;
     display: table;
     -webkit-touch-callout: none;
