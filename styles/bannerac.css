@@ -24,14 +24,23 @@
     padding: 1rem 4rem;
 }
 
-@media (max-width: 768px) {
-    .banner__principal-txt{
-        height: 18vh;
-    }
-}
+
 .banner__principal-txt p{
     color: var(--backObscuro);
     font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .banner__principal-txt{
+        height: 23vh;
+    }
+    .banner__principal-txt p{
+        color: var(--backObscuro);
+        font-size: 2.1rem;
+    }
+    .banner__principal-img{
+        height: 25vh;
+    }
 }
 
 .serviciocliente{
