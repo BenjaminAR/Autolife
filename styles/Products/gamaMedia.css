@@ -16,9 +16,11 @@
 
 @media (max-width: 1055px) {
     .gamaMedia {
+        margin-top: 2rem;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        gap: 3rem;
     }
 }
 
@@ -31,4 +33,26 @@
 
 .listado_producto li span {
     color: black;
+}
+
+.background-img-arteContacto{
+    background-image: url(../../img/Products/Banner/ArteContacto.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 400px) {
+    .bannerGamaMedia{
+        display: none;
+    }
+    .bannerGamaMediaRD{
+        display: block;
+    }
+}
+
+@media (min-width: 401px) {
+    .bannerGamaMediaRD{
+        display: none;
+
+    }
 }
