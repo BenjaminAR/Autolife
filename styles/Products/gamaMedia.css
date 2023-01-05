@@ -1,6 +1,11 @@
+.bannerGamaMedia{
+    width: 100%;
+    height: auto;
+}
+
 .gamaMediabk-img {
     width: 100%;
-    height: 35vh;
+    height: 33vh;
 }
 
 .gamaMedia {
@@ -9,11 +14,21 @@
     align-items: center;
 }
 
-
 @media (max-width: 1055px) {
     .gamaMedia {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
     }
+}
+
+.listado_producto li {
+    margin: 0;
+    color: var(--primario);
+    font-size: 1.8;
+    list-style-type: disc bold;
+}
+
+.listado_producto li span {
+    color: black;
 }
