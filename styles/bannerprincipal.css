@@ -205,7 +205,7 @@
 
 .btn {
     background-color: var(--primario);
-    padding: 1rem;
+    padding: 1rem 2.8rem;
     color: var(--blanco);
     background-color: var(--primario);
     font-weight: bold;
@@ -215,6 +215,7 @@
 
 .btn:hover {
     background-image: linear-gradient(to right, var(--primario) 30%, rgb(49 49 40 / 60%));
+    color: var(--blanco);
     
 }
 
