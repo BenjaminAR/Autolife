@@ -97,6 +97,7 @@
 }
 .btn__banner:hover{
     background-position: right;
+    color: var(--blanco);
 }
 
 @media (max-width: 983px) {
