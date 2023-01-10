@@ -6,15 +6,79 @@
     justify-self: center;
 }
 
+@media (max-width: 1169px) {
+    .GarantiaExtendidaMenu{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 843px) {
+    .GarantiaExtendidaMenu{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 511px) {
+    .GarantiaExtendidaMenu{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .GarantiaExtendidaMenu-boton{
     height: 35vh;
-    background-color: var(--primario);
+    background-color: var(--backOscuro);;
     text-align: center  ;    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    color: var(--blanco);
 }
+
+
+
+.GarantiaExtendidaMenu-boton h4{
+    margin: .5rem;
+    color: var(--primario);
+    font-weight: bold;
+}
+
 .GarantiaExtendidaMenu-boton p{
-    font-size: 2rem;
+    font-size: 1.6rem;
+
+}
+
+
+.GarantiaExtendidaMenu-boton a{
+    color: var(--blanco);
+}
+
+.GarantiaExtendidaMenu a:hover{
+    color: var(--blanco);
+}
+
+
+.GarantiaExtendidaMenu-boton ul{
+    margin: 1rem;
+}
+
+.btn__banner {
+    background-image: linear-gradient(to right, var(--primario) 40%, #31312856);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: background-position .5s ease;
+    padding: 1rem 0;
+    font-weight: bold;
+    color: var(--blanco);
+    width: 50%;
+    text-align: center;
+    border: none;
+
+}
+.btn__banner:hover{
+    background-position: right;
+    color: var(--blanco);
 }

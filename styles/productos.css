@@ -110,11 +110,11 @@
     }
 
     #desProductoDos {
-        height: 60vh;
+        height: auto;
     }
 
     #desProductoUno {
-        height: 60vh;
+        height: auto;
     }
 
     .listado_producto{
