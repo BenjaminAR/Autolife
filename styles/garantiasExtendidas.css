@@ -1,0 +1,20 @@
+.GarantiaExtendidaMenu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.GarantiaExtendidaMenu-boton{
+    height: 35vh;
+    background-color: var(--primario);
+    text-align: center  ;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.GarantiaExtendidaMenu-boton p{
+    font-size: 2rem;
+}
