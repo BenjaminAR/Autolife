@@ -27,7 +27,7 @@
 }
 
 .GarantiaExtendidaMenu-boton{
-    height: 35vh;
+    height: 40vh;
     background-color: var(--backOscuro);;
     text-align: center  ;    
     display: flex;
