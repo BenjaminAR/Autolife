@@ -6,6 +6,13 @@
     justify-self: center;
 }
 
+
+.GarantiaExtendidaMenu h5{
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: var(--primario);
+}
+
 @media (max-width: 1169px) {
     .GarantiaExtendidaMenu{
         grid-template-columns: repeat(3, 1fr);
