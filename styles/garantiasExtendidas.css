@@ -1,74 +1,70 @@
-.GarantiaExtendidaMenu{
+.GarantiaExtendidaMenu {
+    margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    align-self: center;
-    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 
 
-.GarantiaExtendidaMenu h5{
-    font-size: 2.1rem;
+.GarantiaExtendidaMenu h5 {
+    font-size: 2rem;
     font-weight: bold;
     color: var(--primario);
 }
 
 @media (max-width: 1169px) {
-    .GarantiaExtendidaMenu{
+    .GarantiaExtendidaMenu {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 
 @media (max-width: 843px) {
-    .GarantiaExtendidaMenu{
+    .GarantiaExtendidaMenu {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
 @media (max-width: 511px) {
-    .GarantiaExtendidaMenu{
+    .GarantiaExtendidaMenu {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-.GarantiaExtendidaMenu-boton{
-    height: 40vh;
-    background-color: var(--backOscuro);;
-    text-align: center  ;    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    color: var(--blanco);
+.GarantiaExtendidaMenu-boton {
+    height: 35vh;
+    background-color: var(--backOscuro);
+    display: grid;
+    grid-template-rows: 25% 45% 30%;
 }
 
 
 
-.GarantiaExtendidaMenu-boton h4{
-    margin: .5rem;
+.GarantiaExtendidaMenu-boton h5 {
+    font-size: 2.5rem;
     color: var(--primario);
     font-weight: bold;
+    text-align: center;
+    margin: auto 0;
 }
 
-.GarantiaExtendidaMenu-boton p{
-    font-size: 1.6rem;
+.GarantiaExtendidaMenu-boton li {
+    font-size: 1.5rem;
+    color: var(--blanco);
+    margin-left: 5rem;
 
 }
 
-
-.GarantiaExtendidaMenu-boton a{
+.GarantiaExtendidaMenu a:hover {
     color: var(--blanco);
 }
 
-.GarantiaExtendidaMenu a:hover{
-    color: var(--blanco);
-}
 
-
-.GarantiaExtendidaMenu-boton ul{
-    margin: 1rem;
+.div__btn__banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn__banner {
@@ -85,7 +81,10 @@
     border: none;
 
 }
-.btn__banner:hover{
+
+.btn__banner:hover {
     background-position: right;
     color: var(--blanco);
 }
+
+
