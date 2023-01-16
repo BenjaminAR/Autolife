@@ -83,6 +83,7 @@ h5{
 @media (min-width: 1000px) {
     .que_hacemos{
         display: flex;
+        flex-direction: row;
         gap: 2rem;
         justify-content: center;
         align-items: center;
