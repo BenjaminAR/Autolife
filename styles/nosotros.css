@@ -102,6 +102,7 @@ h5{
 @media (max-width: 999px) {
     .hacemosBanner_dos{
         height: auto;
+        margin-top: 2rem;
     }
     .hacemosBanner{
         display: none;
