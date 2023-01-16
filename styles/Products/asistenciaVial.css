@@ -1,0 +1,39 @@
+.asistenciaVial-servicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.asistenciaVial-servicio h5{
+    font-size: 2.2rem;
+    color: var(--primario);
+    margin-top: 5px;
+}
+
+.asistenciaVial-servicio p{
+    line-height: 21px;
+    font-size: 15px;
+
+}
+
+@media (max-width: 1100px) {
+    .asistenciaVial-servicios{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .asistenciaVial-servicios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .asistenciaVial-servicios{
+        display: flex;
+        flex-direction: column;
+    }
+    .asistenciaVial-servicio p{
+        text-align: justify;
+    }
+}
