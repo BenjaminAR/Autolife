@@ -71,6 +71,13 @@ h5{
     text-align: center;
 }
 
+.que_hacemos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
 
 
 @media (min-width: 1000px) {
@@ -102,7 +109,7 @@ h5{
 @media (max-width: 999px) {
     .hacemosBanner_dos{
         height: auto;
-        margin-top: 2rem;
+        
     }
     .hacemosBanner{
         display: none;
