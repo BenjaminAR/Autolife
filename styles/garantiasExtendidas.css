@@ -1,5 +1,7 @@
 .GarantiaExtendidaMenu {
-    margin-top: 2rem;
+    max-width: 145rem;
+    margin: 0 auto;
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
