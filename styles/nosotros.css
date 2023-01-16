@@ -1,0 +1,87 @@
+.img__nosotros {
+    height: auto;
+}
+
+
+@media (max-width: 514px) {
+    .img__nosotros{
+        display: none;
+    }
+    .img__nosotrosRD{
+        display: block;
+    }
+}
+
+@media (min-width: 515px) {
+    .img__nosotrosRD{
+        display: none;
+    }
+}
+
+
+.cont__somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 120rem;
+}
+
+@media (min-width: 860px) {
+    .cont__somos {
+        padding: 0 2rem;
+    }
+}
+
+.cont__somos p {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+
+
+.cont__somos p span {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: var(--primario);
+}
+
+h5{
+    font-size: 2.2rem;
+    color: var(--primario);
+    font-weight: bold;    
+}
+
+.hacemos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1000px) {
+    .que_hacemos{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        max-width: 130rem;
+    }
+    
+    .que_hacemos img{
+        height: 45vh;
+    }
+
+    .que_hacemos img{
+        padding: 2rem;
+    }
+    .Hacemos_titulo{
+        text-align: center;
+    }
+    .hacemos_contenido p{
+        line-height: 3rem;
+        text-align: center;
+    }
+    
+}

@@ -7,7 +7,17 @@
     align-items: flex-end;
     margin-bottom: 4rem;
 }
+.img__nosotros {
+    height: 47vh;
 
+}
+
+
+@media (min-width: 768px) {
+    .img__nosotrosRD{
+        display: none;
+    }
+}
 .somos_h1 {
     text-transform: uppercase;
     font-size: 2.9rem;
@@ -125,3 +135,4 @@
     transform: translateY(0);
     opacity: 1;
 }
+
