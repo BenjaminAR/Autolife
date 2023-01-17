@@ -36,7 +36,7 @@
 .cont__somos p {
     font-weight: 300;
     font-size: 2rem;
-    line-height: 2.2rem;
+    line-height: 2.7rem;
     text-align: center;
 }
 
@@ -101,7 +101,7 @@ h5{
     }
 
     .hacemos_contenido p{
-        line-height: 3rem;
+        line-height: 2.8rem;
         text-align: center;
     }
     
@@ -140,3 +140,30 @@ h5{
     color: var(--blanco);
 }
 
+.mision-vision{
+    margin-top: 5rem;
+}
+
+@media (min-width: 850px) {
+    .mision-vision{
+        display: flex;
+        gap: 5rem;
+        
+    }
+    .mision-vision h5 {
+        text-align: center;
+    }
+}
+
+.vision{
+    background-color: #23232335;
+    padding: 2rem 4rem;
+    text-align: justify;
+    
+}
+
+.mision{
+    background-color: #23232335;
+    padding: 2rem 4rem;
+    text-align: justify;
+}
