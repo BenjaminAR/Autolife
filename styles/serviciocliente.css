@@ -1,4 +1,4 @@
-.empleados__sc{
+.empleados__sc {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem 0;
@@ -7,24 +7,24 @@
 }
 
 @media (max-width: 1050px) {
-    .empleados__sc{
+    .empleados__sc {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 900px) {
-    .empleados__sc{
+    .empleados__sc {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 645px) {
-    .empleados__sc{
+    .empleados__sc {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-.tarjeta__empleado{
+.tarjeta__empleado {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +34,7 @@
     border-bottom: solid 2px var(--primario);
 }
 
-.img__impleado{
+.img__impleado {
     background-image: url(../img/Empleados/Emp1.webp);
     height: 31rem;
     width: 30rem;
@@ -43,32 +43,56 @@
     background-position: center center;
 }
 
-.info_empldeado{
+.info_empldeado {
     text-align: center;
     line-height: 1.4rem;
     color: var(--secundario);
 }
 
-.info_empldeado h3{
+.info_empldeado h3 {
     margin-top: .6rem;
     margin-bottom: 0px;
     font-size: 2rem;
 }
 
-.info_empldeado p{
+.info_empldeado p {
     margin: .7rem 0;
     padding: 0 1rem;
 }
 
-.puesto__empleado{
-    margin-top: 0!important;
+.puesto__empleado {
+    margin-top: 0 !important;
 }
 
 
-.info_empldeado span{
+.info_empldeado span {
     font-size: 1.2rem;
 }
 
-.info_empldeado i{
+.info_empldeado i {
     color: var(--primario);
+}
+
+.conmutador_op {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.conmutador_titulo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+@media (max-width: 758px) {
+    .conmutador_op{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .conmutador_op p{
+        margin: 8px;
+    }
 }
