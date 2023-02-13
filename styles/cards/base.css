@@ -74,3 +74,10 @@ body{
     font-size: 1.3rem;
     align-items: center ;
 }
+
+@media (max-width: 609px) {
+    .contenedor-tarjeta{
+        flex-direction: column;
+        height: auto;
+    }
+}
