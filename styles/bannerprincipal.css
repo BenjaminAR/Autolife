@@ -9,11 +9,11 @@
     justify-content: center;
     align-items: center;
     height: 45vh;
-    
+
 }
 
 @media (min-width: 920px) {
-    .banner__principal-frase{
+    .banner__principal-frase {
         margin-top: -5rem;
     }
 }
@@ -21,9 +21,16 @@
 .banner__principal-frase h1 {
     font-family: var(--funeteParrafo);
     margin-top: 8rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: #56585A;
 }
+
+@media (min-width: 1440px) {
+    .banner__principal-frase h1 {
+        font-size: 4rem;
+    }
+}
+
 
 @media (max-width: 500px) {
     .banner__principal-frase h1 {
@@ -36,7 +43,7 @@
     color: var(--primario);
 }
 
-.parrafo-principal-web{
+.parrafo-principal-web {
     text-transform: uppercase;
 }
 
@@ -63,11 +70,11 @@
 
 @media (min-width: 1080px) {
     .banner__principal-testimonios {
-        height: 50vh;
+        height: 43vh;
     }
 
     .banner__principal-frase {
-        height: 50vh;
+        height: 43vh;
     }
 }
 
@@ -90,26 +97,13 @@
     margin: 8px;
 }
 
-@media (max-width: 768px) {
-    #banner__principal {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 1300px) {
 
-    .banner__principal-frase {
-        height: 25vh;
-    }
-}
-
-@media (max-width: 536px) {
     .banner__principal-testimonios {
+        margin-top: 4rem;
         display: block;
         width: 100%;
         height: 35vh;
-    }
-
-    .banner__principal-frase{
-        height: 12rem;
     }
 
     .banner__principal-img-testimonios {
@@ -117,14 +111,45 @@
     }
 }
 
+@media (max-width: 750px) {
+    .banner__principal-testimonios {
+        margin-top: 0;
+        display: block;
+        width: 100%;
+        height: 35vh;
+    }
+
+    .banner__principal-frase {
+        height: 25rem;
+    }
+
+    .banner__principal-img-testimonios {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #banner__principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner__principal-frase {
+        height: 20vh;
+    }
+
+}
+
+
+
 @media (min-width: 1027px) {
     .parrafo-principal-app {
         display: none;
     }
 }
 
-.parrafo-principal-app{
-    margin-top: 2rem !important; 
+.parrafo-principal-app {
+    margin-top: 1rem !important;
 }
 
 
@@ -139,12 +164,12 @@
     padding: 0 5rem;
 }
 
-.banner__principal-colora-img{
+.banner__principal-colora-img {
     background-image: url(../img/def/icoGarantia.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    width:55%;
+    width: 55%;
     height: 100%;
     margin-left: 2rem;
 }
@@ -181,13 +206,13 @@
 }
 
 
-.banner__principal-colorb-texto p{
+.banner__principal-colorb-texto p {
     line-height: 2rem;
 }
 
 
 @media (max-width: 768px) {
-    .banner__principal-colorb-texto{
+    .banner__principal-colorb-texto {
         font-size: 1.5rem;
         font-style: normal;
         font-weight: normal;
@@ -197,7 +222,8 @@
     .banner__principal-colorb {
         align-items: center;
     }
-    .banner__principal-colorb-texto-principal{
+
+    .banner__principal-colorb-texto-principal {
         font-size: 2.4rem;
     }
 }
@@ -210,17 +236,17 @@
     background-color: var(--primario);
     font-weight: bold;
     text-align: center;
-    transition: background-color  0.6s ease;
+    transition: background-color 0.6s ease;
 }
 
 .btn:hover {
     background-image: linear-gradient(to right, var(--primario) 30%, rgb(49 49 40 / 60%));
     color: var(--blanco);
-    
+
 }
 
 @media (min-width: 900px) {
-    .btn__margin{
+    .btn__margin {
         margin-right: 3rem;
     }
 }
@@ -228,5 +254,105 @@
 @media (max-width: 768px) {
     .btn {
         padding: 1.5rem 4rem;
+    }
+}
+
+/* 
+
+
+.counter-shell{
+    background-color: var(--backOscuro);
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+*/
+
+
+
+.counter-shell {
+    margin-bottom: 2rem;
+    background-image: url(../img/fondosPrincipal/fondo_ciudad_autos2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+}
+
+@media (min-width: 1800px) {
+
+    .counter-shell {
+        height: 49vh;
+    }
+}
+
+.counter-shell div {
+    background-color: var(--transparencia);
+    height: 12rem;
+    width: 28rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
+
+.counter-shell div p {
+    padding: 0;
+    margin: 0;
+    color: var(--primario);
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+.counter-shell div p:last-child {
+    font-weight: normal;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+
+@media (max-width: 500px) {
+    .counter-shell {
+        margin-bottom: 2rem;
+        margin-top: -1rem;
+        padding: 2rem 0;
+        background-image: url(../img/fondosPrincipal/fondo_ciudad_autos2-RD.png);
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .counter-shell div p {
+        font-size: 2rem;
+    }
+
+    .counter-shell div p:last-child {
+        font-size: 1.3rem;
+    }
+}
+
+
+.btn__comment {
+    width: 55%;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .btn__comment {
+        width: 85%;
     }
 }

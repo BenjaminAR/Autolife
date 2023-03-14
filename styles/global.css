@@ -3,13 +3,15 @@
     --funeteParrafo: 'Lato', sans-serif;
     --primario: #ED6E00;
     --secundario: #58595b;
-    --backOscuro:#232323;
+    --backOscuro: #232323;
     --primarioOpacity: #d36622;
+    --primarioTransparente: #ed6f00d2;
     --blanco: #fff;
     --negro: #000;
     --backObscuro: #332F21;
     --backClaro: #e0e0e0;
-
+    --transparencia: rgba(0, 0, 0, 0.692);
+    --parrafo: #555555;
 }
 
 body {
