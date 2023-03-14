@@ -260,3 +260,7 @@ p{
 
 
 /* Fin del efecto scroll */
+
+.map{
+    height: 100%;
+}
