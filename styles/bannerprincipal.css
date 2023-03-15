@@ -87,12 +87,6 @@
     background-position: center bottom;
 }
 
-/* 
-.banner__principal-testimonios img{
-    height: 35vh;
-}
-*/
-
 .testimonial-text p {
     margin: 8px;
 }
@@ -125,6 +119,12 @@
 
     .banner__principal-img-testimonios {
         display: none;
+    }
+}
+
+@media (max-width: 395px) {
+    .banner__principal-testimonios{
+        margin-bottom: 6vh;
     }
 }
 
