@@ -43,6 +43,11 @@ body {
 
 /* Globales */
 
+::selection {
+    background-color: var(--primario);
+    color: white;
+}
+
 .contenedor {
     width: 90%;
     margin: 0 auto;
@@ -161,6 +166,10 @@ img {
     margin: 5rem 0;
 }
 
-.activee{
-	border-bottom: solid var(--primario) 2px;
+.activee {
+    border-bottom: solid var(--primario) 2px;
+}
+
+p {
+    line-height: 1.55;
 }
