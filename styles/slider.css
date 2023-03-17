@@ -32,6 +32,7 @@
 	margin-bottom: 5px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	color: var(--parrafo);
 }
 
 .box-area span {
@@ -132,6 +133,8 @@
 
 .content {
 	font-size: 1.5rem !important;
+	line-height: 1.4;
+	color: var(--parrafo);
 }
 
 @media (max-width: 768px) {
@@ -178,6 +181,6 @@
 
 @media (min-width: 768px) {
 	.contenedor-testimonios h3 {
-		margin-bottom: 10rem;
+		margin-bottom: 6rem;
 	}
 }

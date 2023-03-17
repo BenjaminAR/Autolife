@@ -89,6 +89,8 @@
 
 .testimonial-text p {
     margin: 8px;
+    line-height: 1.2;
+    color: var(--parrafo);
 }
 
 @media (max-width: 1300px) {

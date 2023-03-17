@@ -34,6 +34,54 @@
 
         gtag('config', 'G-89JQMMKQJE');
     </script>
+    <style>
+        .imagen-con-enlace {
+            position: relative;
+            display: inline-block;
+        }
+
+        .icono-enlace {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+        }
+
+        .imagen-con-enlace:hover .icono-enlace {
+            visibility: visible;
+        }
+
+        .icono-enlace i {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primario);
+        }
+
+        a img {
+            opacity: .6;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        a:hover img {
+            opacity: 1;
+        }
+        .vinculos-productos{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .vinculos-productos{
+                flex-direction: column;
+                gap: 3rem;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 
 <header id="nav">
@@ -64,57 +112,38 @@
 <div style="height: 10rem; background-color: transparent;"></div>
 
 <div class="contenedor-fluid">
-    <div class="productos">
-        <div class="nombre__producto">
-            <button id="btnProductoUno" class="active" onclick="verProductoUno()">Premium Gama media </button>
-            <button id="btnProductoDos" class="" onclick="verProductoDos()">Premium Gama alta <i
-                    class="fa-sharp fa-solid fa-greater-than"></i> </button>
+
+    <section class="contenedor">
+        <div class="vinculos-productos">
+            <a href="products/gamaAlta.html" style="max-width: 300px; max-height: 300px;">
+                <div class="imagen-con-enlace" style="max-width: 300px; max-height: 300px ;">
+                    <img src="img/fondosPrincipal/AveryCar.png" alt="Descripción de la imagen">
+                    <span class="icono-enlace"><i class="fas fa-link"></i></span>
+                </div>
+            </a>
+
+            <a href="products/gamaMedia.html" style="max-width: 300px; max-height: 300px;">
+                <div class="imagen-con-enlace" style="max-width: 300px; max-height: 300px ;">
+                    <img src="img/fondosPrincipal/AveryCar.png" alt="Descripción de la imagen">
+                    <span class="icono-enlace"><i class="fas fa-link"></i></span>
+                </div>
+            </a>
+
+            <a href="https://www.ejemplo.com" style="max-width: 300px; max-height: 300px;">
+                <div class="imagen-con-enlace" style="max-width: 300px; max-height: 300px ;">
+                    <img src="img/fondosPrincipal/AveryCar.png" alt="Descripción de la imagen">
+                    <span class="icono-enlace"><i class="fas fa-link"></i></span>
+                </div>
+            </a>
+
+            <a href="https://www.ejemplo.com" style="max-width: 300px; max-height: 300px;">
+                <div class="imagen-con-enlace" style="max-width: 300px; max-height: 300px ;">
+                    <img src="img/fondosPrincipal/AveryCar.png" alt="Descripción de la imagen">
+                    <span class="icono-enlace"><i class="fas fa-link"></i></span>
+                </div>
+            </a>
         </div>
-
-        <div id="desProductoUno" class="on">
-            <div class="margin_productoUno">
-                <h4 style="text-align: center;">Características</h4>
-                <ul class="listado_producto">
-                    <li><span>Para unidades con hasta 10 años de antiguedad.</span></li>
-                    <li><span>Unidades de hasta 150,000 kms.</span></li>
-                    <li><span>Capacidad de arrastre 3 1/2 toneladas.</span></li>
-                    <li><span>Sin limite de averías.</span></li>
-                    <li><span>Sin deducibles.</span></li>
-                    <li><span>Sin limite de Kms a recorrer.</span></li>
-                    <li><span>Facturación individual o por bloque.</span></li>
-                    <li><span>Atencion personalizada y atención de averías en menos de 24hrs.</span></li>
-                    <li><span>Duracion 14 meses.</span></li>
-                </ul>
-            </div>
-            <img src="img/def/senal_mujer.png" alt="Img de mujer" class="img_mujer">
-        </div>
-
-        <div id="desProductoDos" class="off">
-            <h3>Para autos de mas HP</h3>
-            <p>Proximamente</p>
-        </div>
-
-    </div>
-
-    <div class="space-3"></div>
-
-    <div class="formulario__datos">
-
-        <h4>¿Quieres más informes? <br> Contáctanos...</h3>
-            <form class="form_" action="enviar.php" method="post">
-                <input class="w-100" type="text" name="name" id="name" placeholder="Nombre" required>
-                <input class="w-100" type="text" name="lastname" id="lastname" placeholder="Apellidos">
-                <input class="w-100 ex" type="email" name="mail" id="mail" placeholder="ejemplo@tucorreo.com" required>
-                <input class="w-100 ex" type="tel" name="phone" id="phone" placeholder="Número de teléfono" required>
-                <textarea class="one w-100" name="message" id="message" cols="auto" rows="auto"
-                    placeholder="Comentarios o información"></textarea>
-                <label class="checkbox-form">
-                    <input class="two" type="checkbox" value="1" name="privacidad" required> &nbsp; Acepto la <a
-                        href="privacidad.html">politica de privacidad</a>
-                </label>
-                <button class="h-100">Enviar</button>
-            </form>
-    </div>
+    </section>
 
     <div class="space-3"></div>
 
