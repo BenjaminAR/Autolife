@@ -54,7 +54,7 @@ header nav ul li {
 	margin-right: -1rem;
 }
 
-a {
+nav ul li a {
 	color: var(--secundario);
 	display: block;
 	text-decoration: none;
