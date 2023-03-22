@@ -75,8 +75,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mail->isSMTP();                                      // Send using SMTP
     $mail->Host = 'secure.emailsrvr.com';                       // Set the SMTP server to send through
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'norma.balderas@autolife.mx';           // SMTP username
-    $mail->Password = 'A5071121mx';                     // SMTP password
+    $mail->Username = 'correo@tuxxxx.com';           // SMTP username
+    $mail->Password = 'siaja';                     // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable SSL encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
