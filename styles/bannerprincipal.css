@@ -4,6 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+
 .banner__principal-frase {
     display: flex;
     justify-content: center;
@@ -124,9 +125,14 @@
     }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 1300px) {
     .banner__principal-testimonios{
         margin-bottom: 6vh;
+    }
+}
+@media (max-width: 764px) {
+    .banner__principal-testimonios{
+        margin-bottom: 9vh;
     }
 }
 
@@ -134,6 +140,7 @@
     #banner__principal {
         display: flex;
         flex-direction: column;
+        min-height: 45vh;
     }
 
     .banner__principal-frase {

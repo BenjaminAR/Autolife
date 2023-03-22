@@ -1,0 +1,109 @@
+/* Estilos del carrusel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    height: 43vh;
+    margin-top: -11rem;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-slide>div {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding:  2rem 4rem;
+}
+
+.carousel-slide h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--parrafo);
+    margin-bottom: 10px;
+}
+
+.carousel-slide p {
+    font-style: italic;
+    color: var(--parrafo);
+    line-height: 1.5;
+}
+
+.carousel-control {
+    text-align: center;
+    top: 50%;
+    margin: 0 5px;
+    position: absolute;
+    border-radius: 50%;
+    width: 4rem;
+    transform: translateY(-50%);
+    background-color: var(--backObscuro);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control:hover {
+    opacity: 0.8;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    display: inline-block;
+    
+}
+.testimonio-contenedor i{
+    color: var(--primario);
+    font-size: 2rem;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    padding: 5px 0;
+}
+
+@media (maz-width: 763px) {
+    .wrapper{
+        margin-bottom: 100rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper{
+        gap: 2rem;
+    }
+}
