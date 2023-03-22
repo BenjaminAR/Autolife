@@ -195,8 +195,9 @@
 
 .contacto {
     background-color: #f4f4f4;
-    height: 95vh;
+    min-height: 95vh;
     padding-top: 5rem;
+    padding-bottom: 7rem;
 }
 
 @media (max-width: 768px) {
