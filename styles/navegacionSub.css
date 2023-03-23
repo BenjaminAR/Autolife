@@ -78,6 +78,8 @@ li:hover .children {
 	z-index: 999;
 	padding: 0;
 	width: 300px !important;
+	margin: 0 auto;
+	font-size: 1.6rem;
 }
 
 @media (min-width: 1058px) {
@@ -149,7 +151,7 @@ li:hover .children {
 		padding: 2.2rem !important;
 		color: var(--primario);
 		float: right;
-		font-size: 2.6rem !important;
+		font-size: 2.3rem !important;
 	}
 
 	.submenu {
