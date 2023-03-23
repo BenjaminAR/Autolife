@@ -59,7 +59,7 @@
     grid-template-columns: 25% 75%;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    height: 100%;
 }
 
 @media (min-width: 768px) {
