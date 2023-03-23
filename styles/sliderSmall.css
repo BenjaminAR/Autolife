@@ -107,3 +107,22 @@
         gap: 2rem;
     }
 }
+
+@media (max-width: 400px) {
+    .carousel-control{
+        display: none;
+    }
+    .carousel-container{
+        height: 46vh;
+        z-index: 100;
+    }
+    .testimonio-contenedor{
+        height: 100%;
+        padding: 0 !important;
+        padding-top: 1rem !important;
+    }
+    .testimonio-contenedor p{
+        line-height: 1.3;
+        padding: 0 4rem;
+    }
+}
