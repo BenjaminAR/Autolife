@@ -1,0 +1,46 @@
+.modal {
+    display: none;
+    /* ocultamos el modal por defecto */
+    position: fixed;
+    /* posición fija para que no se mueva con el scroll */
+    z-index: 100;
+    /* aseguramos que el modal esté encima de todo lo demás */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* ocupamos todo el ancho de la pantalla */
+    height: 100vh;
+    /* ocupamos toda la altura de la pantalla */
+    overflow: auto;
+    /* permitimos el scroll dentro del modal si el contenido es demasiado largo */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* ponemos un fondo oscuro y transparente */
+}
+
+.modal-content {
+    background-color: white;
+    /* ponemos un fondo blanco para el contenido del modal */
+    margin: 15% auto;
+    /* centramos el modal verticalmente y lo separamos de la parte superior */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 65%;
+    /* le damos un ancho fijo */
+}
+
+.close {
+    color: #aaaaaa;
+    /* cambiamos el color de la X de cierre */
+    float: right;
+    /* ponemos la X en la esquina superior derecha */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    /* cambiamos el color de la X al pasar el cursor por encima */
+    text-decoration: none;
+    cursor: pointer;
+}
