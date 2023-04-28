@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autolife | Tarjeta Benjamín Contreras</title>
+    <title>Autolife | Tarjeta </title>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,46 +13,65 @@
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/cards/base.css">
+    <link rel="stylesheet" href="../styles/pruebas.css">
+    <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="contenedor-tarjeta">
-        <div class="contenedor-tarjeta_front">
-            <a href="https://autolife.mx"><img class="tarjeta-logo" src="../img/LogoSmall.webp" alt="logo"></a>
-            <span class="card-slogan">Garantiza la tranquilidad en tu camino</span>
-            <img class="card-employee_img" src="../img/cards/Persons/Benjamin.jpg" alt="FotoBenjaminContreras">
-            <span class="card-name">Benjamín Contreras</span>
-            <span class="card-position">Director comercial.</span>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-front">
+                <div class="contenedor-tarjeta_front">
+                    <a href="https://autolife.mx"><img class="tarjeta-logo" src="../img/LogoSmall.webp" alt="logo"></a>
+                    <span class="card-slogan">Garantiza la tranquilidad en tu camino</span>
+                    <img class="card-employee_img" src="../img/cards/Persons/Benjamin.jpg" alt="FotoBenjaminContreras">
+                    <span class="card-name">Benjamín Contreras</span>
+                    <span class="card-position">Director comercial.</span>
 
 
-            <div class="card-footer">
-                <span><i style="color: var(--primario);" class="fa-solid fa-mobile-screen-button"></i> <a
-                        style="color:var(--backObscuro)" href="tel:55 8065 2702">55 8065 2702</a></span>
-                <span><i style="color: var(--primario);" class="fa fa-envelope"></i> <a style="color:var(--backObscuro)"
-                        href="mailto:benjamin.contreras@autolife.mx">benjamin.contreras@autolife.mx</a></span>
-                <div class="whatsapp"><a href="https://wa.me/+5215580652702" target="_blank"><i style="color: var(--primario); margin-top: 5px; font-size: 2.2rem; font-weight: bold;" 
-                            class="fa-brands fa-whatsapp"></i></a>
+                    <div class="card-footer">
+                        <span><i style="color: var(--primario);" class="fa-solid fa-mobile-screen-button"></i> <a
+                                style="color:var(--backObscuro)" href="tel:55 8065 2702">55 8065 2702</a></span>
+                        <span><i style="color: var(--primario);" class="fa fa-envelope"></i> <a
+                                style="color:var(--backObscuro)"
+                                href="mailto:benjamin.contreras@autolife.mx">benjamin.contreras@autolife.mx</a></span>
+                        <div class="whatsapp"><a href="https://wa.me/+5215580652702" target="_blank"><i
+                                    style="color: var(--primario); margin-top: 5px; font-size: 2.2rem; font-weight: bold;"
+                                    class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="contenedor-tarjeta_back">
+                    <a href="https://autolife.mx"><img class="tarjeta-logo" src="../img/LogoSmall.webp" alt="logo"></a>
+                    <span class="card-slogan">Garantiza la tranquilidad en tu camino</span>
+                    <img class="card-employee_img" src="../img/cards/qr/base.png" alt="QR">
+                    <br>
+                    <span class="card-name">Benjamín Contreras</span>
+
+                    <div class="card-footer">
+                        <br>
+                        <span><i style="color: var(--primario); font-size: 1.8rem;" class="fa-solid fa-globe"></i> <a
+                                style="color:var(--backObscuro); font-size: 1.8rem"
+                                href="https://autolife.mx">Autolife.mx</a></span>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="contenedor-tarjeta_back">
-            <a href="https://autolife.mx"><img class="tarjeta-logo" src="../img/LogoSmall.webp" alt="logo"></a>
-            <span class="card-slogan">Garantiza la tranquilidad en tu camino</span>
-            <img class="card-employee_img" src="../img/cards/qr/base.png" alt="QR">
-            <br>
-            <span class="card-name">Benjamín Contreras</span>
-
-            <div class="card-footer">
-                <br>
-                <span><i style="color: var(--primario); font-size: 1.8rem;" class="fa-solid fa-globe"></i> <a
-                        style="color:var(--backObscuro); font-size: 1.8rem"
-                        href="https://autolife.mx">Autolife.mx</a></span>
-            </div>
-
-        </div>
+        <button class="btn btn__comment" onclick="flipCard()"><i style="font-size: 2rem;"
+                class="fa fa-arrows-rotate"></i></button>
     </div>
+
+
+
+    <script>
+        // Función para girar la tarjeta
+        function flipCard() {
+            var card = document.querySelector('.card');
+            card.classList.toggle('flipped');
+        }
+    </script>
 </body>
 
 </html>
