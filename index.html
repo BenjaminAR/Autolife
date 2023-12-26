@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/videoModal.css">
     <link rel="stylesheet" href="styles/bannerprincipal.css">
     <link rel="stylesheet" href="styles/navegacionSub.css">
     <link rel="stylesheet" href="styles/contacto.css">
@@ -27,9 +28,9 @@
     <link rel="stylesheet" href="styles/slider-min.css">
     <link rel="stylesheet" href="styles/sliderSmall.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/videoModal.css">
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 
     <title>Autolife: Empresa de gestión de garantías para autos.</title>
 
@@ -47,12 +48,15 @@
 <body>
 
     <!--Modal de video-->
+
     <div class="modal" id="videoModal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <iframe id="youtubeVideo" width="600" height="370" src="https://www.youtube.com/embed/wCXfk7RbVr0?si=XTIrhRYdXUWDYaoJ" frameborder="0" allowfullscreen></iframe>
+            <div id="player"></div>
         </div>
     </div>
+
+    <!--Termina el modal del video-->
 
     <header id="nav">
         <div class="menu_bar">
@@ -69,7 +73,7 @@
                     <a href="#">Productos &nbsp; <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="children">
                         <li><a href="products/garantiasExtendidas.html">Garantías Extendidas Mecánicas</a></li>
-                        <li><a href="#">Garantías Llantas</a></li>
+                        <li><a href="products/llantas.html">Garantías Llantas</a></li>
                         <li><a href="products/asistenciavial.html">Asistencia Víal</a></li>
                         <br>
                     </ul>
