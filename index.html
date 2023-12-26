@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="styles/slider-min.css">
     <link rel="stylesheet" href="styles/sliderSmall.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/videoModal.css">
     <script src="https://kit.fontawesome.com/979135c9b6.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -44,6 +45,14 @@
 </head>
 
 <body>
+
+    <!--Modal de video-->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="youtubeVideo" width="600" height="370" src="https://www.youtube.com/embed/wCXfk7RbVr0?si=XTIrhRYdXUWDYaoJ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <header id="nav">
         <div class="menu_bar">
@@ -526,7 +535,7 @@
     <div class="whatsapp"><a href="https://wa.me/+5215610012964" target="_blank"><i
                 class="fa-brands fa-whatsapp"></i></a>
     </div>
-
+    <script src="scripts/videoModal.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/sliderSmall.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
